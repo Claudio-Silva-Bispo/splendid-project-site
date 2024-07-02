@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     if (req.method === 'GET') {
         try {
             const { db } = await connectToDatabase();
-            const contatos = await db.collection('agendamento').find().toArray();
+            const contatos = await db.collection('t_agendamento').find().toArray();
             return res.status(200).json(contatos);
         } catch (error) {
             console.error('Erro ao buscar os agendentos:', error);
