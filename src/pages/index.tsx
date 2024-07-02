@@ -7,6 +7,7 @@ import FormularioContato from "@/components/FormularioContato"
 import FotoServicos from "@/components/FotoServicos"
 import RedesContatos from "@/components/RedesContatos"
 import SobreFeedback from "@/components/SobreFeedback"
+import FeedbacksRecebidos from "@/components/FeedbacksRecebidos"
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
       <FotoServicos />
       <RedesContatos />
       <SobreFeedback />
+      <FeedbacksRecebidos/>
 
     </div>
   )

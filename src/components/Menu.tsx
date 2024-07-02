@@ -15,15 +15,18 @@ export default function Menu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
+    { item: 'Inicio', path: '/' },
     { item: 'Empresa', path: '/SobreEmpresa' },
     { item: 'Serviços', path: '/#sobre-servicos', id: 'sobre-servicos' },
     { item: 'Contatos', path: '/#contato', id: 'contato' },
     { item: 'Redes', path: '/#redes-contato', id: 'redes-contatos' },
+    { item: 'Dashboard', path: '/LoginDashboard' },
   ];
 
   useEffect(() => {
-    // Determine the selected item based on the current route
-    if (pathname === '/SobreEmpresa') {
+    if (pathname === '/') {
+      setSelectedItem('Inicio');
+    } else if (asPath.startsWith('/SobreEmpresa')) {
       setSelectedItem('Empresa');
     } else if (asPath.startsWith('/#sobre-servicos')) {
       setSelectedItem('Serviços');
@@ -48,7 +51,7 @@ export default function Menu() {
   };
 
   return (
-    <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+    <header className="fixed top-0 left-0 w-full p-4 dark:bg-gray-100 dark:text-gray-800 z-50">
       <div className="container flex justify-between h-16 mx-auto">
         <a
           rel="noopener noreferrer"

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import imagem from '../../public/assets/ServicosEfetuados/WhatsApp Image 2024-06-29 at 19.42.37.jpeg'
-
 export default function SobreEmpresa() {
     return (
         <div className="bg-white py-12">
@@ -84,16 +82,6 @@ export default function SobreEmpresa() {
                         <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                             <h3 className="text-xl font-bold text-gray-800 mb-4">Serviço de Chaveiro</h3>
                             <p className="text-gray-600">Se você trancar suas chaves dentro do carro, estamos aqui para ajudar a abrir o veículo.</p>
-                        </div>
-
-                        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">Troca de óleo</h3>
-                            <p className="text-gray-600">Montar a frase aqui</p>
-                        </div>
-
-                        <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">Patins</h3>
-                            <p className="text-gray-600">Montar a frase aqui</p>
                         </div>
 
                     </div>

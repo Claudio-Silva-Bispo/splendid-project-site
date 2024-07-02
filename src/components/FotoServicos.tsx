@@ -1,11 +1,12 @@
 
+import imagem from '../../public/assets/Servicos/chave-novo.webp'
 export default function FotoServicos(){
     return(
         <section className="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800" id="sobre-servicos">
             
             <div className="container mx-auto space-y-12">
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/bateria.webp" alt="Carga de Bateria" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Servicos/bateria-novo.webp" alt="Carga de Bateria" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
                         
@@ -17,13 +18,13 @@ export default function FotoServicos(){
 
                         <p className="text-md">O serviço de recarga de bateria é destinado apenas a veículos cuja parte elétrica esteja em perfeitas condições. Ele é ideal para casos em que a bateria ficou descarregada devido a um longo período sem uso ou por conta de um uso contínuo de algum acessório que esgotou a bateria sem que o alternador pudesse recarregar o sistema.</p>
                         
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-1" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
 
                     </div>
                 </div>
                 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    <img src="/assets/Servicos/pneu.webp" alt="Troca de Pneu" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Servicos/pneu-novo.webp" alt="Troca de Pneu" className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
                         <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
                         <h3 className="text-3xl font-bold">Troca de Pneu</h3>
@@ -40,7 +41,7 @@ export default function FotoServicos(){
                 </div>
                 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/guincho.webp" alt="Reboque" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Servicos/guincho-novo.webp" alt="Reboque" className="h-80 dark:bg-gray-500 aspect-video" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
                         <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
@@ -57,12 +58,12 @@ export default function FotoServicos(){
                 </div>
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    <img src="/assets/Servicos/oleo.webp" alt="Troca de Óleo" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Servicos/ferramentas.webp" alt="Manutenção Preventiva" className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
                         <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        <h3 className="text-3xl font-bold">Troca de Óleo</h3>
+                        <h3 className="text-3xl font-bold">Manutenção Preventiva</h3>
                         
-                        <p className="my-1 text-md">Serviço completo de troca de óleo no local, com produtos de alta qualidade e atendimento rápido.</p>
+                        <p className="my-1 text-md">Verificações regulares e manutenção preventiva para garantir a segurança e o bom funcionamento do seu veículo.</p>
                         
                         <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
 
@@ -70,7 +71,7 @@ export default function FotoServicos(){
                 </div>
                 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/chave.webp" alt="Desbloqueio de Porta" className="h-80 dark:bg-gray-500 aspect-video" />
+                    <img src="/assets/Servicos/chave-novo.webp" alt="Desbloqueio de Porta" className="h-80 dark:bg-gray-500 aspect-video" />
                     <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
                         
                         <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
@@ -86,18 +87,8 @@ export default function FotoServicos(){
                     </div>
                 </div>
 
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    <img src="/assets/Servicos/prevencao.webp" alt="Manutenção Preventiva" className="h-80 dark:bg-gray-500 aspect-video" />
-                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
-                        <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        <h3 className="text-3xl font-bold">Manutenção Preventiva</h3>
-                        
-                        <p className="my-1 text-md">Verificações regulares e manutenção preventiva para garantir a segurança e o bom funcionamento do seu veículo.</p>
-                        
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+               
 
-                    </div>
-                </div>
             </div>
             
         </section>
