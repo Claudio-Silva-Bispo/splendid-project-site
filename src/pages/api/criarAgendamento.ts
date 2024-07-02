@@ -14,10 +14,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         try {
             const { db } = await connectToDatabase();
             const result = await db.collection('t_agendamento').insertOne({ nome, email, telefone, servico, localizacao, mensagem });
-            return res.status(201).json({ message: 'Contato salvo com sucesso', id: result.insertedId });
+            return res.status(201).json({ message: 'Agendamento salvo com sucesso', id: result.insertedId });
         } catch (error) {
-            console.error('Erro ao salvar contato:', error);
-            return res.status(500).json({ error: 'Erro ao salvar contato' });
+            console.error('Erro ao salvar o Agendamento:', error);
+            return res.status(500).json({ error: 'Erro ao salvar o agendamento' });
         }
     } else {
         res.setHeader('Allow', ['POST']);
