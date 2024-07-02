@@ -6,15 +6,15 @@ import { Feedback } from '../../models/feedback';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        const { nome, email, telefone, servico, localizacao, mensagem }: Feedback = req.body;
+        const { nome, email, telefone, nota, mensagem }: Feedback = req.body;
 
-        if (!nome || !email || !telefone || !servico || !localizacao || !mensagem) {
+        if (!nome || !email || !telefone || !nota || !mensagem) {
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
         try {
             const { db } = await connectToDatabase();
-            const result = await db.collection('t_feedback').insertOne({ nome, email, telefone, servico, localizacao, mensagem });
+            const result = await db.collection('t_feedback').insertOne({ nome, email, telefone, nota, mensagem });
             return res.status(201).json({ message: 'Feedback salvo com sucesso', id: result.insertedId });
         } catch (error) {
             console.error('Erro ao salvar o feedback:', error);

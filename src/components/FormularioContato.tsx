@@ -16,7 +16,7 @@ export default function FormularioContato(){
         e.preventDefault();
 
         try {
-            const response = await fetch('/api/contato', {
+            const response = await fetch('https://oficina-project.vercel.app/api/criarContato', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -52,9 +52,9 @@ export default function FormularioContato(){
             
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 
-                <h2 className="text-5xl font-bold">Serviços diferenciado e personalizado <br /> <span className="uppercase">especialmente para você</span></h2>
+                <h2 className="text-5xl font-bold text-start md:text-center leading-tight">Serviços diferenciado e personalizado <br /> <span className="uppercase">especialmente para você</span></h2>
                 
-                <p className="dark:text-gray-600">Atendimento rápido e eficiente para suas emergências veiculares</p>
+                <p className="text-start md:text-center">Atendimento rápido e eficiente para suas emergências veiculares</p>
             </div>
 
             <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 border rounded-md">
@@ -67,16 +67,16 @@ export default function FormularioContato(){
                                 
                                 <h3 className="text-xl font-semibold uppercase text-center">Formulário de contato</h3>
                                 
-                                <div className="flex flel-col-2 justify-between w-full gap-5">
+                                <div className="grid md:grid-cols-2 gap-5 w-full">
                                     
-                                    <div className="w-full">
+                                    <div className="min-w-full">
                                         <label htmlFor="nome" className="block text-sm font-medium">Nome</label>
-                                        <input type="text" id="nome" className="w-full p-2 border border-gray-300 rounded" onChange={handleChange} value={formulario.nome} />
+                                        <input type="text" id="nome" className="min-w-full p-2 border border-gray-300 rounded" onChange={handleChange} value={formulario.nome} />
                                     </div>
 
                                     <div className="w-full">
                                         <label htmlFor="telefone" className="block text-sm font-medium">Telefone</label>
-                                        <input type="number" id="telefone" className="w-full p-2 border border-gray-300 rounded" placeholder="(xx) xxxxx-xxxx" onChange={handleChange} value={formulario.telefone} />
+                                        <input type="number" id="telefone" className="min-w-full p-2 border border-gray-300 rounded" placeholder="(xx) xxxxx-xxxx" onChange={handleChange} value={formulario.telefone} />
                                     </div>
 
                                 </div>

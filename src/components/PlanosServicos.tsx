@@ -2,7 +2,7 @@
 
 export default function PlanosServicos(){
     return(
-        <section className="py-20 dark:bg-gray-100 dark:text-gray-800">
+        <section className="py-20 p-10 md:p-0 dark:bg-gray-100 dark:text-gray-800">
             
             <div className="container px-4 mx-auto">
 
@@ -11,7 +11,7 @@ export default function PlanosServicos(){
                     <h2 className="text-4xl font-bold lg:text-5xl">Escolha o melhor plano para você</h2>
                 </div>
 
-                <div className="flex flex-wrap items-stretch -mx-4">
+                <div className="flex flex-wrap items-stretch mx-4 pb-10">
                     <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                         <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
                             <div className="space-y-2">
@@ -125,6 +125,7 @@ export default function PlanosServicos(){
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </section>

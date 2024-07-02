@@ -1,38 +1,147 @@
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
+interface MenuItem {
+  item: string;
+  path: string;
+  id?: string;
+}
 
-export default function Menu(){
-    return(
-        
-        <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
-            
-            <div className="container flex justify-between h-16 mx-auto">
-                <a rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
-                    <h1 className="font-bold text-2xl text-[#E5332F] uppercase">Villar Auto Socorro</h1>
+export default function Menu() {
+  const router = useRouter();
+  const { pathname, asPath } = router;
+
+  const [selectedItem, setSelectedItem] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const menuItems: MenuItem[] = [
+    { item: 'Empresa', path: '/SobreEmpresa' },
+    { item: 'Serviços', path: '/#sobre-servicos', id: 'sobre-servicos' },
+    { item: 'Contatos', path: '/#contato', id: 'contato' },
+    { item: 'Redes', path: '/#redes-contato', id: 'redes-contatos' },
+  ];
+
+  useEffect(() => {
+    // Determine the selected item based on the current route
+    if (pathname === '/SobreEmpresa') {
+      setSelectedItem('Empresa');
+    } else if (asPath.startsWith('/#sobre-servicos')) {
+      setSelectedItem('Serviços');
+    } else if (asPath.startsWith('/#contato')) {
+      setSelectedItem('Contatos');
+    } else if (asPath.startsWith('/#redes')) {
+      setSelectedItem('Redes');
+    } else {
+      setSelectedItem('');
+    }
+  }, [pathname, asPath]);
+
+  const handleItemClick = (item: MenuItem) => {
+    setSelectedItem(item.item);
+    setIsMobileMenuOpen(false); // Close the mobile menu when an item is clicked
+
+    if (item.id && pathname === '/') {
+      document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push(item.path);
+    }
+  };
+
+  return (
+    <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+      <div className="container flex justify-between h-16 mx-auto">
+        <a
+          rel="noopener noreferrer"
+          href="/"
+          aria-label="Back to homepage"
+          className="flex items-center p-2"
+        >
+          <h1 className="font-bold text-2xl text-[#E5332F] uppercase">
+            Villar Auto Socorro
+          </h1>
+        </a>
+
+        <ul className="items-stretch hidden space-x-3 md:flex">
+          {menuItems.map((menuItem) => (
+            <li key={menuItem.item} className="flex">
+              <a
+                href="#"
+                className={`flex items-center px-4 -mb-1 border-b-2 ${
+                  selectedItem === menuItem.item
+                    ? 'text-[#E5332F] border-[#E5332F]'
+                    : 'border-gray-500'
+                }`}
+                onClick={() => handleItemClick(menuItem)}
+              >
+                {menuItem.item}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className="flex justify-end p-4 md:hidden"
+          onClick={() => setIsMobileMenuOpen(true)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 bg-[#E5332F] bg-opacity-95 z-50 flex flex-col items-start p-4">
+          <button
+            className="self-end p-2 text-white"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+
+          <ul className="w-full">
+            {menuItems.map((menuItem) => (
+              <li key={menuItem.item} className="w-full">
+                <a
+                  href="#"
+                  className={`block w-full px-4 py-2 text-white text-2xl ${
+                    selectedItem === menuItem.item
+                      ? 'bg-[#C72E2A]'
+                      : 'hover:bg-[#C72E2A]'
+                  }`}
+                  onClick={() => handleItemClick(menuItem)}
+                >
+                  {menuItem.item}
                 </a>
-
-                <ul className="items-stretch hidden space-x-3 md:flex">
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="/SobreEmpresa" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Empresa</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#sobre-servicos" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Serviços</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#contato" className="flex items-center px-4 -mb-1 border-b-2 dark:border- text-[#E5332F] border-[#E5332F]">Contatos</a>
-                    </li>
-                    <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Redes</a>
-                    </li>
-                </ul>
-
-                <button className="flex justify-end p-4 md:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                
-            </div>
-
-        </header>
-    );
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
+  );
 }

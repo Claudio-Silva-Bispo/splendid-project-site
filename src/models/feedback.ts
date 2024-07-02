@@ -4,7 +4,6 @@ export interface Feedback {
     nome: string;
     email: string;
     telefone: string;
-    servico: string;
-    localizacao: string;
+    nota: number;
     mensagem: string;
 }

@@ -9,17 +9,20 @@ export default function SobreFeedback() {
                         A Importância do
                         <span className="dark:text-[#E5332F]"> Feedback</span>
                     </h1>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12">
+                    <p className="mt-6 mb-8 text-lg sm:mb-12 text-start md:text-center">
                         O feedback é essencial para melhorarmos continuamente nossos serviços. Ele nos permite entender suas necessidades e expectativas, ajudando-nos a oferecer um atendimento cada vez melhor e mais personalizado.
                         <br className="hidden md:inline lg:hidden" />
                         Sua opinião é fundamental para o nosso crescimento e aprimoramento.
                     </p>
+                    
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a rel="noopener noreferrer" href="/FormularioFeedback" className="px-8 py-3 text-lg font-semibold rounded dark:bg-[#E5332F] dark:text-gray-50">
+                        
+                        <a rel="noopener noreferrer" href="/FormularioFeedback" className="px-8 py-3 text-lg font-semibold rounded bg-[#E5332F]  text-white">
                             Deixe seu Feedback
                         </a>
+
                         <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">
-                            Saiba Mais
+                            Retornar ao menu
                         </a>
                     </div>
                 </div>

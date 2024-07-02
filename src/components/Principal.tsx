@@ -1,4 +1,5 @@
 
+import imagem from '../../public/assets/Logo/imagem-logo.png'
 
 export default function Principal(){
     return(
@@ -7,8 +8,8 @@ export default function Principal(){
                 
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     
-                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                        <img src="/assets/ServicosEfetuados/WhatsApp Image 2024-06-29 at 10.47.33.jpeg" alt="" className="object-contain h-92 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 md:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                        <img src="/assets/Logo/imagem-logo.png" alt="Imagem com logo da empresa" className="object-contain h-92 md:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                     </div>
 
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
