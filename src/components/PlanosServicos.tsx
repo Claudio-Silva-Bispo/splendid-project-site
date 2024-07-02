@@ -2,7 +2,7 @@
 
 export default function PlanosServicos(){
     return(
-        <section className="py-20 p-10 md:p-0 dark:bg-gray-100 dark:text-gray-800">
+        <section className="py-20 bg-gray-100 text-gray-800">
             
             <div className="container px-4 mx-auto">
 
@@ -16,7 +16,7 @@ export default function PlanosServicos(){
                         <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
                             <div className="space-y-2">
                                 <h4 className="text-2xl font-bold">Básico</h4>
-                                <span className="text-6xl font-bold">Essencial</span>
+                                <span className="text-4xl md:text-6xl font-bold">Essencial</span>
                             </div>
                             <p className="mt-3 leading-relaxed dark:text-gray-600">Serviços essenciais para emergências veiculares.</p>
                             <ul className="flex-1 mb-6 dark:text-gray-600">

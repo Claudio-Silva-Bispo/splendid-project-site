@@ -4,13 +4,13 @@ export default function Sobre() {
     return (
         
         <div>
-            <div className="container grid grid-cols-12 mx-auto p-10 md:p-0">
+            <div className="container grid grid-cols-12 mx-auto p-5 md:p-0">
                 
                 <div className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-auto" >
                     <div className="flex flex-col items-center p-8 py-12 text-center text-gray-800">
                         <span>Sobre nós</span>
                         
-                        <h1 className="py-4 text-5xl font-bold uppercase text-start md:text-center leading-tight">Fundada em 2024 por dois irmãos apaixonados por automóveis e por ajudar as pessoas</h1>
+                        <h1 className="py-4 text-2xl md:text-5xl font-bold uppercase text-start md:text-center leading-tight">Fundada em 2024 por dois irmãos apaixonados por automóveis e por ajudar as pessoas</h1>
                         
                         <p className="pb-6 text-start md:text-center">nossa empresa nasceu da necessidade de proporcionar um serviço diferenciado e de alta qualidade para aqueles que enfrentam contratempos nas estradas.</p>
                         

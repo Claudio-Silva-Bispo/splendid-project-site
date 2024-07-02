@@ -5,7 +5,7 @@ export default function SobreFeedback() {
         <section className="dark:bg-gray-100 dark:text-gray-800">
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                    <h1 className="text-5xl font-bold leading-none sm:text-6xl">
+                    <h1 className="text-4xl md:text-5xl font-bold leading-none sm:text-6xl">
                         A Importância do
                         <span className="dark:text-[#E5332F]"> Feedback</span>
                     </h1>

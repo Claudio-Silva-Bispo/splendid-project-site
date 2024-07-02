@@ -1,7 +1,7 @@
 
 export default function Servicos(){
     return(
-        <section className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800 p-20" id="servicos">
+        <section className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800 md:p-10" id="servicos">
             
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 <h2 className="text-5xl font-bold">Serviços 24 horas para você</h2>

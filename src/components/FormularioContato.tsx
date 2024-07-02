@@ -48,11 +48,11 @@ export default function FormularioContato(){
     };
 
     return(
-        <div className="m-4 md:m-8 p-10" id="contato">
+        <div className="m-4 md:m-8 md:p-10" id="contato">
             
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 
-                <h2 className="text-5xl font-bold text-start md:text-center leading-tight">Serviços diferenciado e personalizado <br /> <span className="uppercase">especialmente para você</span></h2>
+                <h2 className="text-3xl font-bold text-start md:text-center leading-tight uppercase">Serviços diferenciado e personalizado <br /> <span className="uppercase text-[#E5332F]">especialmente para você</span></h2>
                 
                 <p className="text-start md:text-center">Atendimento rápido e eficiente para suas emergências veiculares</p>
             </div>

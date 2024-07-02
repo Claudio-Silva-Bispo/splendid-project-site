@@ -15,5 +15,9 @@ export const ContatoAnimation = () => {
         }
     };
 
-    return <Lottie options={defaultOptions} width={650} height={450} />;
+    return (
+        <div className="flex justify-center items-center w-[100%] md:w-[100vh]">
+            <Lottie options={defaultOptions} style={{ width: '100%', height: '100%' }} />
+        </div>
+    );
 };
