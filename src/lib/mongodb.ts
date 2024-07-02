@@ -11,6 +11,9 @@ if (!MONGODB_DB) {
     throw new Error('Por favor, defina a variável de ambiente MONGODB_DB no arquivo .env.local');
 }
 
+console.log('MONGODB_URI:', MONGODB_URI); // Log para depuração
+console.log('MONGODB_DB:', MONGODB_DB);   // Log para depuração
+
 let cachedClient: MongoClient | null = null;
 let cachedDb: Db | null = null;
 

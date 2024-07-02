@@ -1,7 +1,6 @@
 // pages/api/buscarContatos.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { connectToDatabase } from '../../lib/mongodb';
-import { Contato } from '../../models/contato';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'GET') {
