@@ -21,7 +21,7 @@ export default function Principal(){
                         
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                             
-                            <a rel="noopener noreferrer" href="#contato" className="px-8 py-3 text-lg font-semibold rounded bg-[rgb(229,51,47)] dark:text-gray-50">Contato</a>
+                            <a rel="noopener noreferrer" href="#contato" className="px-8 py-3 text-lg font-semibold rounded bg-[rgb(229,51,47)] dark:text-gray-50">Contatos</a>
                             <a rel="noopener noreferrer" href="#servicos" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Serviços</a>
 
                         </div>
