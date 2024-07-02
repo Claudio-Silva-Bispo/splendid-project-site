@@ -31,8 +31,12 @@ export default function FluxoContato(){
                             <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-[#E5332F]">
                                 <h3 className="text-xl font-semibold tracking-wide">Contato</h3>
                                 <time className="text-xs tracking-wide uppercase dark:text-gray-600">Fácil e rápido</time>
-                                <p className="mt-3">Entre em contato conosco via WhatsApp ou chat ao vivo. Nossa equipe está disponível 24 horas por dia para ajudar você.</p>
+                                <p className="mt-3">Entre em contato conosco via telefone, WhatsApp ou chat ao vivo. Nossa equipe está disponível 24 horas por dia para ajudar você.</p>
                             </div>
+                        </div>
+
+                        <div>
+                        <button type="submit" className="w-full py-2 px-4 font-semibold text-white rounded" style={{ backgroundColor: '#E5332F' }}>clique aqui e veja as opções de contato</button>
                         </div>
                     </div>
                 </div>

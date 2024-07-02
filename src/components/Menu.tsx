@@ -6,19 +6,19 @@ export default function Menu(){
         <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
             
             <div className="container flex justify-between h-16 mx-auto">
-                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
+                <a rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
                     <h1 className="font-bold text-2xl text-[#E5332F] uppercase">Villar Auto Socorro</h1>
                 </a>
 
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Empresa</a>
+                        <a rel="noopener noreferrer" href="/SobreEmpresa" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Empresa</a>
                     </li>
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Serviços</a>
+                        <a rel="noopener noreferrer" href="#sobre-servicos" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Serviços</a>
                     </li>
                     <li className="flex">
-                        <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border- text-[#E5332F] border-[#E5332F]">Contatos</a>
+                        <a rel="noopener noreferrer" href="#contato" className="flex items-center px-4 -mb-1 border-b-2 dark:border- text-[#E5332F] border-[#E5332F]">Contatos</a>
                     </li>
                     <li className="flex">
                         <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:border-">Redes</a>

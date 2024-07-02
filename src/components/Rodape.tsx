@@ -4,7 +4,7 @@ export default function Rodape(){
         
         <footer className="footer bg-gray-200 text-base-content p-10 flex justify-around gap-10">
             <nav className="flex flex-col">
-                <h6 className="footer-title">Serviços</h6>
+                <h6 className="footer-title uppercase font-bold mb-3">Serviços</h6>
                 <a className="link link-hover">Troca de pneu</a>
                 <a className="link link-hover">Carga na bateria</a>
                 <a className="link link-hover">Regate de motos</a>
@@ -12,7 +12,7 @@ export default function Rodape(){
             </nav>
 
             <nav className="flex flex-col">
-                <h6 className="footer-title">Empresa</h6>
+                <h6 className="footer-title uppercase font-bold mb-3">Empresa</h6>
                 <a className="link link-hover">Sobre nós</a>
                 <a className="link link-hover">Contato</a>
                 <a className="link link-hover">Redes sociais</a>
@@ -20,7 +20,7 @@ export default function Rodape(){
             </nav>
 
             <nav className="flex flex-col">
-                <h6 className="footer-title">Legal</h6>
+                <h6 className="footer-title uppercase font-bold mb-3">Legal</h6>
                 <a className="link link-hover">Terms of use</a>
                 <a className="link link-hover">Privacy policy</a>
                 <a className="link link-hover">Cookie policy</a>
@@ -44,7 +44,7 @@ export default function Rodape(){
                     <input
                     type="text"
                     placeholder="username@site.com"
-                    className="input input-bordered join-item" />
+                    className="input input-bordered join-item p-3 w-full" />
                     
                 </div>
 

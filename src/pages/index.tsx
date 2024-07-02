@@ -1,5 +1,6 @@
 import Principal from "@/components/Principal"
 import PlanosServicos from "@/components/PlanosServicos"
+import Sobre from "@/components/Sobre"
 import Servicos from "@/components/Servicos"
 import FluxoContato from "@/components/FluxoContato"
 import FormularioContato from "@/components/FormularioContato"
@@ -13,6 +14,7 @@ export default function Home() {
     <div> 
       <Principal />
       <PlanosServicos />
+      <Sobre />
       <Servicos />
       <FluxoContato />
       <FormularioContato />

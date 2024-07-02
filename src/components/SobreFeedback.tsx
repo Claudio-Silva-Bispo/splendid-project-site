@@ -15,7 +15,7 @@ export default function SobreFeedback() {
                         Sua opinião é fundamental para o nosso crescimento e aprimoramento.
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-[#E5332F] dark:text-gray-50">
+                        <a rel="noopener noreferrer" href="/FormularioFeedback" className="px-8 py-3 text-lg font-semibold rounded dark:bg-[#E5332F] dark:text-gray-50">
                             Deixe seu Feedback
                         </a>
                         <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">
