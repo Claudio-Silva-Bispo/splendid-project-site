@@ -76,11 +76,11 @@ export default function FotoServicos(){
                         
                         <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
                         
-                        <h3 className="text-3xl font-bold">Desbloqueio de Porta</h3>
+                        <h3 className="text-3xl font-bold">Chaveiro</h3>
                         
-                        <p className="my-6 dark:text-gray-600">Assistência rápida para desbloqueio de portas de veículos, disponível 24 horas por dia.</p>
+                        <p className="my-6 text-gray-600">Assistência rápida para desbloqueio de portas de veículos, disponível 24 horas por dia.</p>
 
-                        <p className="my-1 text-md">O serviço de chaveiro do Villar Auto Socorro é especializado na abertura de veículos trancados.</p>
+                        <p className="my-6 text-md text-gray-600">O serviço de chaveiro do Villar Auto Socorro é especializado na abertura de veículos trancados. </p>
 
                         <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
 

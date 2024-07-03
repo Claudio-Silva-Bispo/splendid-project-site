@@ -3,7 +3,7 @@ import React from 'react';
 export default function SobreEmpresa() {
     return (
         <div className="bg-white py-12">
-            <div className="container mx-auto px-6 lg:px-20">
+            <div className="container mx-auto px-6 lg:px-20 mt-20">
                 <header className="text-start py-12">
                     <h1 className="text-5xl font-bold text-gray-800 mb-6">Sobre a Villar Auto Socorro</h1>
                     <p className="text-lg text-gray-600">Fundada em 2024 por dois irmãos apaixonados por automóveis e por ajudar as pessoas, a Villar Auto Socorro surgiu com o propósito de ser a resposta imediata e confiável para motoristas em situações de emergência.</p>

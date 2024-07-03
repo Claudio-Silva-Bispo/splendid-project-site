@@ -6,7 +6,7 @@ export default function Principal(){
 
             <section className="bg-gray-100">
                 
-                <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+                <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between md:mt-20">
                     
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 md:h-80 lg:h-96 xl:h-112 2xl:h-128">
                         <img src="/assets/Logo/imagem-logo.png" alt="Imagem com logo da empresa" className="object-contain h-92 md:h-80 lg:h-96 xl:h-112 2xl:h-128" />

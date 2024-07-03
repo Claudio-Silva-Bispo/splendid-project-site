@@ -1,7 +1,7 @@
 
 export default function Servicos(){
     return(
-        <section className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800 md:p-10" id="servicos">
+        <section className="m-4 md:m-8 bg-gray-100 text-gray-800 md:p-10 text-center" id="servicos">
             
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 <h2 className="text-5xl font-bold">Serviços 24 horas para você</h2>
@@ -28,42 +28,14 @@ export default function Servicos(){
                     </svg>
 
                     <h3 className="my-3 text-3xl font-semibold">Troca de Pneu</h3>
+                    
                     <div className="space-y-1 leading-tight">
                         <p>Substituição segura e rápida</p>
                         <p>Disponibilidade imediata</p>
                         <p>Equipamento de qualidade</p>
                     </div>
                 </div>
-
-                <div className="flex flex-col items-center p-4">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 dark:text-[#E5332F]">
-                    <path d="M21 13.5V8h-1V5a1 1 0 00-1-1h-4V3a1 1 0 00-1-1H4a1 1 0 00-1 1v11H2a1 1 0 000 2h1a3 3 0 006 0h4a3 3 0 006 0h2a1 1 0 000-2h-1zM5 4h9v9H5V4zm3 13a1 1 0 11-1-1 1 1 0 011 1zm10 0a1 1 0 11-1-1 1 1 0 011 1zm-3-5H5v-2h10zM18 5h-1v7h1z"/>
-                    </svg>
-
-
-                    <h3 className="my-3 text-3xl font-semibold">Reboque</h3>
-                    <div className="space-y-1 leading-tight">
-                        <p>Reboque básico e avançado</p>
-                        <p>Assistência 24/7</p>
-                        <p>Segurança e confiabilidade</p>
-                    </div>
-                </div>
-
-                <div className="flex flex-col items-center p-4">
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 dark:text-[#E5332F]">
-                    <path d="M12 2a1 1 0 01.948.684l1.846 5.538a6.006 6.006 0 014.882 1.146 5.987 5.987 0 011.882 5.34A4 4 0 0116 18H8a4 4 0 01-4.558-3.293 5.99 5.99 0 012.44-6.201 6.006 6.006 0 014.882-1.146l1.846-5.538A1 1 0 0112 2zm0 3.732l-1.112 3.338a1 1 0 01-.948.684H8.47a4.005 4.005 0 00-3.905 3.905 3.992 3.992 0 00.631 2.307A2 2 0 018 16h8a2 2 0 001.804-2.862 3.992 3.992 0 00-.631-2.307 4.005 4.005 0 00-3.905-3.905h-1.47a1 1 0 01-.948-.684L12 5.732z"/>
-                    </svg>
-
-                    <h3 className="my-3 text-3xl font-semibold">Troca de Óleo</h3>
-                    <div className="space-y-1 leading-tight">
-                        <p>Serviço completo no local</p>
-                        <p>Óleo de alta qualidade</p>
-                        <p>Profissionais treinados</p>
-                    </div>
-                </div>
-
+ 
                 <div className="flex flex-col items-center p-4">
                     
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 dark:text-[#E5332F]">
@@ -71,28 +43,17 @@ export default function Servicos(){
                     </svg>
 
 
-                    <h3 className="my-3 text-3xl font-semibold">Desbloqueio de Porta</h3>
+                    <h3 className="my-3 text-3xl font-semibold">Chaveiro</h3>
+                    
                     <div className="space-y-1 leading-tight">
                         <p>Assistência rápida</p>
                         <p>Serviço 24 horas</p>
                         <p>Profissionais especializados</p>
+                        <p>Somente para abertura do veículo</p>
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center p-4">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 dark:text-[#E5332F]">
-                    <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8zm-1 3v5h-3l4 4 4-4h-3V7h-2z"/>
-                    </svg>
-
-
-                    <h3 className="my-3 text-3xl font-semibold">Manutenção Preventiva</h3>
-                    <div className="space-y-1 leading-tight">
-                        <p>Verificações regulares</p>
-                        <p>Manutenção preventiva</p>
-                        <p>Suporte contínuo</p>
-                    </div>
-                </div>
+            
 
             </div>
 
