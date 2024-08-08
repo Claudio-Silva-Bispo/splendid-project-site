@@ -16,8 +16,8 @@ export default function Home() {
       <Principal />
       <PlanosServicos />
       <Sobre />
-      <Servicos />
       <FluxoContato />
+      <Servicos />
       <FormularioContato />
       <FotoServicos />
       <RedesContatos />

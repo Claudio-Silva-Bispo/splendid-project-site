@@ -60,7 +60,7 @@ export default function LoginDashboard() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-red-600 sm:text-sm"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
               />
             </div>
           </div>
@@ -76,17 +76,17 @@ export default function LoginDashboard() {
                 required
                 value={senha}
                 onChange={(e) => setSenha(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-red-600 sm:text-sm"
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
               />
             </div>
           </div>
 
-          {error && <p className="text-red-600">{error}</p>}
+          {error && <p className="text-blue-600">{error}</p>}
 
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus:outline focus:outline-2 focus:outline-red-600"
+              className="flex w-full justify-center rounded-md bg-quinta px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-sexta focus:outline focus:outline-2 focus:outline-[#00b4d8]"
               disabled={loading}
             >
               {loading ? 'Acessando...' : 'Acesse'}
@@ -96,7 +96,7 @@ export default function LoginDashboard() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Cadastro somente
-          <span className="block font-semibold text-red-600">com o administrador do sistema</span>
+          <span className="block font-semibold text-[#00b4d8]">com o administrador do sistema</span>
         </p>
       </div>
     </div>

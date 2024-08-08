@@ -1,97 +1,185 @@
 
-import imagem from '../../public/assets/Servicos/chave-novo.webp'
-export default function FotoServicos(){
-    return(
-        <section className="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800" id="sobre-servicos">
-            
-            <div className="container mx-auto space-y-12">
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/bateria-novo.webp" alt="Carga de Bateria" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
-                        
-                        <span className="text-xs uppercase">Serviço 24 Horas</span>
-                        
-                        <h3 className="text-3xl font-bold">Carga de Bateria</h3>
-                        
-                        <p className="my-1 text-md">Se você esqueceu a lanterna acesa, deixou o som do carro ligado ou o veículo ficou vários dias sem dar partida e acabou ficando sem bateria, não se preocupe. Com o Villar Auto Socorro, você pode solicitar um serviço de auxílio de partida.</p>
 
-                        <p className="text-md">O serviço de recarga de bateria é destinado apenas a veículos cuja parte elétrica esteja em perfeitas condições. Ele é ideal para casos em que a bateria ficou descarregada devido a um longo período sem uso ou por conta de um uso contínuo de algum acessório que esgotou a bateria sem que o alternador pudesse recarregar o sistema.</p>
-                        
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-1" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+export default function FotoServicos() {
+  return (
+    <section
+      className="p-4 lg:p-8 bg-gray-100 text-gray-800"
+      id="sobre-servicos"
+    >
 
-                    </div>
-                </div>
+        <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    <img src="/assets/Servicos/pneu-novo.webp" alt="Troca de Pneu" className="h-80 dark:bg-gray-500 aspect-video" />
-                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
-                        <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        <h3 className="text-3xl font-bold">Troca de Pneu</h3>
-                        
-                        <p className="my-1 text-md">Substituição segura e rápida de pneus furados ou danificados, com atendimento imediato.</p>
-
-                        <p className="my-1 text-md">Em caso de pneu furado, conte com a eficiência do Villar Auto Socorro.</p>
-
-                        <p className="my-1 text-md">Nosso serviço de troca de pneu é ideal para quem possui um estepe em boas condições. Nossos profissionais montarão o pneu reserva, permitindo que você dirija até a borracharia mais próxima.</p>
-                        
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
-
-                    </div>
-                </div>
+                <h2 className="text-2xl font-bold text-start md:text-center leading-tight uppercase">Conheça os servicos que criamos <br /> <span className="uppercase text-quinta">especialmente para você</span></h2>
                 
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/guincho-novo.webp" alt="Reboque" className="h-80 dark:bg-gray-500 aspect-video" />
-                    
-                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
-                        <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        
-                        <h3 className="text-3xl font-bold">Reboque</h3>
-                        
-                        <p className="my-1 text-md">Assistência de reboque para veículos quebrados ou danificados, disponível 24 horas por dia.</p>
+                <p className="text-start md:text-center">Queremos facilitar o seu dia com as melhores soluções</p>
+        </div>
 
-                        <p className="my-1 text-md">O serviço de reboque de motocicletas do Villar Auto Socorro oferece transporte seguro e eficiente, utilizando equipamentos e ferramentas adequados para garantir a integridade do seu veículo.</p>
+      <div className="container mx-auto space-y-12">
+        {/* Limpeza Residencial */}
+        <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+          <img
+            src="https://source.unsplash.com/featured/?home,cleaning"
+            alt="Limpeza Residencial"
+            className="h-80 bg-gray-500 aspect-video"
+          />
 
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+            <span className="text-xs uppercase">Serviço Personalizado</span>
 
-                    </div>
-                </div>
+            <h3 className="text-3xl font-bold">Limpeza Residencial</h3>
 
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-                    <img src="/assets/Servicos/ferramentas.webp" alt="Manutenção Preventiva" className="h-80 dark:bg-gray-500 aspect-video" />
-                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
-                        <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        <h3 className="text-3xl font-bold">Manutenção Preventiva</h3>
-                        
-                        <p className="my-1 text-md">Verificações regulares e manutenção preventiva para garantir a segurança e o bom funcionamento do seu veículo.</p>
-                        
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+            <p className="my-1 text-md">
+              Oferecemos um serviço completo de limpeza residencial, garantindo
+              que sua casa esteja sempre limpa e organizada.
+            </p>
 
-                    </div>
-                </div>
-                
-                <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-                    <img src="/assets/Servicos/chave-novo.webp" alt="Desbloqueio de Porta" className="h-80 dark:bg-gray-500 aspect-video" />
-                    <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
-                        
-                        <span className="text-xs uppercase dark:text-gray-600">Serviço 24 Horas</span>
-                        
-                        <h3 className="text-3xl font-bold">Chaveiro</h3>
-                        
-                        <p className="my-6 text-gray-600">Assistência rápida para desbloqueio de portas de veículos, disponível 24 horas por dia.</p>
+            <p className="text-md">
+              Nosso serviço abrange todas as áreas da casa, desde salas e
+              quartos até cozinhas e banheiros, sempre com foco em detalhes e
+              higiene.
+            </p>
 
-                        <p className="my-6 text-md text-gray-600">O serviço de chaveiro do Villar Auto Socorro é especializado na abertura de veículos trancados. </p>
+            <button
+              type="button"
+              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-1"
+              style={{ backgroundColor: '#00B4D8' }}
+            >
+              Solicitar
+            </button>
+          </div>
+        </div>
 
-                        <button type="button" className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5" style={{ backgroundColor: '#E5332F' }}>Solicitar</button>
+        {/* Limpeza Comercial */}
+        <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+          <img
+            src="https://source.unsplash.com/featured/?office,cleaning"
+            alt="Limpeza Comercial"
+            className="h-80 bg-gray-500 aspect-video"
+          />
+          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+            <span className="text-xs uppercase text-gray-600">
+              Serviço Personalizado
+            </span>
+            <h3 className="text-3xl font-bold">Limpeza Comercial</h3>
 
-                    </div>
-                </div>
+            <p className="my-1 text-md">
+              Mantenha seu ambiente de trabalho limpo e profissional com nossos
+              serviços de limpeza comercial.
+            </p>
 
-               
+            <p className="my-1 text-md">
+              Oferecemos limpeza para escritórios, lojas e estabelecimentos
+              comerciais, com horários flexíveis para não atrapalhar o
+              funcionamento do seu negócio.
+            </p>
 
-            </div>
-            
-        </section>
+            <button
+              type="button"
+              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              style={{ backgroundColor: '#00B4D8' }}
+            >
+              Solicitar
+            </button>
+          </div>
+        </div>
 
-    );
+        {/* Limpeza Pós-Obra */}
+        <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+          <img
+            src="https://source.unsplash.com/featured/?construction,cleaning"
+            alt="Limpeza Pós-Obra"
+            className="h-80 bg-gray-500 aspect-video"
+          />
+
+          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+            <span className="text-xs uppercase text-gray-600">
+              Serviço Personalizado
+            </span>
+
+            <h3 className="text-3xl font-bold">Limpeza Pós-Obra</h3>
+
+            <p className="my-1 text-md">
+              Transforme seu espaço recém-construído em um ambiente habitável
+              com nossa limpeza pós-obra.
+            </p>
+
+            <p className="my-1 text-md">
+              Removemos sujeiras, resíduos e poeiras, garantindo um ambiente
+              limpo e seguro.
+            </p>
+
+            <button
+              type="button"
+              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              style={{ backgroundColor: '#00B4D8' }}
+            >
+              Solicitar
+            </button>
+          </div>
+        </div>
+
+        {/* Limpeza de Janelas */}
+        <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
+          <img
+            src="https://source.unsplash.com/featured/?window,cleaning"
+            alt="Limpeza de Janelas"
+            className="h-80 bg-gray-500 aspect-video"
+          />
+          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+            <span className="text-xs uppercase text-gray-600">
+              Serviço Personalizado
+            </span>
+            <h3 className="text-3xl font-bold">Limpeza de Janelas</h3>
+
+            <p className="my-1 text-md">
+              Mantenha suas janelas impecáveis com nosso serviço de limpeza
+              especializada.
+            </p>
+
+            <button
+              type="button"
+              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              style={{ backgroundColor: '#00B4D8' }}
+            >
+              Solicitar
+            </button>
+          </div>
+        </div>
+
+        {/* Higienização de Estofados */}
+        <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
+          <img
+            src="https://source.unsplash.com/featured/?furniture,cleaning"
+            alt="Higienização de Estofados"
+            className="h-80 bg-gray-500 aspect-video"
+          />
+          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
+            <span className="text-xs uppercase text-gray-600">
+              Serviço Personalizado
+            </span>
+
+            <h3 className="text-3xl font-bold">Higienização de Estofados</h3>
+
+            <p className="my-6 text-gray-600">
+              Cuide dos seus estofados com nossa higienização especializada,
+              garantindo limpeza e conservação.
+            </p>
+
+            <p className="my-6 text-md text-gray-600">
+              Utilizamos produtos ecológicos e técnicas avançadas para limpar e
+              desinfetar seus estofados.
+            </p>
+
+            <button
+              type="button"
+              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              style={{ backgroundColor: '#00B4D8' }}
+            >
+              Solicitar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

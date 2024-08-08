@@ -17,7 +17,7 @@ export const FeedbackAnimation = () => {
 
     return (
         <div className="flex justify-center items-center w-[100%] md:w-[100vh]">
-            <Lottie options={defaultOptions} style={{ width: '100%', height: '100%' }} />
+            <Lottie options={defaultOptions} style={{ width: '70%', height: '100%' }} />
         </div>
     );
 };

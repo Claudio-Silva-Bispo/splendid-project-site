@@ -51,7 +51,7 @@ export default function Menu() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full p-4 dark:bg-gray-100 dark:text-gray-800 z-50">
+    <header className="fixed top-0 left-0 w-full p-4 bg-white z-50">
       <div className="container flex justify-between h-16 mx-auto">
         <a
           rel="noopener noreferrer"
@@ -59,8 +59,8 @@ export default function Menu() {
           aria-label="Back to homepage"
           className="flex items-center p-2"
         >
-          <h1 className="font-bold text-2xl text-[#E5332F] uppercase">
-            Villar Auto Socorro
+          <h1 className="font-bold hidden lg:flex items-center justify-center lg:text-2xl text-sexta uppercase">
+            Maria's Cleaning Service
           </h1>
         </a>
 
@@ -71,7 +71,7 @@ export default function Menu() {
                 href="#"
                 className={`flex items-center px-4 -mb-1 border-b-2 ${
                   selectedItem === menuItem.item
-                    ? 'text-[#E5332F] border-[#E5332F]'
+                    ? 'text-nona border-sexta'
                     : 'border-gray-500'
                 }`}
                 onClick={() => handleItemClick(menuItem)}
@@ -105,7 +105,7 @@ export default function Menu() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-[#E5332F] bg-opacity-95 z-50 flex flex-col items-start p-4">
+        <div className="fixed inset-0 bg-sexta bg-opacity-95 z-50 flex flex-col items-start p-4">
           <button
             className="self-end p-2 text-white"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -133,8 +133,8 @@ export default function Menu() {
                   href="#"
                   className={`block w-full px-4 py-2 text-white text-2xl ${
                     selectedItem === menuItem.item
-                      ? 'bg-[#C72E2A]'
-                      : 'hover:bg-[#C72E2A]'
+                      ? 'bg-setima'
+                      : 'hover:bg-sexta'
                   }`}
                   onClick={() => handleItemClick(menuItem)}
                 >

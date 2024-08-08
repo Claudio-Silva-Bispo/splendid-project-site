@@ -11,7 +11,7 @@ export default function FeedbackRecebido(){
                         <div className="grid gap-4 md:grid-cols-2">
                             <div className="grid content-center gap-4">
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>O atendimento foi excelente! Precisei de um chaveiro em uma emergência e fui atendido rapidamente. Além disso, a equipe de carga de bateria foi muito eficiente e me ajudou a voltar à estrada em pouco tempo. Recomendo a todos!</p>
+                                    <p>O atendimento foi excelente! Precisei em uma emergência e fui atendido rapidamente. Além disso, a equipe foi muito eficiente e me ajudou em pouco tempo. Recomendo a todos!</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
                                         <div>
@@ -38,7 +38,7 @@ export default function FeedbackRecebido(){
                                     </div>
                                 </div>
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>Precisei de uma carga de bateria no meio da noite e a equipe chegou rapidamente e resolveu o problema em minutos. Serviço excelente e muito profissional!</p>
+                                    <p>Precisei no meio da noite e a equipe chegou rapidamente e resolveu o problema em minutos. Serviço excelente e muito profissional!</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
                                         <div>
@@ -67,7 +67,7 @@ export default function FeedbackRecebido(){
                             </div>
                             <div className="grid content-center gap-4">
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>Atendimento rápido e eficiente. O chaveiro foi muito atencioso e conseguiu resolver meu problema de forma rápida. Recomendo os serviços!</p>
+                                    <p>Atendimento rápido e eficiente. Foi muito atencioso e conseguiu resolver meu problema de forma rápida. Recomendo os serviços!</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
                                         <div>
@@ -94,7 +94,7 @@ export default function FeedbackRecebido(){
                                     </div>
                                 </div>
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>Excelente serviço de chaveiro e carga de bateria. A equipe é muito profissional e prestativa. Continuarei a usar os serviços sempre que necessário.</p>
+                                    <p>A equipe é muito profissional e prestativa. Continuarei a usar os serviços sempre que necessário.</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
                                         <div>

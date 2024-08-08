@@ -52,9 +52,9 @@ export default function FormularioContato(){
             
             <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                 
-                <h2 className="text-3xl font-bold text-start md:text-center leading-tight uppercase">Serviços diferenciado e personalizado <br /> <span className="uppercase text-[#E5332F]">especialmente para você</span></h2>
+                <h2 className="text-3xl font-bold text-start md:text-center leading-tight uppercase">Formulário de contato diferenciado, pensando <br /> <span className="uppercase text-quinta">em você e sem seu negócio</span></h2>
                 
-                <p className="text-start md:text-center">Atendimento rápido e eficiente para suas emergências veiculares</p>
+                <p className="text-start md:text-center">Atendimento rápido e eficiente para você, sua familía negócios e amigos</p>
             </div>
 
             <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 border rounded-md">
@@ -91,12 +91,12 @@ export default function FormularioContato(){
                                     
                                     <select id="servico" className="w-full p-2 border border-gray-300 rounded" onChange={handleChange} value={formulario.servico}>
                                         <option>Selecione uma opção</option>
-                                        <option>Carga de Bateria</option>
-                                        <option>Troca de Pneu</option>
-                                        <option>Reboque</option>
-                                        <option>Troca de Óleo</option>
-                                        <option>Desbloqueio de Porta</option>
-                                        <option>Manutenção Preventiva</option>
+                                        <option>Diária</option>
+                                        <option>Semanal</option>
+                                        <option>Quinzenal</option>
+                                        <option>Mensal</option>
+                                        <option>Única</option>
+                                        <option>Personalizado</option>
                                     </select>
                                 </div>
 
@@ -110,7 +110,7 @@ export default function FormularioContato(){
                                     <textarea id="mensagem" className="w-full p-2 border border-gray-300 rounded" placeholder="Digite mais detalhes do seu endereco e da sua solicitação" onChange={handleChange} value={formulario.mensagem}></textarea>
                                 </div>
 
-                                <button type="submit" className="w-full py-2 px-4 font-semibold text-white rounded" style={{ backgroundColor: '#E5332F' }}>Enviar</button>
+                                <button type="submit" className="w-full py-2 px-4 font-semibold text-white rounded" style={{ backgroundColor: '#00b4d8' }}>Enviar</button>
                             </form>
                         </div>
                     </div>
