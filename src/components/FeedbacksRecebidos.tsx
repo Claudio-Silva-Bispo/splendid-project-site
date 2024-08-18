@@ -21,37 +21,34 @@ export default function FeedbacksRecebidos() {
     return (
         <section>
 
-            <div className="container flex flex-col justify-center items-center p-4 mx-auto space-y-6 md:p-8 min-h-[90vh]">
+            <div className="flex flex-col justify-center items-center p-4 space-y-6 md:p-8 min-h-[90vh] bg-segunda w-full mx-auto">
 
-                <div className="md:text-center sm:text-left md:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-quinta mt-20 md:mt-0">
-                    <h3 className="text-3xl font-semibold">Venha saber um pouco mais</h3>
+                <div className="md:text-center sm:text-left md:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-primeira mt-20 md:mt-0">
+                    <h3 className="text-3xl font-semibold text-primeira">Venha saber um pouco mais</h3>
                     
-                    <span className="text-sm font-bold tracking-wider uppercase text-gray-600">
+                    <span className="text-sm font-bold tracking-wider uppercase text-white">
                     O que andam falando sobre nós nas redes e nas avaliações recebidas
                     </span>
                 </div>
+            
                 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-16 h-16 text-[#00b4d8]">
-                    {/* SVG content omitted for brevity */}
-                </svg>
-                
-                <p className="px-6 py-2 text-2xl md:text-5xl font-semibold text-center sm:font-bold sm:text-3xl lg:max-w-2xl xl:max-w-4xl text-gray-700">
+                <p className="px-6 py-2 text-2xl md:text-5xl font-semibold text-center sm:font-bold sm:text-3xl lg:max-w-2xl xl:max-w-4xl text-white">
                     "{feedbacks[activeFeedback]}"
                 </p>
 
                 <div className="flex justify-center space-x-3">
-                    <img src="https://source.unsplash.com/80x80/?portrait?2" alt="" className="w-20 h-20 bg-center bg-cover rounded-md" />
+                
                     <div>
-                        <p className="leading-tight">João Silva</p>
-                        <p className="text-sm leading-tight dark:text-gray-700">5 estrelas - 10/06/2024</p>
-                        <a className="flex items-center py-2 space-x-1 text-sm text-[#00b4d8]" href="/FeedbackRecebido">
+            
+                        <a className="flex items-center py-2 space-x-1 text-sm text-[#FF7F2C] text-center" href="/FeedbackRecebido">
                             <span>Teve curiosidade? Saiba mais clicando aqui!</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                {/* SVG path omitted for brevity */}
+                              
                             </svg>
                         </a>
                     </div>
                 </div>
+
             </div>
         </section>
     );

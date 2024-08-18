@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import '../globals.css';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import Menu from '@/components/Menu';
-import Rodape from '@/components/Rodape';
+import Menu from '@/components/Navbar';
+import Rodape from '@/components/Footer';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const router = useRouter();

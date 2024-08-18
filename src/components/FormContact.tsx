@@ -1,7 +1,9 @@
-import { ContatoAnimation } from "./ContatoAnimacao";
+import Image from "next/image";
 import { useState } from "react";
 
-export default function FormularioContato(){
+import imagem from "../../public/assets/iPhone 15 Mockup, Perspective.png"
+
+export default function FormContact(){
 
     const [formulario, setFormulario] = useState({
         nome: "",
@@ -48,16 +50,16 @@ export default function FormularioContato(){
     };
 
     return(
-        <div className="m-4 md:m-8 md:p-10" id="contato">
+        <div className="m-4 md:m-8 md:p-10" id="contact">
             
-            <div className="container mx-auto p-4 my-6 space-y-2 text-center">
+            <div className="container mx-auto p-4 my-6 space-y-2 text-center bg-segunda text-white pt-20 pb-20 md:pt-10 md:pb-10">
                 
-                <h2 className="text-3xl font-bold text-start md:text-center leading-tight uppercase">Formulário de contato diferenciado, pensando <br /> <span className="uppercase text-quinta">em você e sem seu negócio</span></h2>
+                <h2 className="text-3xl font-bold text-start md:text-center leading-relaxed uppercase">Formulário de contato diferenciado, pensando <br /> <span className="uppercase text-white">em você e sem seu negócio</span></h2>
                 
                 <p className="text-start md:text-center">Atendimento rápido e eficiente para você, sua familía negócios e amigos</p>
             </div>
 
-            <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 border rounded-md">
+            <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 border rounded-md ">
                 <div className="mockup-phone border-primary w-full p-5" style={{ borderColor: '#E5332F' }}>
                     <div className="camera"></div>
                     
@@ -102,21 +104,22 @@ export default function FormularioContato(){
 
                                 <div>
                                     <label htmlFor="localizacao" className="block text-sm font-medium">Endereço</label>
-                                    <input type="text" id="localizacao" className="w-full p-2 border border-gray-300 rounded" placeholder="Digite a Rua, número e CEP" onChange={handleChange} value={formulario.localizacao} />
+                                    <input type="text" id="localizacao" className="w-full p-2 border border-gray-300 rounded text-sm" placeholder="Digite a Rua, número e CEP" onChange={handleChange} value={formulario.localizacao} />
                                 </div>
 
                                 <div>
                                     <label htmlFor="mensagem" className="block text-sm font-medium">Detalhes Adicionais</label>
-                                    <textarea id="mensagem" className="w-full p-2 border border-gray-300 rounded" placeholder="Digite mais detalhes do seu endereco e da sua solicitação" onChange={handleChange} value={formulario.mensagem}></textarea>
+                                    <textarea id="mensagem" className="w-full p-2 border border-gray-300 rounded text-sm" placeholder="Digite mais detalhes do seu endereco e da sua solicitação" onChange={handleChange} value={formulario.mensagem}></textarea>
                                 </div>
 
-                                <button type="submit" className="w-full py-2 px-4 font-semibold text-white rounded" style={{ backgroundColor: '#00b4d8' }}>Enviar</button>
+                                <button type="submit" className="w-full py-2 px-4 font-semibold text-white rounded" style={{ backgroundColor: '#FF7F2C' }}>Enviar</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 space-y-4 text-center lg:text-left">
-                    <ContatoAnimation/>
+
+                <div className="mt-8 space-y-4 text-center lg:text-left ">
+                    <Image src={imagem.src} width={800} height={800} alt="Imagem de dois celular com nossos serviços"></Image>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function FormularioFeedback() {
+export default function FormFeedback() {
     const [formulario, setFormulario] = useState({
         nome: "",
         email: "",
@@ -50,73 +50,60 @@ export default function FormularioFeedback() {
     };
 
     return (
-        <section className="bg-white">
+        <section className="bg-white pt-20">
+            
             <div className="container flex flex-col-reverse lg:flex-row">
                 <div className="flex flex-col p-20 space-y-6 rounded-sm lg:w-1/2 xl:w-3/5  text-black">
-                    <h1 className="font-bold text-2xl uppercase">Sobre nossos serviços, como foi sua experiência?</h1>
+                    <h1 className="font-bold text-2xl uppercase text-primeira">Sobre nossos serviços, como foi sua experiência?</h1>
+
                     <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-segunda">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                         <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Carga de Bateria</p>
-                            <p className="leading-snug">Serviço rápido e eficiente para recarga de baterias descarregadas.</p>
-                        </div>
-                    </div>
-                    <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                        </svg>
-                        <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Troca de Pneu</p>
-                            <p className="leading-snug">Substituição segura e rápida de pneus furados ou danificados.</p>
-                        </div>
-                    </div>
-                    <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-                        </svg>
-                        <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Reboque</p>
-                            <p className="leading-snug">Assistência de reboque para veículos quebrados ou danificados.</p>
+                            <p className="text-lg font-medium leading-snug text-primeira">Servico Residencial</p>
+                            <p className="leading-snug">Serviço rápido e eficiente para seu lar.</p>
                         </div>
                     </div>
 
                     <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-segunda">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                         <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Chaveiro</p>
-                            <p className="leading-snug">Assistência de chaveiro para veículos com as fechaduras quebrados ou danificados.</p>
+                            <p className="text-lg font-medium leading-snug text-primeira">Servico Comercial</p>
+                            <p className="leading-snug">Deixe seu negócio impecável.</p>
                         </div>
                     </div>
 
                     <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-segunda">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
+
                         <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Troca do óleo</p>
-                            <p className="leading-snug">Assistência simples e rápida para troca do óleo e água.</p>
+                            <p className="text-lg font-medium leading-snug text-primeira">Diário, Semanal, Mensal, Personalizado</p>
+                            <p className="leading-snug">Personalize o serviço do seu jeito e de acordo com sua agenda.</p>
                         </div>
                     </div>
 
                     <div className="flex space-x-2 sm:space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-segunda">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                         </svg>
                         <div className="space-y-2">
-                            <p className="text-lg font-medium leading-snug">Preventiva</p>
-                            <p className="leading-snug">Avaliação rápida e simples para saber a condição do seu veículo, seja para uma viagem, para uma preocupacão sobre algfum barulho.</p>
+                            <p className="text-lg font-medium leading-snug text-primeira">Contato</p>
+                            <p className="leading-snug">Defina o contato por Telefone, SMS, WhatsApp, E-mail, qual o melhor para você?</p>
                         </div>
                     </div>
+
+                 
 
                 </div>
 
                 <div className="lg:w-1/2 xl:w-3/5 bg-white">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-                        <div className="flex flex-col max-w-xl p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-50 dark:text-gray-800">
+                        <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 dark:bg-gray-50 dark:text-gray-800">
                             
                             <form onSubmit={handleSubmit}>
                                 <div className="flex flex-col items-center w-full">
@@ -147,7 +134,7 @@ export default function FormularioFeedback() {
 
                                     <div className="flex flex-col w-full">
                                         <textarea
-                                            rows={5}
+                                            rows={3}
                                             placeholder="Mensagem..."
                                             className="p-4 rounded-md resize-none dark:text-gray-800"
                                             id="mensagem"
@@ -164,14 +151,6 @@ export default function FormularioFeedback() {
                                             onChange={handleChange}
                                         />
 
-                                        <input
-                                            type="text"
-                                            placeholder="Telefone"
-                                            className="p-4 rounded-md resize-none dark:text-gray-800 mt-3"
-                                            id="telefone"
-                                            value={formulario.telefone}
-                                            onChange={handleChange}
-                                        />
 
                                         <input
                                             type="email"
@@ -183,7 +162,7 @@ export default function FormularioFeedback() {
                                         />
                                         
 
-                                        <button type="submit" className="py-4 my-8 font-semibold rounded-md dark:text-gray-50" style={{ backgroundColor: '#E5332F' }}>
+                                        <button type="submit" className="py-4 my-4 font-semibold rounded-md dark:text-gray-50" style={{ backgroundColor: '#1C6F42' }}>
                                             Deixe sua mensagem
                                         </button>
                                     </div>

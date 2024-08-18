@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import logo from '../../public/assets/Logo/logo-com-fundo.png';
+import Image from 'next/image';
 
 interface MenuItem {
   item: string;
@@ -7,7 +9,7 @@ interface MenuItem {
   id?: string;
 }
 
-export default function Menu() {
+export default function Navbar() {
   const router = useRouter();
   const { pathname, asPath } = router;
 
@@ -16,24 +18,21 @@ export default function Menu() {
 
   const menuItems: MenuItem[] = [
     { item: 'Inicio', path: '/' },
-    { item: 'Empresa', path: '/SobreEmpresa' },
+    { item: 'Empresa', path: '/AboutCompany' },
     { item: 'Serviços', path: '/#sobre-servicos', id: 'sobre-servicos' },
     { item: 'Contatos', path: '/#contato', id: 'contato' },
-    { item: 'Redes', path: '/#redes-contato', id: 'redes-contatos' },
     { item: 'Dashboard', path: '/LoginDashboard' },
   ];
 
   useEffect(() => {
     if (pathname === '/') {
       setSelectedItem('Inicio');
-    } else if (asPath.startsWith('/SobreEmpresa')) {
+    } else if (asPath.startsWith('/AboutCompany')) {
       setSelectedItem('Empresa');
-    } else if (asPath.startsWith('/#sobre-servicos')) {
+    } else if (asPath.startsWith('/#services')) {
       setSelectedItem('Serviços');
-    } else if (asPath.startsWith('/#contato')) {
+    } else if (asPath.startsWith('/#contact')) {
       setSelectedItem('Contatos');
-    } else if (asPath.startsWith('/#redes')) {
-      setSelectedItem('Redes');
     } else {
       setSelectedItem('');
     }
@@ -41,7 +40,7 @@ export default function Menu() {
 
   const handleItemClick = (item: MenuItem) => {
     setSelectedItem(item.item);
-    setIsMobileMenuOpen(false); // Close the mobile menu when an item is clicked
+    setIsMobileMenuOpen(false);
 
     if (item.id && pathname === '/') {
       document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
@@ -51,28 +50,20 @@ export default function Menu() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full p-4 bg-white z-50">
-      <div className="container flex justify-between h-16 mx-auto">
-        <a
-          rel="noopener noreferrer"
-          href="/"
-          aria-label="Back to homepage"
-          className="flex items-center p-2"
-        >
-          <h1 className="font-bold hidden lg:flex items-center justify-center lg:text-2xl text-sexta uppercase">
-            Maria's Cleaning Service
-          </h1>
-        </a>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white rounded m-5 h-[80px]">
+      
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
+        <Image src={logo} width={80} height={80} alt="Imagem logo da empresa" />
 
-        <ul className="items-stretch hidden space-x-3 md:flex">
+        <ul className="hidden md:flex space-x-6 font-bold text-xl">
           {menuItems.map((menuItem) => (
             <li key={menuItem.item} className="flex">
               <a
                 href="#"
-                className={`flex items-center px-4 -mb-1 border-b-2 ${
+                className={`flex items-center border-b-2 ${
                   selectedItem === menuItem.item
                     ? 'text-nona border-sexta'
-                    : 'border-gray-500'
+                    : 'border-transparent hover:border-segunda'
                 }`}
                 onClick={() => handleItemClick(menuItem)}
               >
@@ -83,7 +74,7 @@ export default function Menu() {
         </ul>
 
         <button
-          className="flex justify-end p-4 md:hidden"
+          className="md:hidden p-4"
           onClick={() => setIsMobileMenuOpen(true)}
         >
           <svg
@@ -98,12 +89,11 @@ export default function Menu() {
               strokeLinejoin="round"
               strokeWidth="2"
               d="M4 6h16M4 12h16M4 18h16"
-            ></path>
+            />
           </svg>
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-sexta bg-opacity-95 z-50 flex flex-col items-start p-4">
           <button
@@ -122,7 +112,7 @@ export default function Menu() {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-              ></path>
+              />
             </svg>
           </button>
 

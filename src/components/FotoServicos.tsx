@@ -1,10 +1,9 @@
-
+import imagem from "../../public/assets/ServicesDone/servico-moveis.png"
 
 export default function FotoServicos() {
   return (
     <section
       className="p-4 lg:p-8 bg-gray-100 text-gray-800"
-      id="sobre-servicos"
     >
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center">
@@ -18,7 +17,7 @@ export default function FotoServicos() {
         {/* Limpeza Residencial */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img
-            src="https://source.unsplash.com/featured/?home,cleaning"
+            src="/assets/ServicesDone/servico-residencial.png"
             alt="Limpeza Residencial"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -26,7 +25,7 @@ export default function FotoServicos() {
           <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
             <span className="text-xs uppercase">Serviço Personalizado</span>
 
-            <h3 className="text-3xl font-bold">Limpeza Residencial</h3>
+            <h3 className="text-3xl font-bold text-[#FF7F2C]">Limpeza Residencial</h3>
 
             <p className="my-1 text-md">
               Oferecemos um serviço completo de limpeza residencial, garantindo
@@ -42,7 +41,7 @@ export default function FotoServicos() {
             <button
               type="button"
               className="self-start py-2 px-4 font-semibold rounded-md text-white mt-1"
-              style={{ backgroundColor: '#00B4D8' }}
+              style={{ backgroundColor: '#FF7F2C' }}
             >
               Solicitar
             </button>
@@ -52,7 +51,7 @@ export default function FotoServicos() {
         {/* Limpeza Comercial */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
           <img
-            src="https://source.unsplash.com/featured/?office,cleaning"
+            src="/assets/ServicesDone/servico-comercial.png"
             alt="Limpeza Comercial"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -60,7 +59,7 @@ export default function FotoServicos() {
             <span className="text-xs uppercase text-gray-600">
               Serviço Personalizado
             </span>
-            <h3 className="text-3xl font-bold">Limpeza Comercial</h3>
+            <h3 className="text-3xl font-bold text-[#FF7F2C]">Limpeza Comercial</h3>
 
             <p className="my-1 text-md">
               Mantenha seu ambiente de trabalho limpo e profissional com nossos
@@ -76,7 +75,7 @@ export default function FotoServicos() {
             <button
               type="button"
               className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
-              style={{ backgroundColor: '#00B4D8' }}
+              style={{ backgroundColor: '#FF7F2C' }}
             >
               Solicitar
             </button>
@@ -86,7 +85,7 @@ export default function FotoServicos() {
         {/* Limpeza Pós-Obra */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img
-            src="https://source.unsplash.com/featured/?construction,cleaning"
+            src="/assets/ServicesDone/servico-pos-obra.png"
             alt="Limpeza Pós-Obra"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -96,7 +95,7 @@ export default function FotoServicos() {
               Serviço Personalizado
             </span>
 
-            <h3 className="text-3xl font-bold">Limpeza Pós-Obra</h3>
+            <h3 className="text-3xl font-bold text-[#FF7F2C]">Limpeza Pós-Obra</h3>
 
             <p className="my-1 text-md">
               Transforme seu espaço recém-construído em um ambiente habitável
@@ -111,7 +110,7 @@ export default function FotoServicos() {
             <button
               type="button"
               className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
-              style={{ backgroundColor: '#00B4D8' }}
+              style={{ backgroundColor: '#FF7F2C' }}
             >
               Solicitar
             </button>
@@ -121,7 +120,7 @@ export default function FotoServicos() {
         {/* Limpeza de Janelas */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
           <img
-            src="https://source.unsplash.com/featured/?window,cleaning"
+            src="/assets/ServicesDone/servico-janelas.png"
             alt="Limpeza de Janelas"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -129,7 +128,7 @@ export default function FotoServicos() {
             <span className="text-xs uppercase text-gray-600">
               Serviço Personalizado
             </span>
-            <h3 className="text-3xl font-bold">Limpeza de Janelas</h3>
+            <h3 className="text-3xl font-bold text-[#FF7F2C]">Limpeza de Janelas</h3>
 
             <p className="my-1 text-md">
               Mantenha suas janelas impecáveis com nosso serviço de limpeza
@@ -139,7 +138,7 @@ export default function FotoServicos() {
             <button
               type="button"
               className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
-              style={{ backgroundColor: '#00B4D8' }}
+              style={{ backgroundColor: '#FF7F2C' }}
             >
               Solicitar
             </button>
@@ -149,7 +148,7 @@ export default function FotoServicos() {
         {/* Higienização de Estofados */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img
-            src="https://source.unsplash.com/featured/?furniture,cleaning"
+            src="/assets/ServicesDone/servico-moveis.png"
             alt="Higienização de Estofados"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -158,14 +157,14 @@ export default function FotoServicos() {
               Serviço Personalizado
             </span>
 
-            <h3 className="text-3xl font-bold">Higienização de Estofados</h3>
+            <h3 className="text-3xl font-bold text-[#FF7F2C]">Pequenos detalhes nos moveis</h3>
 
-            <p className="my-6 text-gray-600">
-              Cuide dos seus estofados com nossa higienização especializada,
+            <p className="my-3 text-gray-600">
+              Cuide dos seus estofados e moveis com nossa higienização especializada,
               garantindo limpeza e conservação.
             </p>
 
-            <p className="my-6 text-md text-gray-600">
+            <p className=" text-md text-gray-600">
               Utilizamos produtos ecológicos e técnicas avançadas para limpar e
               desinfetar seus estofados.
             </p>
@@ -173,7 +172,7 @@ export default function FotoServicos() {
             <button
               type="button"
               className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
-              style={{ backgroundColor: '#00B4D8' }}
+              style={{ backgroundColor: '#FF7F2C' }}
             >
               Solicitar
             </button>

@@ -1,6 +1,9 @@
 import React from 'react';
+import Image from 'next/image';
 
-export default function Sobre() {
+import imagem from "../../public/assets/Logo/imagem-logo-oficial.png"
+
+export default function About() {
   return (
     <div>
       <div className="container grid grid-cols-12 mx-auto p-6 md:p-0">
@@ -10,28 +13,21 @@ export default function Sobre() {
             <span>Sobre nós</span>
 
             <h1 className="py-4 text-2xl md:text-5xl font-bold uppercase text-start md:text-center leading-tight text-setima">
-              Fundada por um casal apaixonado por limpeza e organização
+              Fundada por uma empresária dedicada ao cuidado e carinho
             </h1>
 
             <p className="pb-6 text-start md:text-center">
-              Nossa empresa nasceu da necessidade de proporcionar um serviço
-              diferenciado e de alta qualidade para aqueles que buscam uma casa
-              limpa e organizada.
+              Nossa empresa nasceu do desejo de transformar cada casa em um lar
+              novo e acolhedor, onde cada detalhe reflete amor, zelo e
+              dedicação.
             </p>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-7 h-7"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
           </div>
+
+          <div className='flex justify-center'>
+            <Image src={imagem.src} width={300} height={300} alt='Imagem logo da empresa'></Image>
+          </div>
+
         </div>
 
         <div className="flex flex-col col-span-12 md:p-6 divide-y lg:col-span-6 lg:p-10">
@@ -39,19 +35,19 @@ export default function Sobre() {
           <div className="pt-6 pb-4 space-y-2">
             <span>Missão</span>
 
-            <h1 className="text-2xl md:text-3xl font-bold text-setima">
-              Proporcionar ambientes limpos e saudáveis
+            <h1 className="text-2xl md:text-3xl font-bold text-primeira">
+              Transformar casas em lares acolhedores
             </h1>
             <p>
-              Oferecer serviços de limpeza de alta qualidade que atendam às
-              necessidades dos nossos clientes, promovendo bem-estar e
-              satisfação.
+              Nossa missão é levar carinho, zelo e um toque de amor a cada
+              espaço, garantindo que cada lar reflita o cuidado que dedicamos
+              em nossos serviços.
             </p>
 
             <a
               rel="noopener noreferrer"
-              href="/SobreEmpresa"
-              className="inline-flex items-center py-2 space-x-2 text-sm text-setima"
+              href="/AboutCompany"
+              className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
               <span>Saiba mais</span>
               <svg
@@ -71,16 +67,16 @@ export default function Sobre() {
 
           <div className="pt-6 pb-4 space-y-2">
             <span>Visão</span>
-            <h1 className="text-2xl md:text-3xl font-bold text-setima">Ser líder no mercado de limpeza</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-primeira">Ser referência em cuidado e acolhimento</h1>
             <p>
-              Ser reconhecida pela excelência no atendimento e na prestação de
-              serviços de limpeza, criando ambientes mais limpos e saudáveis
-              para nossos clientes.
+              Almejamos ser reconhecidos pela nossa dedicação em transformar
+              casas em espaços de amor e conforto, onde cada detalhe faz a
+              diferença na vida de nossos clientes.
             </p>
             <a
               rel="noopener noreferrer"
-              href="/SobreEmpresa"
-              className="inline-flex items-center py-2 space-x-2 text-sm text-setima"
+              href="/AboutCompany"
+              className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
               <span>Saiba mais</span>
               <svg
@@ -101,19 +97,19 @@ export default function Sobre() {
           <div className="pt-6 pb-4 space-y-2">
             <span>Valores</span>
 
-            <h1 className="text-2xl md:text-3xl font-bold text-setima">
-              Comprometimento com a qualidade
+            <h1 className="text-2xl md:text-3xl font-bold text-primeira">
+              Carinho em cada detalhe
             </h1>
 
             <p>
-              Priorizamos a satisfação dos nossos clientes através de um
-              atendimento ágil e eficiente, sempre buscando superar as
-              expectativas.
+              Valorizamos o cuidado e a atenção em cada serviço que realizamos,
+              sempre buscando entregar mais do que o esperado, transformando
+              ambientes com amor e dedicação.
             </p>
             <a
               rel="noopener noreferrer"
-              href="/SobreEmpresa"
-              className="inline-flex items-center py-2 space-x-2 text-sm text-setima"
+              href="/AboutCompany"
+              className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
               <span>Saiba mais</span>
 

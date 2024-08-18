@@ -1,6 +1,6 @@
-export default function Rodape() {
+export default function Footer() {
   return (
-    <footer className="footer bg-primeira text-base-content p-10 grid grid-cols-1 md:grid-cols-4 gap-5">
+    <footer className="footer bg-gray-100 text-base-content p-10 grid grid-cols-1 md:grid-cols-4 gap-5">
       <div className="flex flex-col">
         <h6 className="footer-title uppercase font-bold mb-3">Serviços</h6>
         <a className="link link-hover">Limpeza Residencial</a>

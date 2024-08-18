@@ -5,7 +5,7 @@ export default function FluxoContato() {
           <div className="grid gap-4 mx-4 sm:grid-cols-12">
             <div className="col-span-12 sm:col-span-3">
               
-              <div className="md:text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-quinta">
+              <div className="md:text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-primeira">
                 <h3 className="text-3xl font-semibold">Entre em Contato</h3>
                 
                 <span className="text-sm font-bold tracking-wider uppercase text-gray-600">
@@ -70,7 +70,7 @@ export default function FluxoContato() {
                 <button
                   type="submit"
                   className="w-full py-2 px-4 font-semibold text-white rounded mt-10 md:mt-0"
-                  style={{ backgroundColor: '#00b4d8' }}
+                  style={{ backgroundColor: '#FF7F2C' }}
                 >
                   Entre em contato
                 </button>

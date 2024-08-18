@@ -16,15 +16,13 @@ const config: Config = {
       colors: {
         transparente: "transparent",
         current: "currentColor",
-        primeira: "#CAF0F8",
-        segunda: "#ADE8F4",
-        terceira: "#90E0EF",
-        quarta: "#48CAE4",
-        quinta: "#00B4D8",
-        sexta: "#0096C7",
-        setima: "#0077B6",
-        oitava: "#023E8A",
-        nona: "#03045E",
+        primeira: "#FF7F2C",
+        segunda: "#1C6F42",
+        terceira: "#F5F5F5",
+        quarta: "#D3D3D3",
+        quinta: "#333333",
+        sexta: "#FFA500",
+        setima: "#2E8B57"
       },
       fontFamily: {
         sans: ['"Helvetica Neue"', "Arial", "sans-serif"],

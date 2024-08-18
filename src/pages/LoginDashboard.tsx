@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
+import imagem from "../../public/assets/Logo/logo-com-fundo.png"
+
 export default function LoginDashboard() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -41,11 +43,11 @@ export default function LoginDashboard() {
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded shadow-md">
         <div className="text-center">
           <img
-            className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
+            className="mx-auto h-20 w-auto"
+            src="/assets/Logo/logo-com-fundo.png"
             alt="Your Company"
           />
-          <h2 className="mt-6 text-2xl font-bold text-gray-900">Acesso ao Painel de Solicitações</h2>
+          <h2 className="mt-6 text-2xl font-bold text-primeira">Painel de Solicitações</h2>
         </div>
 
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -86,7 +88,7 @@ export default function LoginDashboard() {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-quinta px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-sexta focus:outline focus:outline-2 focus:outline-[#00b4d8]"
+              className="flex w-full justify-center rounded-md bg-quinta px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-sexta focus:outline focus:outline-2 focus:outline-[#FF7F2C]"
               disabled={loading}
             >
               {loading ? 'Acessando...' : 'Acesse'}
@@ -96,7 +98,7 @@ export default function LoginDashboard() {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Cadastro somente
-          <span className="block font-semibold text-[#00b4d8]">com o administrador do sistema</span>
+          <span className="block font-semibold text-[#FF7F2C]">com o administrador do sistema</span>
         </p>
       </div>
     </div>
