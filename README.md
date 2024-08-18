@@ -10,11 +10,11 @@ Nesta documentação, você encontrará detalhes sobre o propósito de cada comp
 
 Esperamos que esta documentação torne o processo de integração e utilização dos componentes mais simples e eficiente, contribuindo para o sucesso do seu projeto.
 
-Este projeto está composto pelo Front-End (React: Next.js), Back-End(Next.js) e Banco de Dados com MongoDb.
+**Este projeto está composto pelo Front-End (React: Next.js), Back-End(Next.js) e Banco de Dados com MongoDb.**
 
-## Front-End
+# Front-End
 
-# Navbar
+## Navbar
 
 **Descrição:**
 
@@ -26,9 +26,10 @@ Este componente utiliza as seguintes bibliotecas do ecossistema Next.js, que dev
 next/router para gestão de rotas. next/link para links otimizados que preparam as páginas no background.
 
 ***Instale essas dependências usando:***
+
 ```bash
     npm install next
-``` 
+```
 
 ***Observações Adicionais:***
 
@@ -36,7 +37,7 @@ Certifique-se de que as rotas especificadas no componente correspondem às defin
 
 O componente ajusta automaticamente o scroll para seções específicas da página em resposta a cliques, e gerencia a exibição do menu em dispositivos móveis.
 
-# HomePage
+## HomePage
 
 **Descrição:**
 
@@ -52,7 +53,7 @@ Certifique-se de que os identificadores de link usados nos botões (#FormQuote e
 
 A imagem utilizada deve estar disponível no diretório público do seu projeto para ser corretamente carregada. Adjuste o caminho conforme necessário.
 
-# About
+## About
 
 **Descrição:**
 
@@ -63,7 +64,7 @@ O componente About apresenta informações detalhadas sobre a empresa, incluindo
 Este componente requer a instalação do pacote react-router-dom para manipulação de rotas, caso o componente VideoComponent faça uso de navegação ou parâmetros de rota.
 
 ```bash
-npm install react-router-dom
+    npm install react-router-dom
 ``` 
 
 ***Observações Adicionais:***
@@ -74,27 +75,27 @@ O componente faz uso de navegação interna com hashes para facilitar a navegaç
 
 A funcionalidade de rolagem automática ao clicar nos links depende que os IDs correspondentes estejam corretamente atribuídos às seções dentro da página.
 
-# SocialMedia
+## SocialMedia
 
 **Descrição:**
 
 O componente SocialMedia é projetado para destacar as plataformas de mídia social da empresa, permitindo aos usuários seguir e interagir com a empresa em diferentes redes. Este componente combina elementos visuais como o logotipo da empresa e botões de ação que direcionam para os perfis sociais, incentivando o engajamento direto.
 
 ***Instalação de Dependências:***
-***
+
 Não são necessárias instalações adicionais de dependências para este componente, a menos que sejam utilizados frameworks ou bibliotecas externas para animações ou interações específicas.
 
-# AboutUs
+## AboutUs
 
 **Descrição:**
 
 O componente AboutUs apresenta informações detalhadas sobre os valores e diferenciais da empresa, utilizando ícones e textos para destacar a importância de escolher seus serviços. Cada seção combina ícones visuais com descrições de serviços, refletindo a missão e os valores da empresa em fornecer soluções de limpeza de alta qualidade.
 
 ***Instalação de Dependências:***
-***
+
 Não há dependências externas específicas necessárias para este componente além das bibliotecas padrão do React e Next.js, assumindo que os ícones são SVGs incluídos diretamente no projeto.
 
-# Contact
+## Contact
 
 **Descrição:**
 
@@ -104,27 +105,27 @@ O componente Contact é utilizado para coletar informações de contato dos usu�
 
 Este componente não requer instalações de dependências adicionais além das básicas do React e Next.js, assumindo que o servidor e endpoint para receber os dados do formulário já estão configurados e operacionais.
 
-# Service
+## Service
 
 **Descrição:**
 ***
 O componente Services apresenta uma seção do website que descreve os vários serviços oferecidos pela Oliver Business Cleaning Services. A seção é visualmente dividida em múltiplas subseções, cada uma destacando um tipo diferente de serviço como limpeza regular, limpeza profunda, limpeza pós-construção, limpeza para eventos especiais, e mais. Cada serviço é descrito com um título, uma breve descrição, e uma chamada para ação convidando o usuário a obter um orçamento. Imagens relevantes são utilizadas para complementar as descrições dos serviços.
 
 ***Instalação de Dependências:***
-***
+
 Não são necessárias instalações de dependências adicionais para este componente além das já existentes no projeto Next.js. Certifique-se de que as imagens utilizadas estão corretamente hospedadas e acessíveis no diretório /assets/Services/.
 
-# Feedback
+## Feedback
 
 **Descrição:**
 
 O componente Feedback é projetado para coletar feedback dos usuários sobre os serviços oferecidos. Ele inclui mensagens motivadoras para o usuário deixar uma avaliação e oferece links diretos para páginas de feedback externas, como o Google. O componente apresenta um layout organizado com opções para avaliação por estrelas, um campo de texto para mensagens detalhadas e botões para envio do feedback ou adiamento.
 
 ***Instalação de Dependências:***
-***
+
 Não são necessárias instalações de dependências adicionais para este componente além das já existentes no projeto Next.js.
 
-# Testimonials - Feedbacks recebidos
+## Testimonials - Feedbacks recebidos
 
 **Descrição:**
 
@@ -134,7 +135,7 @@ O componente Testimonials apresenta depoimentos de clientes sobre os serviços o
 
 Este componente requer o uso de React e pode necessitar de pacotes adicionais para fetch de dados, como axios ou fetch, já integrados no ambiente Next.js. Certifique-se de que as dependências relacionadas à gestão de estado e efeitos colaterais (como useState e useEffect de React) estejam corretamente importadas.
 
-# Feedback Forms
+## Feedback Forms
 
 **Descrição:**
 
@@ -144,7 +145,7 @@ O componente FormFeedback é utilizado para coletar feedback dos usuários atrav
 
 Não há dependências externas específicas mencionadas que precisam ser instaladas para que este componente funcione, além das já utilizadas no projeto React.
 
-# Quote - Orçamento
+## Quote - Orçamento
 
 **Descrição:**
 
@@ -154,7 +155,7 @@ O componente Quote é uma seção interativa de um website projetada para guiar 
 
 Não há dependências externas específicas mencionadas que precisam ser instaladas para que este componente funcione, além das já utilizadas no projeto React.
 
-# Form Quote - Formulário de orçamento
+## Form Quote - Formulário de orçamento
 
 **Descrição:**
 
@@ -164,7 +165,7 @@ O componente FormQuote é um formulário multifásico interativo projetado para 
 
 Este componente não requer a instalação de dependências adicionais além das já utilizadas no projeto React, como o useState e useRef para gerenciamento de estado e referência de elementos do formulário, respectivamente.
 
-# Footer
+## Footer
 
 **Descrição:**
 
@@ -174,16 +175,16 @@ O componente Footer é um rodapé estilizado que inclui links de navegação par
 
 Este componente não requer instalações de dependências externas, pois utiliza apenas recursos básicos do React e Tailwind CSS para estilização, que são parte do ambiente padrão do projeto.
 
-# Video componente
+## Video componente
 
 **Descrição:**
 O VideoComponent é um componente React funcional que renderiza um elemento de vídeo. Ele é projetado para ser flexível com propriedades para especificar a fonte do vídeo (videoSrc), além de opcionalmente definir a largura (width) e a altura (height). O componente garante que o vídeo só será renderizado no lado do cliente, usando um estado para verificar se está executando no cliente após a montagem. Se o navegador não suportar a tag de vídeo, uma mensagem de fallback é exibida.
 
 ***Instalação de Dependências:***
-***
+
 Este componente não requer instalação de dependências adicionais além do React, que já é parte do ambiente de desenvolvimento padrão.
 
-# Icones de contatos
+## Icones de contatos
 
 **Descrição:**
 
@@ -193,7 +194,7 @@ O ContactWidget é um componente React funcional que serve como um widget de con
 
 Este componente não requer a instalação de dependências adicionais, já que utiliza apenas funcionalidades básicas do React (useState, useEffect) para seu funcionamento.
 
-# Login
+## Login
 
 **Descrição:**
 
@@ -203,7 +204,7 @@ O componente LoginDashboard é utilizado para autenticar usuários no painel adm
 
 Este componente não requer instalação de dependências adicionais, uma vez que utiliza recursos básicos do Next.js e React para funcionamento.
 
-# Dashboard
+## Dashboard
 
 **Descrição:**
 
@@ -213,7 +214,7 @@ O componente Dashboard é um painel administrativo dinâmico usado para gerencia
 
 Não são necessárias instalações de dependências externas adicionais, pois o componente usa funcionalidades básicas do React e do Next.js, juntamente com chamadas de API via fetch.
 
-# Tabela com dados dos usuários - Uso de API do próprio Next route
+## Tabela com dados dos usuários - Uso de API do próprio Next route
 
 ***Essas quatro tabelas estão em um fluxo do front e back, junto com consumo das informações do banco de dados.***
 
@@ -225,7 +226,7 @@ O componente TabelaUsuarios é responsável por renderizar uma tabela com inform
 
 Não são necessárias instalações de dependências externas adicionais, pois o componente utiliza principalmente funcionalidades do React, além de requisições HTTP via fetch para interação com uma API externa.
 
-# Tabela com dados dos contatos registrados pelo formulário
+## Tabela com dados dos contatos registrados pelo formulário
 
 **Descrição:**
 
@@ -235,7 +236,7 @@ O componente TabelaContatos é utilizado para exibir uma tabela de contatos, cad
 
 Não são necessárias instalações de dependências externas adicionais, visto que o componente depende principalmente de React e fetch para requisições API, já incluídos ou facilmente integráveis em um projeto React moderno.
 
-# Tabela com dados dos feedbacks
+## Tabela com dados dos feedbacks
 
 **Descrição:**
 
@@ -245,7 +246,7 @@ O componente TabelaFeedbacks é responsável por apresentar uma lista de feedbac
 
 Não são necessárias instalações de dependências adicionais além das já utilizadas no projeto React, como o React Router para navegação (caso haja interação com outras páginas) e a biblioteca Fetch para requisições HTTP. Certifique-se de que o projeto está configurado para suportar operações assíncronas e modais de interface.
 
-# Tabela com Orçamentos
+## Tabela com Orçamentos
 
 **Descrição:**
 
@@ -284,11 +285,12 @@ Assegure-se também de que a variável de ambiente JWT_SECRET está corretamente
 No terminal do Linux ou macOS, você pode usar o comando openssl para gerar uma chave secreta:
 
 Digite:
+
 ```bash
     openssl rand -base64 64
 ```
 
-# Arquivo mongodb.ts - Criar a conexão com o banco
+## Arquivo mongodb.ts - Criar a conexão com o banco
 
 **Descrição:**
 
@@ -299,6 +301,7 @@ O código é uma configuração de conexão com o banco de dados MongoDB usando 
 Este script requer a instalação do pacote mongodb, que inclui as classes MongoClient e Db utilizadas no script.
 
 Instale o pacote MongoDB com o seguinte comando no terminal: 
+
 ```bash
     npm install mongodb
 ``` 
@@ -307,7 +310,7 @@ Assegure-se de que as variáveis de ambiente MONGODB_URI e MONGODB_DB estejam de
 
 As variaveis podem ser inseridas no arquivo .env.local (Precisa criar ele no mesmo nivel que a pasta SRC)
 
-# .env.local
+## .env.local
 
 # Models
 
@@ -320,13 +323,14 @@ O código define uma interface Usuario para tipagem de dados de um usuário em T
 Não há necessidade de instalar dependências adicionais para definir interfaces em TypeScript. A única exigência é que o projeto esteja configurado para utilizar TypeScript.
 
 Para garantir que seu projeto suporte TypeScript, instale o TypeScript globalmente ou no seu projeto:
+
 ```bash
 npm install typescript --save-dev
 ``` 
 
 Certifique-se de configurar o seu tsconfig.json apropriadamente para o uso adequado do TypeScript no projeto. Essa abordagem de tipagem é fundamental para projetos TypeScript, pois oferece segurança adicional em tempo de desenvolvimento, ajudando a prevenir muitos tipos de erros comuns em JavaScript ao assegurar que os dados estejam corretos e completos conforme especificado.
 
-# Pasta Page > API > Criar todas as acões como criar algo, buscar dados no banco, atualizar ou excluir. CRUD
+## Pasta Page > API > Criar todas as acões como criar algo, buscar dados no banco, atualizar ou excluir. CRUD
 
 **Descrição:**
 Este código define um API handler para uma aplicação Next.js, responsável por gerenciar solicitações para a rota de usuários. O handler suporta apenas requisições do tipo GET. Quando uma requisição GET é feita, ele se conecta a um banco de dados MongoDB usando a função connectToDatabase importada, consulta a coleção t_usuario para recuperar todos os registros, e retorna esses dados ao cliente após transformar o campo _id do MongoDB em uma string para compatibilidade com JSON. Se qualquer outro método HTTP for utilizado, como POST ou DELETE, a resposta indicará que o método não é permitido.
