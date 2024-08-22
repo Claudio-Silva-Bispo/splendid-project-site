@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import imagem from "../../public/assets/Service/quarto/quarto1.png"
-
 const services = {
   rooms: [
     {

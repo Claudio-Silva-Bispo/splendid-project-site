@@ -4,10 +4,10 @@ import ConfirmarExclusaoModal from './ConfirmarExclusaoModal';
 
 interface UserData {
   id: string;
-  nome: string;
+  name: string;
   email: string;
-  telefone: string;
-  senha?: string;
+  phone: string;
+  password?: string;
 }
 
 interface TabelaUsuariosProps {
@@ -29,7 +29,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
 
   const handleSave = async (updatedUsuario: UserData) => {
     try {
-      const response = await fetch('https://oficina-project.vercel.app/api/atualizarUsuario', {
+      const response = await fetch('https://splendid-project-site.vercel.app/api/atualizarUsuario', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
   const handleConfirmDelete = async () => {
     if (usuarioExcluindo) {
       try {
-        const response = await fetch('https://oficina-project.vercel.app/api/excluirUsuario', {
+        const response = await fetch('https://splendid-project-site.vercel.app/api/excluirUsuario', {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -81,9 +81,9 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data, onRefresh }) => {
         <tbody className="border-b dark:bg-gray-50 dark:border-gray-300">
           {data.map((item) => (
             <tr key={item.id}>
-              <td className="px-3 py-2">{item.nome}</td>
+              <td className="px-3 py-2">{item.name}</td>
               <td className="px-3 py-2">{item.email}</td>
-              <td className="px-3 py-2">{item.telefone}</td>
+              <td className="px-3 py-2">{item.phone}</td>
               <td className="px-3 py-2">
                 <button onClick={() => handleEditClick(item)} className="px-2 py-1 text-white bg-blue-600 rounded">Editar</button>
                 <button onClick={() => handleDeleteClick(item)} className="ml-2 px-2 py-1 text-white bg-red-600 rounded">Excluir</button>

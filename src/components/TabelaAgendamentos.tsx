@@ -2,12 +2,12 @@ import React from 'react';
 
 interface UserData {
   id: string;
-  nome: string;
+  name: string;
   email: string;
-  telefone: string;
-  servico: string;
-  localizacao: string;
-  mensagem: string;
+  phone: string;
+  service: string;
+  location: string;
+  message: string;
 }
 
 interface TabelaUsuariosProps {
@@ -31,12 +31,12 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data }) => {
       <tbody className="border-b dark:bg-gray-50 dark:border-gray-300">
         {data.map((item) => (
           <tr key={item.id}>
-            <td className="px-3 py-2">{item.nome}</td>
+            <td className="px-3 py-2">{item.name}</td>
             <td className="px-3 py-2">{item.email}</td>
-            <td className="px-3 py-2">{item.telefone}</td>
-            <td className="px-3 py-2">{item.servico}</td>
-            <td className="px-3 py-2">{item.localizacao}</td>
-            <td className="px-3 py-2">{item.mensagem}</td>
+            <td className="px-3 py-2">{item.phone}</td>
+            <td className="px-3 py-2">{item.service}</td>
+            <td className="px-3 py-2">{item.location}</td>
+            <td className="px-3 py-2">{item.message}</td>
             <td className="px-3 py-2">
               <button className="px-2 py-1 text-white bg-blue-600 rounded">Editar</button>
               <button className="ml-2 px-2 py-1 text-white bg-red-600 rounded">Excluir</button>
