@@ -45,7 +45,7 @@ export default function About() {
               href="/AboutCompany"
               className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
-              <span>Learn more</span>
+              <span> Learn more </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
