@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 interface UserData {
   id: string;
-  nome: string;
+  name: string;
   email: string;
-  telefone: string;
-  senha?: string;
+  phone: string;
+  password?: string;
 }
 
 interface EditarUsuarioModalProps {
@@ -17,10 +17,10 @@ interface EditarUsuarioModalProps {
 const EditarUsuarioModal: React.FC<EditarUsuarioModalProps> = ({ usuario, onClose, onSave }) => {
   const [formData, setFormData] = useState<UserData>({
     id: '',
-    nome: '',
+    name: '',
     email: '',
-    telefone: '',
-    senha: ''
+    phone: '',
+    password: ''
   });
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const EditarUsuarioModal: React.FC<EditarUsuarioModalProps> = ({ usuario, onClos
               id="nome"
               name="nome"
               className="w-full p-2 border border-gray-300 rounded"
-              value={formData.nome}
+              value={formData.name}
               onChange={handleChange}
             />
           </div>
@@ -77,7 +77,7 @@ const EditarUsuarioModal: React.FC<EditarUsuarioModalProps> = ({ usuario, onClos
               id="telefone"
               name="telefone"
               className="w-full p-2 border border-gray-300 rounded"
-              value={formData.telefone}
+              value={formData.phone}
               onChange={handleChange}
             />
           </div>
@@ -88,7 +88,7 @@ const EditarUsuarioModal: React.FC<EditarUsuarioModalProps> = ({ usuario, onClos
               id="senha"
               name="senha"
               className="w-full p-2 border border-gray-300 rounded"
-              value={formData.senha}
+              value={formData.password}
               onChange={handleChange}
             />
           </div>

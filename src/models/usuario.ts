@@ -1,8 +1,8 @@
 // Minha estrutura para o formulário de cadastro de novos usuários.
 
 export interface Usuario {
-    nome: string;
+    name: string;
     email: string;
-    telefone: string;
-    senha: string;
+    phone: string;
+    password: string;
 }

@@ -15,7 +15,7 @@ const AdicionarUsuario: React.FC<AdicionarUsuarioProps> = ({ onClose }) => {
 
     console.log('Dados que será enviado: ' + nome + email + telefone + senha )
 
-    const response = await fetch('https://oficina-project.vercel.app/api/criarUsuario', {
+    const response = await fetch('https://splendid-project-site.vercel.app/api/criarUsuario', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

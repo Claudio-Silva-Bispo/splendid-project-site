@@ -4,10 +4,10 @@ export default function ServicePlan() {
         <div className="container md:px-4 mx-auto">
           <div className="max-w-2xl mx-auto md:mb-16 md:text-center p-6 md:p-0">
             <span className="font-bold tracking-wider uppercase text-primeira">
-              Serviços
+              Services
             </span>
             <h2 className="text-4xl font-bold lg:text-5xl uppercase">
-              Escolha o melhor plano de limpeza para você
+            Choose the best cleaning plan for you
             </h2>
           </div>
   
@@ -16,11 +16,11 @@ export default function ServicePlan() {
             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
                 <div className="space-y-2">
-                  <h4 className="text-2xl font-bold">Serviços diários</h4>
-                  <span className="text-4xl md:text-6xl font-bold">Essencial</span>
+                  <h4 className="text-2xl font-bold">Daily services</h4>
+                  <span className="text-4xl md:text-6xl font-bold">Essential</span>
                 </div>
                 <p className="mt-3 leading-relaxed dark:text-gray-600">
-                  Serviços essenciais para manter sua casa limpa e organizada.
+                Essential services to keep your home clean and organized.
                 </p>
                 
                 <ul className="flex-1 mb-6 dark:text-gray-600">
@@ -37,7 +37,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Limpeza de salas e quartos</span>
+                    <span>Cleaning of living rooms and bedrooms</span>
                   </li>
 
                   <li className="flex mb-2 space-x-2">
@@ -53,7 +53,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Higienização de banheiros</span>
+                    <span>Bathroom sanitization</span>
                   </li>
 
                   <li className="flex mb-2 space-x-2">
@@ -69,7 +69,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Limpeza de cozinhas</span>
+                    <span>Kitchen cleaning</span>
                   </li>
 
                 </ul>
@@ -78,7 +78,7 @@ export default function ServicePlan() {
                   type="button"
                   className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-segunda dark:text-gray-50"
                 >
-                  Começar
+                  Start now
                 </button>
               </div>
             </div>
@@ -87,11 +87,11 @@ export default function ServicePlan() {
             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-segunda dark:text-gray-50">
                 <div className="space-y-2">
-                  <h4 className="text-2xl font-bold">Serviço</h4>
-                  <span className="text-4xl md:text-6xl font-bold">Mensal</span>
+                  <h4 className="text-2xl font-bold">Service</h4>
+                  <span className="text-4xl md:text-6xl font-bold">Monthly</span>
                 </div>
                 <p className="leading-relaxed">
-                  Serviços de limpeza pesado e uma única vez no mês
+                Heavy cleaning services performed once a month
                 </p>
                 <ul className="flex-1 space-y-2">
                   <li className="flex items-center space-x-2">
@@ -107,7 +107,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Limpeza do combo Essencial</span>
+                    <span>Cleaning of the Essential package</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <svg
@@ -122,7 +122,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Lavagem de janelas</span>
+                    <span>Window washing</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <svg
@@ -137,7 +137,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Defina os cômodos e itens primordiais</span>
+                    <span>Define the primary rooms and items</span>
                   </li>
                 </ul>
                 <a
@@ -145,7 +145,7 @@ export default function ServicePlan() {
                   href="#"
                   className="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded dark:bg-gray-100 text-quinta"
                 >
-                  Começar
+                  Start
                 </a>
               </div>
             </div>
@@ -154,12 +154,11 @@ export default function ServicePlan() {
             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
                 <div className="space-y-2">
-                  <h4 className="text-2xl font-bold">Plano</h4>
-                  <span className="text-3xl md:text-6xl font-bold">Personalizado</span>
+                  <h4 className="text-2xl font-bold">Plan</h4>
+                  <span className="text-3xl md:text-6xl font-bold">Customized</span>
                 </div>
                 <p className="leading-relaxed dark:text-gray-600">
-                  Combinação de serviços diários e mensais para uma limpeza
-                  completa.
+                A combination of daily and monthly services for a complete cleaning.
                 </p>
                 <ul className="space-y-2 dark:text-gray-600">
                   <li className="flex items-start space-x-2">
@@ -175,7 +174,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Todos os itens da casa</span>
+                    <span>All items in the house</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <svg
@@ -190,7 +189,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Desconto especial para pacotes</span>
+                    <span>Special discount for packages</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <svg
@@ -205,7 +204,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Prioridade no agendamento</span>
+                    <span>Priority scheduling</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <svg
@@ -220,7 +219,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Defina os locais e comôdos de sua preferência</span>
+                    <span>Specify your preferred locations and rooms</span>
                   </li>
                 </ul>
                 <a
@@ -228,7 +227,7 @@ export default function ServicePlan() {
                   href="#"
                   className="inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded bg-segunda text-white"
                 >
-                  Começar
+                  Quote free now
                 </a>
               </div>
             </div>

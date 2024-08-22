@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
   const fetchData = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch(`https://oficina-project.vercel.app/api/buscar${section.charAt(0).toUpperCase() + section.slice(1)}`);
+      const response = await fetch(`https://splendid-project-site.vercel.app/api/buscar${section.charAt(0).toUpperCase() + section.slice(1)}`);
       const data = await response.json();
       setData(data);
     } catch (error) {

@@ -381,7 +381,8 @@ Este handler requer a instalação do nodemailer, uma biblioteca que facilita o 
 
 # Configuração de Ambiente:
 
-Antes de usar este handler, é crucial configurar variáveis de ambiente que armazenam as credenciais para autenticação com o serviço de email. As variáveis EMAIL_USER e EMAIL_PASSWORD são essenciais para a autenticação, e EMAIL_DESTINATARIO define para qual email as mensagens serão enviadas. Essas variáveis devem ser definidas em um arquivo .env.local para desenvolvimento local ou configuradas diretamente no ambiente de produção para garantir a segurança das credenciais.
+Antes de usar este handler, é crucial configurar variáveis de ambiente que armazenam as credenciais para autenticação com o serviço de email. 
+As variáveis EMAIL_USER e EMAIL_PASSWORD são essenciais para a autenticação, e EMAIL_DESTINATARIO define para qual email as mensagens serão enviadas. Essas variáveis devem ser definidas em um arquivo .env.local para desenvolvimento local ou configuradas diretamente no ambiente de produção para garantir a segurança das credenciais.
 
 # Considerações de Segurança:
 

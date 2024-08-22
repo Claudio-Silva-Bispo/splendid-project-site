@@ -1,9 +1,9 @@
 // Minha estrutura para o formulário de contato.
 
 export interface Feedback {
-    nome: string;
+    name: string;
     email: string;
-    telefone: string;
-    nota: number;
-    mensagem: string;
+    phone: string;
+    rating: number;
+    message: string;
 }

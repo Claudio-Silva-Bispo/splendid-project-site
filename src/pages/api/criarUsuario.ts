@@ -5,16 +5,16 @@ import { Usuario } from '../../models/usuario';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        const { nome, email, telefone, senha }: Usuario = req.body;
+        const { name, email, phone, password }: Usuario = req.body;
 
-        if (!nome || !email || !telefone || !senha) {
+        if (!name || !email || !phone || !password) {
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
         try {
-            const hashedPassword = await bcrypt.hash(senha, 10);
+            const hashedPassword = await bcrypt.hash(password, 10);
             const { db } = await connectToDatabase();
-            const result = await db.collection('t_usuario').insertOne({ nome, email, telefone, senha: hashedPassword });
+            const result = await db.collection('t_usuario').insertOne({ name, email, phone, password: hashedPassword });
             return res.status(201).json({ message: 'Usuário salvo com sucesso', id: result.insertedId });
         } catch (error) {
             console.error('Erro ao salvar usuário:', error);

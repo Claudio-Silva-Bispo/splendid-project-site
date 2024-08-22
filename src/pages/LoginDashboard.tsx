@@ -16,7 +16,7 @@ export default function LoginDashboard() {
     setError('');
 
     try {
-      const response = await fetch('https://oficina-project.vercel.app/api/login', {
+      const response = await fetch('https://splendid-project-site.vercel.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export default function LoginDashboard() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-6 py-12 mt-20">
+    <div className="flex min-h-screen items-center justify-center px-6 py-12 pt-40 bg-segunda">
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded shadow-md">
         <div className="text-center">
           <img

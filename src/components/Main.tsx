@@ -26,14 +26,14 @@ export default function Main() {
               href="#contact"
               className="px-8 py-3 text-lg font-semibold  text-center rounded bg-primeira hover:bg-segunda text-white"
             >
-              Contato
+              Contact
             </a>
             <a
               rel="noopener noreferrer"
               href="#services"
               className="px-8 py-3 text-lg font-semibold  rounded bg-segunda text-white hover:bg-primeira hover:text-white text-center"
             >
-              Nossos Serviços
+              Our Services
             </a>
           </div>
         </div>

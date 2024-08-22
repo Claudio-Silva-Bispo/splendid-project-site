@@ -1,10 +1,10 @@
 // Minha estrutura para o formulário de contato.
 
 export interface Contato {
-    nome: string;
+    name: string;
     email: string;
-    telefone: string;
-    servico: string;
-    localizacao: string;
-    mensagem: string;
+    phone: string;
+    service: string;
+    location: string;
+    message: string;
 }

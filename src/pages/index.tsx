@@ -2,12 +2,12 @@ import Main from "@/components/Main"
 import ServicePlan from "@/components/ServicePlan"
 import About from "@/components/About"
 import Services from "@/components/Services"
-import FluxoContato from "@/components/FluxoContato"
-import FormularioContato from "@/components/FormContact"
-import FotoServicos from "@/components/FotoServicos"
-import RedesContatos from "@/components/RedesContatos"
+import ContactFlow from "@/components/ContactFlow"
+import FormContact from "@/components/FormContact"
+import ServicePhotos from "@/components/ServicePhotos"
+import ContactNetworks from "@/components/ContactNetworks"
 import SobreFeedback from "@/components/AboutFeedback"
-import FeedbacksRecebidos from "@/components/FeedbacksRecebidos"
+import ReceivedFeedbacks from "@/components/ReceivedFeedbacks"
 
 export default function Home() {
 
@@ -16,13 +16,13 @@ export default function Home() {
       <Main />
       <ServicePlan />
       <About />
-      <FluxoContato />
+      <ContactFlow />
       <Services />
-      <FormularioContato />
-      <FotoServicos />
-      <RedesContatos />
+      <FormContact />
+      <ServicePhotos />
+      <ContactNetworks />
       <SobreFeedback />
-      <FeedbacksRecebidos/>
+      <ReceivedFeedbacks/>
 
     </div>
   )

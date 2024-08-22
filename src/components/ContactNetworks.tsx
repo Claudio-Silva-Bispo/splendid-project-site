@@ -1,10 +1,10 @@
-export default function RedesContatos() {
+export default function ContactNetworks() {
   return (
     <section className="bg-segunda" id="redes-contatos">
       
       <div className="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
         
-        <h2 className="text-3xl font-bold text-white uppercase">Contatos e <span>Redes Sociais</span></h2>
+        <h2 className="text-3xl font-bold text-white uppercase">Contacts and <span>Social Media</span></h2>
         <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center lg:justify-between">
 
           <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" className="w-12 h-12 mx-10 my-6 fill-current text-white hover:text-primeira">

@@ -4,9 +4,9 @@ import { ObjectId } from 'mongodb';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'PUT') {
-        const { id, nome, email, telefone, senha } = req.body;
+        const { id, name, email, phone, password } = req.body;
 
-        if (!id || !nome || !email || !telefone) {
+        if (!id || !name || !email || !phone) {
             return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
         }
 
@@ -14,7 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             const { db } = await connectToDatabase();
             const result = await db.collection('t_usuario').updateOne(
                 { _id: new ObjectId(id) },
-                { $set: { nome, email, telefone, senha } }
+                { $set: { name, email, phone, password } }
             );
             if (result.matchedCount === 0) {
                 return res.status(404).json({ error: 'Usuário não encontrado' });

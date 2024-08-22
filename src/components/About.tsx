@@ -10,16 +10,14 @@ export default function About() {
         <div className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover lg:col-span-6 lg:h-auto">
           
           <div className="flex flex-col md:items-center md:p-8 py-12 text-start md:text-center text-gray-800">
-            <span>Sobre nós</span>
+            <span>About Us</span>
 
             <h1 className="py-4 text-2xl md:text-5xl font-bold uppercase text-start md:text-center leading-tight text-setima">
-              Fundada por uma empresária dedicada ao cuidado e carinho
+            Founded by an entrepreneur dedicated to care and affection
             </h1>
 
             <p className="pb-6 text-start md:text-center">
-              Nossa empresa nasceu do desejo de transformar cada casa em um lar
-              novo e acolhedor, onde cada detalhe reflete amor, zelo e
-              dedicação.
+            Our company was born out of the desire to transform each house into a new and welcoming home, where every detail reflects love, care, and dedication.
             </p>
 
           </div>
@@ -33,15 +31,13 @@ export default function About() {
         <div className="flex flex-col col-span-12 md:p-6 divide-y lg:col-span-6 lg:p-10">
           
           <div className="pt-6 pb-4 space-y-2">
-            <span>Missão</span>
+            <span>Mission</span>
 
             <h1 className="text-2xl md:text-3xl font-bold text-primeira">
-              Transformar casas em lares acolhedores
+            Transforming houses into welcoming homes
             </h1>
             <p>
-              Nossa missão é levar carinho, zelo e um toque de amor a cada
-              espaço, garantindo que cada lar reflita o cuidado que dedicamos
-              em nossos serviços.
+            Our mission is to bring care, attention, and a touch of love to every space, ensuring that every home reflects the care we dedicate to our services.
             </p>
 
             <a
@@ -49,7 +45,7 @@ export default function About() {
               href="/AboutCompany"
               className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
-              <span>Saiba mais</span>
+              <span>Learn more</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -66,19 +62,17 @@ export default function About() {
           </div>
 
           <div className="pt-6 pb-4 space-y-2">
-            <span>Visão</span>
-            <h1 className="text-2xl md:text-3xl font-bold text-primeira">Ser referência em cuidado e acolhimento</h1>
+            <span>Vision</span>
+            <h1 className="text-2xl md:text-3xl font-bold text-primeira">To be a reference in care and welcoming</h1>
             <p>
-              Almejamos ser reconhecidos pela nossa dedicação em transformar
-              casas em espaços de amor e conforto, onde cada detalhe faz a
-              diferença na vida de nossos clientes.
+            aim to be recognized for our dedication to transforming houses into spaces of love and comfort, where every detail makes a di
             </p>
             <a
               rel="noopener noreferrer"
               href="/AboutCompany"
               className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
-              <span>Saiba mais</span>
+              <span>Learn more</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -95,23 +89,21 @@ export default function About() {
           </div>
 
           <div className="pt-6 pb-4 space-y-2">
-            <span>Valores</span>
+            <span>Values</span>
 
             <h1 className="text-2xl md:text-3xl font-bold text-primeira">
-              Carinho em cada detalhe
+            Care in every detail
             </h1>
 
             <p>
-              Valorizamos o cuidado e a atenção em cada serviço que realizamos,
-              sempre buscando entregar mais do que o esperado, transformando
-              ambientes com amor e dedicação.
+            We value the care and attention in every service we perform, always striving to deliver more than expected, transforming spaces with love and dedication.
             </p>
             <a
               rel="noopener noreferrer"
               href="/AboutCompany"
               className="inline-flex items-center py-2 space-x-2 text-sm text-black"
             >
-              <span>Saiba mais</span>
+              <span>Learn more</span>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"

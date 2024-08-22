@@ -17,22 +17,22 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems: MenuItem[] = [
-    { item: 'Inicio', path: '/' },
-    { item: 'Empresa', path: '/AboutCompany' },
-    { item: 'Serviços', path: '/#sobre-servicos', id: 'sobre-servicos' },
-    { item: 'Contatos', path: '/#contato', id: 'contato' },
+    { item: 'Home', path: '/' },
+    { item: 'Company', path: '/AboutCompany' },
+    { item: 'Services', path: '/#about-services', id: 'about-services' },
+    { item: 'Contact', path: '/#contact', id: 'contact' },
     { item: 'Dashboard', path: '/LoginDashboard' },
   ];
 
   useEffect(() => {
     if (pathname === '/') {
-      setSelectedItem('Inicio');
+      setSelectedItem('Home');
     } else if (asPath.startsWith('/AboutCompany')) {
-      setSelectedItem('Empresa');
+      setSelectedItem('Company');
     } else if (asPath.startsWith('/#services')) {
-      setSelectedItem('Serviços');
+      setSelectedItem('Service');
     } else if (asPath.startsWith('/#contact')) {
-      setSelectedItem('Contatos');
+      setSelectedItem('Contact');
     } else {
       setSelectedItem('');
     }
@@ -50,10 +50,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white rounded m-5 h-[80px]">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white rounded m-5 h-[80px] border border-gray-400">
       
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Image src={logo} width={80} height={80} alt="Imagem logo da empresa" />
+        <Image src={logo} width={70} height={70} alt="Imagem logo da empresa" />
 
         <ul className="hidden md:flex space-x-6 font-bold text-xl">
           {menuItems.map((menuItem) => (
