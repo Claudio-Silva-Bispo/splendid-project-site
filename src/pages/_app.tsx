@@ -7,7 +7,6 @@ import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
         
 import Navbar from '@/components/Navbar';
 import Rodape from '@/components/Footer';
-import Menu from '../components/Menu'
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const router = useRouter();
