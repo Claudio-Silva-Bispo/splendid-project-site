@@ -18,11 +18,11 @@ const config: Config = {
         current: "currentColor",
         primeira: "#FF7F2C",
         segunda: "#1C6F42",
-        terceira: "#F5F5F5",
-        quarta: "#D3D3D3",
-        quinta: "#333333",
-        sexta: "#FFA500",
-        setima: "#2E8B57"
+        terceira: "#E2EDDD",
+        quarta: "#DCE9CF",
+        quinta: "#C5E1CB",
+        sexta: "#C0DDBF",
+        setima: "#8CC6AE"
       },
       fontFamily: {
         sans: ['"Helvetica Neue"', "Arial", "sans-serif"],
@@ -32,7 +32,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
 
 export default config;

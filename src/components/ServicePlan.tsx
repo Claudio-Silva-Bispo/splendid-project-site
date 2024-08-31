@@ -14,16 +14,16 @@ export default function ServicePlan() {
           <div className="flex flex-wrap items-stretch mx-4 pb-10">
             {/* Plano Interno */}
             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-              <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
+              <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Daily services</h4>
                   <span className="text-4xl md:text-6xl font-bold">Essential</span>
                 </div>
-                <p className="mt-3 leading-relaxed dark:text-gray-600">
+                <p className="mt-3 leading-relaxed text-gray-600">
                 Essential services to keep your home clean and organized.
                 </p>
                 
-                <ul className="flex-1 mb-6 dark:text-gray-600">
+                <ul className="flex-1 mb-6 text-gray-600">
                   <li className="flex mb-2 space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function ServicePlan() {
 
                 <button
                   type="button"
-                  className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-segunda dark:text-gray-50"
+                  className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-segunda text-gray-50"
                 >
                   Start now
                 </button>
@@ -85,7 +85,7 @@ export default function ServicePlan() {
   
             {/* Plano Mensal */}
             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-              <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-segunda dark:text-gray-50">
+              <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-segunda text-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Service</h4>
                   <span className="text-4xl md:text-6xl font-bold">Monthly</span>
@@ -143,7 +143,7 @@ export default function ServicePlan() {
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded dark:bg-gray-100 text-quinta"
+                  className="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded bg-gray-100 text-quinta"
                 >
                   Start
                 </a>
@@ -157,10 +157,10 @@ export default function ServicePlan() {
                   <h4 className="text-2xl font-bold">Plan</h4>
                   <span className="text-3xl md:text-6xl font-bold">Customized</span>
                 </div>
-                <p className="leading-relaxed dark:text-gray-600">
+                <p className="leading-relaxed text-gray-600">
                 A combination of daily and monthly services for a complete cleaning.
                 </p>
-                <ul className="space-y-2 dark:text-gray-600">
+                <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

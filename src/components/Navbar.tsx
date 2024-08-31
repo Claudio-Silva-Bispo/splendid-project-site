@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import logo from '../../public/assets/Logo/logo-com-fundo.png';
-import Image from 'next/image';
+import logo from '../../public/assets/Logo/imagem-logo-oficial.png';
+import 'primeicons/primeicons.css';
 
 interface MenuItem {
   item: string;
-  path: string;
+  path?: string;
   id?: string;
+  icon: string;
+  items?: MenuItem[];
 }
 
 export default function Navbar() {
@@ -15,87 +17,103 @@ export default function Navbar() {
 
   const [selectedItem, setSelectedItem] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openContactMenu, setOpenContactMenu] = useState(false);
 
   const menuItems: MenuItem[] = [
-    { item: 'Home', path: '/' },
-    { item: 'Company', path: '/AboutCompany' },
-    { item: 'Services', path: '/#about-services', id: 'about-services' },
-    { item: 'Contact', path: '/#contact', id: 'contact' },
-    { item: 'Dashboard', path: '/LoginDashboard' },
+    { item: 'Home', path: '/', icon: 'pi pi-home' },
+    { item: 'About Us', path: '/AboutCompany', icon: 'pi pi-building' },
+    { item: 'Services', path: '/#about-services', id: 'about-services', icon: 'pi pi-search' },
+    { 
+      item: 'Contact', 
+      icon: 'pi pi-phone',
+      items: [
+        { item: 'Call +2063763755', path: 'tel:+2063763755', icon: 'pi pi-phone' },
+        { item: 'SMS', path: 'sms:+2063763755', icon: 'pi pi-comments' },
+        { item: 'Email', path: 'mailto:splendidcleaningusa@gmail.com', icon: 'pi pi-envelope' },
+        { item: 'WhatsApp', path: 'https://wa.me/2063763755', icon: 'pi pi-whatsapp' },
+      ]
+    },
+    { item: 'Feedback', path: '/FormFeedback', icon: 'pi pi-star' },
+    { item: 'Testimonials', path: '/Testimonials', icon: 'pi pi-heart' },
+    { item: 'Dashboard', path: '/Dashboard', icon: 'pi pi-briefcase' },
   ];
 
   useEffect(() => {
-    if (pathname === '/') {
-      setSelectedItem('Home');
-    } else if (asPath.startsWith('/AboutCompany')) {
-      setSelectedItem('Company');
-    } else if (asPath.startsWith('/#services')) {
-      setSelectedItem('Service');
-    } else if (asPath.startsWith('/#contact')) {
-      setSelectedItem('Contact');
-    } else {
-      setSelectedItem('');
-    }
+    if (pathname === '/') setSelectedItem('Home');
+    else if (asPath.startsWith('/AboutCompany')) setSelectedItem('Company');
+    else if (asPath.startsWith('/#about-services')) setSelectedItem('Services');
+    else if (asPath.startsWith('/#contact')) setSelectedItem('Contact');
+    else setSelectedItem('');
   }, [pathname, asPath]);
 
   const handleItemClick = (item: MenuItem) => {
     setSelectedItem(item.item);
-    setIsMobileMenuOpen(false);
+    if (!item.items) setIsMobileMenuOpen(false);
 
-    if (item.id && pathname === '/') {
-      document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      router.push(item.path);
+    if (item.path) {
+      if (item.id && pathname === '/') {
+        document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.open(item.path, '_blank');
+      }
     }
   };
 
+  const toggleContactMenu = () => {
+    setOpenContactMenu(!openContactMenu);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setOpenContactMenu(false); // Fechar submenu ao alternar o menu principal
+  };
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white rounded m-5 h-[80px] border border-gray-400">
-      
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Image src={logo} width={70} height={70} alt="Imagem logo da empresa" />
+    <header className="fixed w-full bg-white">
+      <div className="navbar">
+        <div className="navbar-start">
+          <img src={logo.src} alt="logo" />
+        </div>
 
-        <ul className="hidden md:flex space-x-6 font-bold text-xl">
-          {menuItems.map((menuItem) => (
-            <li key={menuItem.item} className="flex">
-              <a
-                href="#"
-                className={`flex items-center border-b-2 ${
-                  selectedItem === menuItem.item
-                    ? 'text-nona border-sexta'
-                    : 'border-transparent hover:border-segunda'
-                }`}
-                onClick={() => handleItemClick(menuItem)}
-              >
-                {menuItem.item}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <button
-          className="md:hidden p-4"
-          onClick={() => setIsMobileMenuOpen(true)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6"
+        {/* Botão do menu mobile */}
+        <div className="navbar-end lg:hidden">
+          <button
+            className="p-2 text-xl text-segunda"
+            onClick={toggleMobileMenu}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
+            <i className="pi pi-bars"></i> {/* Ícone de menu */}
+          </button>
+        </div>
+
+        {/* Aqui o menu desktop permanece exatamente como estava */}
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-xl text-segunda font-bold">
+            <li><a href="/">Home</a></li>
+            <li><a href="/AboutCompany">About Us</a></li>
+            <li><a href="/#about-services">Services</a></li>
+            <li>
+              <details>
+                <summary>Contact</summary>
+                <ul className="p-2 bg-segunda z-50 text-white font-bold text-xl">
+                  <li><a href="tel:+2063763755" aria-label="Call" target='_blank'>Call +2063763755</a></li>
+                  <li><a href="sms:+2063763755" aria-label="SMS" target='_blank'>SMS +2063763755</a></li>
+                  <li><a href="mailto:splendidcleaningusa@gmail.com" aria-label="Email">Email splendidcleaningusa@gmail.com</a></li>
+                  <li><a href="https://wa.me/2063763755" aria-label="WhatsApp" target="_blank">WhatsApp +2063763755</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="/FormFeedback">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div className="navbar-end hidden lg:flex">
+          <a className="btn bg-primeira border-none text-white text-xl uppercase">Contact +(206)3763755</a>
+        </div>
       </div>
 
+      {/* Menu mobile */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-sexta bg-opacity-95 z-50 flex flex-col items-start p-4">
+        <div className="fixed inset-0 bg-[#C5E1CB] bg-opacity-100 z-50 flex flex-col items-start p-4">
           <button
             className="self-end p-2 text-white"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -121,15 +139,43 @@ export default function Navbar() {
               <li key={menuItem.item} className="w-full">
                 <a
                   href="#"
-                  className={`block w-full px-4 py-2 text-white text-2xl ${
-                    selectedItem === menuItem.item
-                      ? 'bg-setima'
-                      : 'hover:bg-sexta'
+                  className={`block w-full px-4 py-2 text-segunda text-2xl font-bold ${
+                    selectedItem === menuItem.item ? 'bg-gray-50' : 'hover:bg-sexta'
                   }`}
-                  onClick={() => handleItemClick(menuItem)}
+                  onClick={() => {
+                    if (menuItem.items) {
+                      toggleContactMenu();
+                      setSelectedItem(menuItem.item); // Para destacar o item selecionado
+                    } else {
+                      handleItemClick(menuItem);
+                    }
+                  }}
                 >
-                  {menuItem.item}
+                  <i className={`text-black ${menuItem.icon}`}></i>
+                  <span className="ml-2">{menuItem.item}</span>
+                  {menuItem.items && (
+                    <i className={`pi pi-chevron-${openContactMenu && selectedItem === menuItem.item ? 'up' : 'down'} ml-2`}></i>
+                  )}
                 </a>
+                {menuItem.items && openContactMenu && selectedItem === menuItem.item && (
+                  <ul className="pl-4 bg-segunda text-white font-bold w-full">
+                    {menuItem.items.map((subItem) => (
+                      <li key={subItem.item}>
+                        <a
+                          href={subItem.path}
+                          className="block w-full px-4 py-2 text-xl hover:bg-setima"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.open(subItem.path, '_blank');
+                          }}
+                        >
+                          <i className={subItem.icon}></i>
+                          <span className="ml-2">{subItem.item}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>

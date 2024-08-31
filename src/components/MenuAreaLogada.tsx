@@ -12,7 +12,6 @@ const MenuAreaLogada: React.FC<SidebarProps> = ({ setSection }) => {
     // Abrir o modal para adiconar novos usuários
     const [isAddUserModalOpen, setIsAddUserModalOpen] = useState(false);
 
-
   const handleLogout = () => {
     // Implement your logout logic here
     window.location.href = '/'; // Redirect to homepage or login page
@@ -22,7 +21,7 @@ const MenuAreaLogada: React.FC<SidebarProps> = ({ setSection }) => {
 
     <section>
 
-        <aside className="fixed top-0 left-0 w-full sm:w-60 h-full p-6 dark:bg-gray-50 dark:text-gray-800">
+        <aside className="fixed top-0 left-0 w-full sm:w-60 h-full p-6 bg-gray-50 text-gray-800">
         <nav className="space-y-8 text-sm">
             <div className="space-y-2">
             <h2 className="text-2xl font-semibold tracking-widest uppercase text-gray-600 mb-5">Dashboard</h2>

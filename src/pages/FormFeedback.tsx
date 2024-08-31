@@ -100,7 +100,7 @@ export default function FormFeedback() {
 
                 <div className="lg:w-1/2 xl:w-3/5 bg-white">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-                        <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 dark:bg-gray-50 dark:text-gray-800">
+                        <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 bg-gray-50 text-gray-800">
                             
                             <form onSubmit={handleSubmit}>
                                 <div className="flex flex-col items-center w-full">
@@ -133,7 +133,7 @@ export default function FormFeedback() {
                                         <textarea
                                             rows={3}
                                             placeholder="Message..."
-                                            className="p-4 rounded-md resize-none dark:text-gray-800"
+                                            className="p-4 rounded-md resize-none text-gray-800"
                                             id="message"
                                             value={formData.message}
                                             onChange={handleChange}
@@ -142,7 +142,7 @@ export default function FormFeedback() {
                                         <input
                                             type="text"
                                             placeholder="Name"
-                                            className="p-4 rounded-md resize-none dark:text-gray-800 mt-3"
+                                            className="p-4 rounded-md resize-none text-gray-800 mt-3"
                                             id="name"
                                             value={formData.name}
                                             onChange={handleChange}
@@ -151,20 +151,20 @@ export default function FormFeedback() {
                                         <input
                                             type="email"
                                             placeholder="Email"
-                                            className="p-4 rounded-md resize-none dark:text-gray-800 mt-3"
+                                            className="p-4 rounded-md resize-none text-gray-800 mt-3"
                                             id="email"
                                             value={formData.email}
                                             onChange={handleChange}
                                         />
                                         
-                                        <button type="submit" className="py-4 my-4 font-semibold rounded-md dark:text-gray-50" style={{ backgroundColor: '#1C6F42' }}>
+                                        <button type="submit" className="py-4 my-4 font-semibold rounded-md text-gray-50" style={{ backgroundColor: '#1C6F42' }}>
                                             Leave your message
                                         </button>
                                     </div>
                                 </div>
                             </form>
                             <div className="flex items-center justify-center">
-                                <a rel="noopener noreferrer" href="/" className="text-sm dark:text-gray-600">Return to Menu</a>
+                                <a rel="noopener noreferrer" href="/" className="text-sm text-gray-600">Return to Menu</a>
                             </div>
                         </div>
                     </div>

@@ -21,6 +21,40 @@ Esperamos que esta documentação torne o processo de integração e utilizaçã
 O componente Navbar é uma barra de navegação responsiva para websites. Ele inclui ligações para várias seções do site, como Home, About, Services, entre outros. O componente ajusta-se para visualização em dispositivos móveis, incluindo um menu hamburguer que expande as opções de navegação ao ser clicado.
 
 ***Instalação de Dependências:***
+
+    $   Importar npm install primereact
+
+No App
+
+    $   import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+
+Exemplo de como vai ficar o componente App
+
+```bash
+
+    import { PrimeReactProvider } from 'primereact/api';
+
+    export default function MyApp({ Component, pageProps }) {
+        return (
+            <PrimeReactProvider>
+                <Component {...pageProps} />
+            </PrimeReactProvider>
+        );
+    }
+```
+Instalar os icons
+    $ npm install primeicons
+
+Importar no componente
+    $ import 'primeicons/primeicons.css';
+        
+Instalar outro componente de apoio 
+    $ npm i -D daisyui@latest
+
+Inserir plugin no documetno tailwind.config.ts
+
+    $ require('daisyui'),
+
 Este componente utiliza as seguintes bibliotecas do ecossistema Next.js, que devem ser instaladas para o correto funcionamento:
 
 next/router para gestão de rotas. next/link para links otimizados que preparam as páginas no background.

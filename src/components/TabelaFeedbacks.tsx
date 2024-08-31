@@ -17,7 +17,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data }) => {
   return (
     <table className="w-full p-6 text-xs text-left whitespace-nowrap">
       <thead>
-        <tr className="dark:bg-gray-300">
+        <tr className="bg-gray-300">
           <th className="p-3">Nome</th>
           <th className="p-3">E-mail</th>
           <th className="p-3">Telefone</th>
@@ -26,7 +26,7 @@ const TabelaUsuarios: React.FC<TabelaUsuariosProps> = ({ data }) => {
           <th className="p-3">Ações</th>
         </tr>
       </thead>
-      <tbody className="border-b dark:bg-gray-50 dark:border-gray-300">
+      <tbody className="border-b bg-gray-50 border-gray-300">
         {data.map((item) => (
           <tr key={item.id}>
             <td className="px-3 py-2">{item.name}</td>

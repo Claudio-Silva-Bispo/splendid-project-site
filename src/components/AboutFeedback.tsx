@@ -8,7 +8,7 @@ export default function AboutFeedback() {
                 <div className="flex flex-col justify-center md:p-6 md:text-center rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
                     <h1 className="text-3xl md:text-5xl font-bold leading-none sm:text-6xl uppercase md:text-center">
                     The Importance <br />  of
-                        <span className="dark:text-[#FF7F2C]"> Feedback</span>
+                        <span className="text-[#FF7F2C]"> Feedback</span>
                     </h1>
                     <p className="mt-6 mb-8 text-lg sm:mb-12 text-start md:text-center">
                     Feedback is essential for continuously improving our services. It allows us to understand your needs and expectations, helping us provide increasingly better and more personalized service.
@@ -22,7 +22,7 @@ export default function AboutFeedback() {
                         Fill Out
                         </a>
 
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">
+                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded border-gray-800">
                         Return to Menu
                         </a>
                     </div>

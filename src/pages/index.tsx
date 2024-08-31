@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <div> 
       <Main />
+      {/*
       <ServicePlan />
       <About />
       <ContactFlow />
@@ -23,7 +24,8 @@ export default function Home() {
       <ContactNetworks />
       <SobreFeedback />
       <ReceivedFeedbacks/>
-
+      */}
     </div>
+    
   )
 }

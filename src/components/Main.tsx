@@ -1,40 +1,41 @@
+import logo from '../../public/assets/Logo/fundo-main-removebg-preview.png';
 
 export default function Main() {
   return (
-    <section
-      className="relative bg-center bg-cover bg-no-repeat pt-20 md:opacity-80"
-      style={{
-        backgroundImage: "url('/assets/Main/imagem-bg.png')",
-        height: "100vh",
-      }}
-    >
-      <div className="container flex flex-col justify-center  p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between md:mt-20">
-        
-        <div className="flex flex-col md:justify-center md:p-6 md:text-center rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
-          
-          <h1 className="text-4xl font-bold leading-none md:text-6xl text-white pt-20 md:pt-0">
-            Professional Cleaning Services Provider
-          </h1>
+    <section className="bg-[#C5E1CB]">
+      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between md:mt-20 min-h-[100vh]">
 
-          <p className="mt-6 mb-8 md:text-2xl sm:mb-12 text-white">
-            We provide best solutions for a Clean Environment. If you need any
-            help in cleaning or maintenance.
-          </p>
-          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <a
-              rel="noopener noreferrer"
-              href="#contact"
-              className="px-8 py-3 text-lg font-semibold  text-center rounded bg-primeira hover:bg-segunda text-white"
-            >
-              Contact
-            </a>
-            <a
-              rel="noopener noreferrer"
-              href="#services"
-              className="px-8 py-3 text-lg font-semibold  rounded bg-segunda text-white hover:bg-primeira hover:text-white text-center"
-            >
-              Our Services
-            </a>
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
+
+            <h1 className="text-5xl md:text-md font-bold leading-none lg:text-6xl text-white pt-40 md:pt-0">
+              Professional Cleaning Services Provider
+            </h1>
+
+            <p className="mt-3 md:mt-6 mb-4 md:mb-8 text-2xl md:text-3xl sm:mb-12 text-white font-bold">
+              We provide the best solutions for a Clean Environment. If you need any help in cleaning or maintenance.
+            </p>
+
+            <div className="flex flex-col space-y-4 sm:items-center  sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+              <a
+                rel="noopener noreferrer"
+                href="tel:+2063763755" aria-label="Call" target='_blank'
+                className="px-8 py-3 text-xl font-bold text-center rounded bg-primeira hover:bg-sexta text-white uppercase"
+              >
+                Contact
+              </a>
+              <a
+                rel="noopener noreferrer"
+                href="#services"
+                className="px-8 py-3 text-xl font-bold rounded bg-segunda text-white hover:bg-setima hover:text-white uppercase text-center"
+              >
+                Our Services
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center lg:ml-6 lg:mt-0 mt-8">
+            <img src={logo.src} alt="logo" className="w-[300px] md:w-[800px] h-auto" />
           </div>
         </div>
       </div>
