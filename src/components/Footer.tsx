@@ -2,34 +2,41 @@ import imagem from "../../public/assets/Logo/imagem-logo-oficial.png"
 
 export default function Footer() {
   return (
-    <footer className="px-4 divide-y bg-gray-100 text-gray-800">
+    <footer className="px-4 divide-y bg-terceira text-gray-800">
+	
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-		<div className="lg:w-1/3">
-			<a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
-				<img src="/assets/Logo/imagem-logo-oficial.png" alt="Logo da empresa" />
-				<span className="self-center text-2xl font-semibold">Splendid Cleaning</span>
+		<div className="hidden lg:grid lg:w-1/3">
+			<a rel="noopener noreferrer" href="/" className="flex justify-center space-x-3 lg:justify-center">
+				<img src="/assets/Logo/imagem-logo-oficial.png" alt="Logo da empresa" className="w-44" />
+				
 			</a>
 		</div>
-		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+
+		<div className="grid text-xl gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4 p-5 md:p-0">
 			<div className="space-y-3">
 				<h3 className="tracking-wide uppercase font-semibold">Service</h3>
 				<ul className="space-y-1">
 					<li>
 						<a rel="noopener noreferrer" href="#about-services">Regular cleaning</a>
 					</li>
+
 					<li>
 						<a rel="noopener noreferrer" href="#about-services">Deep Cleaning</a>
 					</li>
+
 					<li>
 						<a rel="noopener noreferrer" href="#about-services">Move-in & Move-out</a>
 					</li>
+
 					<li>
 						<a rel="noopener noreferrer" href="#about-services">Commerial</a>
 					</li>
-          <li>
+
+					<li>
 						<a rel="noopener noreferrer" href="#about-services">Vacation Home</a>
 					</li>
-          <li>
+
+					<li>
 						<a rel="noopener noreferrer" href="#about-services">Event</a>
 					</li>
 				</ul>
@@ -44,7 +51,8 @@ export default function Footer() {
 					<li>
 						<a rel="noopener noreferrer" href="/#contact">Request a quote</a>
 					</li>
-          <li>
+         			
+					<li>
 						<a rel="noopener noreferrer" href="#">Business hours</a>
 					</li>
 				</ul>
@@ -58,6 +66,7 @@ export default function Footer() {
 					</li>
 				</ul>
 			</div>
+
 			<div className="space-y-3">
 				<div className="uppercase font-semibold">Social Media</div>
 				<div className="flex justify-start space-x-3">
@@ -74,9 +83,13 @@ export default function Footer() {
 					</a>
 				</div>
 			</div>
+			
 		</div>
+
 	</div>
+
 	<div className="py-6 text-sm text-center text-gray-600">© 2024 Company Splendid Cleaning. All rights reserved.</div> 
+
 </footer>
 
   );
