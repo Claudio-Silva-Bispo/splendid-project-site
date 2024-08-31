@@ -1,12 +1,14 @@
 export default function ServicePlan() {
     return (
-      <section className="py-20 bg-gray-100 text-gray-800 md:pt-60">
+      <section className="py-10 md:py-20 bg-gray-100 text-gray-800 md:pt-60">
+        
         <div className="container md:px-4 mx-auto">
+          
           <div className="max-w-2xl mx-auto md:mb-16 md:text-center p-6 md:p-0">
             <span className="font-bold tracking-wider uppercase text-primeira text-4xl md:text-6xl">
               Services
             </span>
-            <h2 className="text-4xl font-bold lg:text-2xl uppercase">
+            <h2 className="text-2xl font-bold lg:text-2xl uppercase pt-5 md:pt-0">
             Choose the best cleaning plan for you
             </h2>
           </div>
@@ -17,7 +19,7 @@ export default function ServicePlan() {
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Daily services</h4>
-                  <span className="text-4xl md:text-6xl font-bold">Essential</span>
+                  <span className="text-6xl font-bold">Essential</span>
                 </div>
                 <p className="mt-3 leading-relaxed text-black text-xl">
                 Essential services to keep your home clean and organized.
@@ -85,7 +87,7 @@ export default function ServicePlan() {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                    <span>Check List</span>
+                    <span>Check-List</span>
                   </li>
 
                 </ul>
@@ -104,7 +106,7 @@ export default function ServicePlan() {
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-segunda text-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Service</h4>
-                  <span className="text-4xl md:text-6xl font-bold">Monthly</span>
+                  <span className="text-6xl font-bold">Monthly</span>
                 </div>
                 <p className="leading-relaxed text-xl">
                 Heavy cleaning services performed once a month
@@ -171,7 +173,7 @@ export default function ServicePlan() {
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Plan</h4>
-                  <span className="text-3xl md:text-6xl font-bold">Customized</span>
+                  <span className="text-xl md:text-6xl font-bold">Customized</span>
                 </div>
                 <p className="leading-relaxed text-black text-xl">
                 A combination of daily and monthly services for a complete cleaning.
