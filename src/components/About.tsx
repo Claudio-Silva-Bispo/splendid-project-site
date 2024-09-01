@@ -17,7 +17,7 @@ export default function About() {
       
       {/* Coluna do Texto */}
       <div className="w-full flex flex-col justify-center text-gray-800 md:text-center lg:text-left lg:pl-8 p-6 lg:p-12">
-        <span className="text-5xl lg:text-6xl font-bold">About Us</span>
+        <span className="text-4xl lg:text-6xl font-bold uppercase">About Us</span>
         <h1 className="py-4 text-3xl lg:text-5xl font-bold leading-tight text-segunda">
           Founded by an entrepreneur dedicated to care and affection
         </h1>

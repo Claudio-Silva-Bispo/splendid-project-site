@@ -6,7 +6,7 @@ export default function ServicePlan() {
           
           <div className="max-w-2xl mx-auto md:mb-16 md:text-center p-6 md:p-0">
             <span className="font-bold tracking-wider uppercase text-primeira text-4xl md:text-6xl">
-              Services
+              Service Plan
             </span>
             <h2 className="text-2xl font-bold lg:text-2xl uppercase pt-5 md:pt-0">
             Choose the best cleaning plan for you
@@ -173,7 +173,7 @@ export default function ServicePlan() {
               <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
                 <div className="space-y-2">
                   <h4 className="text-2xl font-bold">Plan</h4>
-                  <span className="text-xl md:text-6xl font-bold">Customized</span>
+                  <span className="text-4xl md:text-6xl font-bold">Customized</span>
                 </div>
                 <p className="leading-relaxed text-black text-xl">
                 A combination of daily and monthly services for a complete cleaning.
@@ -245,7 +245,7 @@ export default function ServicePlan() {
                   href="#"
                   className="inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded bg-segunda text-white uppercase text-xl"
                 >
-                  Quote free now
+                  Quote free
                 </a>
               </div>
             </div>
