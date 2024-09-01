@@ -55,6 +55,12 @@ Inserir plugin no documetno tailwind.config.ts
 
     $ require('daisyui'),
 
+Instalar font awesome
+    $ npm install @fortawesome/fontawesome-free
+
+Importar no componente
+    $ import '@fortawesome/fontawesome-free/css/all.min.css';
+
 Este componente utiliza as seguintes bibliotecas do ecossistema Next.js, que devem ser instaladas para o correto funcionamento:
 
 next/router para gestão de rotas. next/link para links otimizados que preparam as páginas no background.

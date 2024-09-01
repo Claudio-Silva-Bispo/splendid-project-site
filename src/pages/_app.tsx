@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import '../globals.css';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
-
         
 import Navbar from '@/components/Navbar';
 import Rodape from '@/components/Footer';

@@ -1,6 +1,9 @@
-import Link from "next/link";
+
+import { GiButterfly } from 'react-icons/gi';
+
 
 export default function ContactFlow() {
+  
   return (
     <section className="bg-quinta text-gray-800">
       <div className="container max-w-5xl px-4 py-12 mx-auto">
@@ -13,6 +16,11 @@ export default function ContactFlow() {
               <span className="text-xl md:text-2xl font-bold tracking-wider uppercase text-segunda">
                 Customized services tailored to your preferences and schedule
               </span>
+
+              <GiButterfly className="text-segunda w-20 h-20" />
+              <GiButterfly className="text-terceira w-8 h-8" />
+              <GiButterfly className="text-terceira w-44 h-20" />
+      
             </div>
           </div>
 
@@ -24,8 +32,9 @@ export default function ContactFlow() {
                   Step 1: Choose the Service
                 </h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
-                  Available for you
+                  Available for you <span><GiButterfly className="text-primeira w-8 h-8" /></span>
                 </time>
+                
                 <p className="mt-3 text-xl">
                   Choose from the services offered, such as residential cleaning, commercial cleaning, post-construction cleaning, and more.
                 </p>

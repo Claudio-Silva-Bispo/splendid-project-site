@@ -1,3 +1,5 @@
+import { GiButterfly } from 'react-icons/gi';
+
 export default function ServicePlan() {
     return (
       <section className="py-10 md:py-20 bg-gray-100 text-gray-800 md:pt-60">
@@ -27,66 +29,22 @@ export default function ServicePlan() {
                 
                 <ul className="flex-1 mb-6 text-black text-xl">
                   <li className="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Cleaning of living rooms and bedrooms</span>
                   </li>
 
                   <li className="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Bathroom sanitization</span>
                   </li>
 
                   <li className="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a 1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Kitchen cleaning</span>
                   </li>
 
                   <li className="flex mb-2 space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a 1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Check-List</span>
                   </li>
 
@@ -113,48 +71,15 @@ export default function ServicePlan() {
                 </p>
                 <ul className="flex-1 space-y-2 text-xl">
                   <li className="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    <GiButterfly className="text-terceira w-8 h-8" />
                     <span>Cleaning of the Essential package</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    <GiButterfly className="text-terceira w-8 h-8" />
                     <span>Window washing</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    <GiButterfly className="text-terceira w-8 h-8" />
                     <span>Define the primary rooms and items</span>
                   </li>
                 </ul>
@@ -180,63 +105,19 @@ export default function ServicePlan() {
                 </p>
                 <ul className="space-y-2 text-black text-xl">
                   <li className="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    <GiButterfly className="text-primeira w-8 h-8" />
                     <span>All items in the house</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Special discount for packages</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Priority scheduling</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="flex-shrink-0 w-6 h-6 text-segunda"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                  <GiButterfly className="text-primeira w-8 h-8" />
                     <span>Specify your preferred locations and rooms</span>
                   </li>
                 </ul>
