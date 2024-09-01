@@ -58,13 +58,33 @@ export default function AboutCompany() {
                             <h3 className="text-2xl font-bold text-white mb-4">Window Cleaning</h3>
                             <p className="text-white text-2xl">We ensure that your windows are always spotless, allowing natural light to fill your home.</p>
                         </div>
-                        <div className="bg-segunda p-6 rounded-lg shadow-lg">
-                            
+
+                        <div className="p-6 bg-white shadow-lg rounded-lg overflow-hidden group">
+                            <h2 className="text-2xl font-bold text-segunda mb-4">Contacts</h2>
+                            <p className="mt-2 text-segunda text-2xl">Phone:</p>
+                            <p className='text-black'>+2063763755</p>
+                            <p className="mt-2 text-segunda text-2xl">Email:</p>
+                            <p className='text-black'>splendidcleaningusa@gmail.com</p>
+
+                            {/* Pseudo-elemento para a borda animada */}
+                            <div className="absolute inset-0 rounded-lg border-4 border-transparent transition-all duration-300 group-hover:border-primeira group-hover:animate-pulse">
+
+                            </div>
                         </div>
-                        <div className="bg-segunda p-6 rounded-lg shadow-lg">
-                            
+                        
+
+                        <div className="p-6 bg-white shadow-lg rounded-lg overflow-hidden group">
+                            <h2 className="text-2xl font-bold text-segunda">Cities Operation</h2>
+                            <p className="mt-2 text-gray-600">Descrição do card.</p>
+
+                            {/* Pseudo-elemento para a borda animada */}
+                            <div className="absolute inset-0 rounded-lg border-4 border-transparent transition-all duration-300 group-hover:border-primeiragroup-hover:animate-pulse">
+
+                            </div>
                         </div>
+
                     </div>
+                
                 </section>
 
                 <section>
@@ -76,17 +96,17 @@ export default function AboutCompany() {
                             </svg>
                         </button>
 
-                        <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
-                            <div className="relative flex flex-shrink-0 w-full sm:w-auto">
+                        <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8 z-">
+                            <div className="flex flex-shrink-0 w-full sm:w-auto">
                                 <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/chao.webp" alt="Image 1"/>
                             </div>
-                            <div className="relative flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/cozinha.webp" alt="Image 2" />
+                            <div className="flex flex-shrink-0 w-full sm:w-auto">
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/cozinha.webp" alt="Image 2"/>
                             </div>
-                            <div className="relative flex flex-shrink-0 w-full sm:w-auto">
+                            <div className=" flex flex-shrink-0 w-full sm:w-auto">
                                 <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/fogao.webp" alt="Image 3" />
                             </div>
-                            <div className="relative flex flex-shrink-0 w-full sm:w-auto">
+                            <div className=" flex flex-shrink-0 w-full sm:w-auto">
                                 <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/louca.webp" alt="Image 4" />
                             </div>
                             

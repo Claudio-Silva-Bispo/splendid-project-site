@@ -69,7 +69,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed w-full bg-white">
+    <header className="fixed w-full bg-white z-50">
       <div className="navbar">
         <div className="navbar-start">
           <a href="/"><img src={logo.src} alt="logo" /></a>
