@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { GiButterfly } from 'react-icons/gi';
 
 const servicos = {
   comodos: [
@@ -106,7 +107,24 @@ export default function Servicos() {
     <div className="bg-white" id='servicos'>
 
       <div className="container mx-auto p-4 my-6 space-y-2 text-center pt-20">
-        <h2 className="text-6xl font-bold text-start md:text-center leading-tight uppercase">Serviços Diferenciados e Personalizados <br /> <span className="uppercase text-quinta">especialmente para você</span></h2>
+        <h2 className="text-3xl md:text-6xl font-bold text-start md:text-center leading-tight uppercase">Serviços diferenciados e personalizados <br /> <span className="uppercase text-quinta">especialmente para você</span></h2>
+
+        <div className='flex justify-between'>
+
+          <div className='flex'>
+          <GiButterfly className="text-primeira w-8 h-8"/>
+          <GiButterfly className="text-primeira w-8 h-8" />
+          </div>
+
+          <div className='flex'>
+          <GiButterfly className="text-primeira w-8 h-8"/>
+          <GiButterfly className="text-primeira w-8 h-8" />
+          </div>
+
+        </div>
+
+        <p className='text-left text-lg md:text-2xl text-black'>Entenda um pouco sobre o que oferecemos, em cada detalhe por comodo e os itens que é padrão em um limpeza e o que pode ser personalizado por você através dos nossos serviços personalizados.</p>
+      
       </div>
 
       <div className="pt-6">
@@ -124,8 +142,8 @@ export default function Servicos() {
               <button
                 key={comodo.id}
                 onClick={() => setComodoSelecionadoIndex(servicos.comodos.findIndex(c => c.id === comodo.id))}
-                className={`font-medium text-sm ${
-                  comodoSelecionadoIndex === servicos.comodos.findIndex(c => c.id === comodo.id) ? 'text-quinta' : 'text-gray-900 hover:text-gray-600'
+                className={`font-medium text-xl ${
+                  comodoSelecionadoIndex === servicos.comodos.findIndex(c => c.id === comodo.id) ? 'text-primeira' : 'text-gray-900 hover:text-gray-600'
                 }`}
               >
                 {comodo.nome}
@@ -176,22 +194,31 @@ export default function Servicos() {
 
         {/* Descrição do Cômodo */}
         <div className="mx-auto max-w-2xl px-6 pb-16 pt-10 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-            {servicos.comodos[comodoSelecionadoIndex].nome}
-          </h1>
+
+          <div className='flex gap-5'>
+            <GiButterfly className="text-terceira w-8 h-8"/>
+            <GiButterfly className="text-quarta w-10 h-10"/>
+            <GiButterfly className="text-quinta w-12 h-12"/>
+            <h2 className="text-4xl md:text-4xl font-bold tracking-tight text-primeira sm:text-3xl">
+              {servicos.comodos[comodoSelecionadoIndex].nome}
+            </h2>
+            <GiButterfly className="text-quinta w-12 h-12"/>
+            <GiButterfly className="text-quarta w-10 h-10"/>
+            <GiButterfly className="text-terceira w-8 h-8"/>
+          </div>
           <div className="mt-4 space-y-6">
             <h2 className="text-xl font-semibold text-gray-800">{servicos.comodos[comodoSelecionadoIndex].itensCasa}</h2>
-            <p className="text-base text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoItensCasa}</p>
+            <p className="text-xl text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoItensCasa}</p>
 
             <h2 className="text-xl font-semibold text-gray-800">{servicos.comodos[comodoSelecionadoIndex].agendamentos}</h2>
-            <p className="text-base text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoAgendamentos}</p>
+            <p className="text-xl text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoAgendamentos}</p>
 
             <h2 className="text-xl font-semibold text-gray-800">{servicos.comodos[comodoSelecionadoIndex].checklist}</h2>
-            <p className="text-base text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoChecklist}</p>
+            <p className="text-xl text-gray-900">{servicos.comodos[comodoSelecionadoIndex].descricaoChecklist}</p>
 
             <h2 className="text-xl font-semibold text-gray-800">Descrição Adicional</h2>
             {servicos.comodos[comodoSelecionadoIndex].descricaoAdicional.map((line, index) => (
-              <p key={index} className="text-base text-gray-900">
+              <p key={index} className="text-xl text-gray-900">
                 {line}
               </p>
             ))}
