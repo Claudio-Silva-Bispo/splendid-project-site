@@ -2,7 +2,7 @@ import { GiButterfly } from 'react-icons/gi';
 
 export default function ServicePlan() {
     return (
-      <section className="py-10 md:py-20 bg-gray-100 text-gray-800 md:pt-60">
+      <section className="py-10 md:py-20 bg-gray-100 text-gray-800 md:pt-20">
         
         <div className="container md:px-4 mx-auto">
           
