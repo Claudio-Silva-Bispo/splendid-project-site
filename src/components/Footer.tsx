@@ -14,7 +14,7 @@ export default function Footer() {
 
 		<div className="grid text-xl gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4 p-5 md:p-0">
 			<div className="space-y-3">
-				<h3 className="tracking-wide uppercase font-semibold">Service</h3>
+				<h3 className="tracking-wide uppercase font-bold">Service</h3>
 				<ul className="space-y-1">
 					<li>
 						<a rel="noopener noreferrer" href="#about-services">Regular cleaning</a>
@@ -43,7 +43,7 @@ export default function Footer() {
 			</div>
 
 			<div className="space-y-3">
-				<h3 className="tracking-wide uppercase font-semibold">Company</h3>
+				<h3 className="tracking-wide uppercase font-bold">Company</h3>
 				<ul className="space-y-1">
 					<li>
 						<a rel="noopener noreferrer" href="#">About</a>
@@ -59,7 +59,7 @@ export default function Footer() {
 			</div>
 
 			<div className="space-y-3">
-				<h3 className="uppercase font-semibold">Developers</h3>
+				<h3 className="uppercase font-bold">Developers</h3>
 				<ul className="space-y-1">
 					<li>
 						<a rel="noopener noreferrer" href="#">Documentation</a>
