@@ -24,15 +24,15 @@ export default function ReceivedFeedbacks() {
             <div className="flex flex-col justify-center items-center p-4 space-y-6 md:p-8 min-h-[90vh] bg-segunda w-full mx-auto">
 
                 <div className="md:text-center sm:text-left md:mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-primeira mt-20 md:mt-0">
-                    <h3 className="text-3xl font-semibold text-primeira">Come and Learn More</h3>
+                    <h3 className="text-3xl text-primeira mb-5 md:mb-0">Come and Learn More</h3>
                     
-                    <span className="text-sm font-bold tracking-wider uppercase text-white">
+                    <span className="text-sm tracking-wider text-white">
                     What people are saying about us on social media and in reviews
                     </span>
                 </div>
             
                 
-                <p className="px-6 py-2 text-2xl md:text-5xl font-semibold text-center sm:font-bold sm:text-3xl lg:max-w-2xl xl:max-w-4xl text-white">
+                <p className="px-6 py-2 text-2xl md:text-5xl text-center sm:text-3xl lg:max-w-2xl xl:max-w-4xl text-white">
                     "{feedbacks[activeFeedback]}"
                 </p>
 
@@ -40,7 +40,7 @@ export default function ReceivedFeedbacks() {
                 
                     <div>
             
-                        <a className="flex items-center py-2 space-x-1 text-sm text-[#FF7F2C] text-center" href="/PageReceivedFeedbacks">
+                        <a className="flex items-center py-2 space-x-1 text-md text-[#FF7F2C] text-center" href="/PageReceivedFeedbacks">
                             <span>Curious? Learn more by clicking here!</span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                               

@@ -11,9 +11,9 @@ export default function ContactFlow() {
           <div className="col-span-12 sm:col-span-3">
             
             <div className="text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-segunda">
-              <h3 className="text-3xl font-bold uppercase mb-5">Get in Touch</h3>
+              <h3 className="text-3xl uppercase mb-5">Get in Touch</h3>
               
-              <span className="text-xl md:text-2xl font-bold tracking-wider uppercase text-segunda">
+              <span className="text-xl md:text-2xl tracking-wider uppercase text-segunda">
                 Customized services tailored to your preferences and schedule
               </span>
 
@@ -28,7 +28,7 @@ export default function ContactFlow() {
             
             <div className="col-span-12 space-y-12 relative md:px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-quinta">
-                <h3 className="text-xl md:text-3xl font-bold tracking-wide uppercase">
+                <h3 className="text-xl md:text-3xl tracking-wide uppercase font-bold">
                   Step 1: Choose the Service
                 </h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
@@ -40,7 +40,7 @@ export default function ContactFlow() {
                 </p>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-quinta">
-                <h3 className="text-xl md:text-3xl  font-bold tracking-wide uppercase">
+                <h3 className="text-xl md:text-3xl tracking-wide uppercase font-bold">
                   Step 2: Schedule the Time
                 </h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
@@ -51,7 +51,7 @@ export default function ContactFlow() {
                 </p>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-quinta">
-                <h3 className="text-xl md:text-3xl font-bold tracking-wide uppercase">
+                <h3 className="text-xl md:text-3xl tracking-wide uppercase font-bold">
                   Step 3: Additional Details
                 </h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
@@ -62,7 +62,7 @@ export default function ContactFlow() {
                 </p>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-quinta">
-                <h3 className="text-xl md:text-3xl font-bold tracking-wide uppercase">Contact</h3>
+                <h3 className="text-xl md:text-3xl tracking-wide uppercase font-bold">Contact</h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
                   Easy and quick
                 </time>
@@ -75,7 +75,7 @@ export default function ContactFlow() {
             <div>
               <button
                 type="submit"
-                className="w-full py-2 px-4 font-semibold text-white rounded mt-10 md:mt-0 text-xl md:text-2xl uppercase"
+                className="w-full py-2 px-4 text-white rounded mt-10 md:mt-0 text-xl md:text-2xl uppercase font-bold"
                 style={{ backgroundColor: '#1C6F42' }}
               >
                 <a href="/#contact">Contact Us</a>

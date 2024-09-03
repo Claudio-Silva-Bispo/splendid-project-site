@@ -4,9 +4,9 @@ export default function ServicePhotos() {
       className="p-4 lg:p-8 bg-terceira text-gray-800"
     >
 
-        <div className="container mx-auto p-4 my-6 space-y-2 text-center" id="about-services">
+        <div className="container mx-auto p-2 md:p-4 my-6 space-y-2 text-center" id="about-services">
                 
-                <h2 className="text-2xl md:text-5xl font-bold text-start md:text-center leading-tight uppercase">Discover the Services We Have Created <br /> <span className="uppercase text-primeira">Especially for You</span></h2>
+                <h2 className="text-2xl md:text-5xl text-start md:text-center leading-tight uppercase">Discover the Services We Have Created <br /> <span className="uppercase text-primeira font-bold">Especially for You</span></h2>
                 
                 <p className="text-xl text-left md:text-center">We aim to make your day easier with the best solutions</p>
         </div>
@@ -21,9 +21,9 @@ export default function ServicePhotos() {
           />
 
           <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
-            <span className="text-xs uppercase">Customized Service</span>
+            <span className="text-xs uppercase bold-bold">Customized Service</span>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Residential Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Residential Cleaning</h3>
 
             <p className="my-1 text-md">
               We offer a complete residential cleaning service, ensuring your home is always clean and organized.
@@ -35,7 +35,7 @@ export default function ServicePhotos() {
 
             <button
               type="button"
-              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-1"
+              className="self-start py-2 px-4 rounded-md text-white mt-3 font-bold"
               style={{ backgroundColor: '#FF7F2C' }}
             >
               <a href="/#contact">Request</a>
@@ -54,7 +54,7 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Commercial Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Commercial Cleaning</h3>
 
             <p className="my-1 text-md">
               Keep your workspace clean and professional with our commercial cleaning services.
@@ -66,7 +66,7 @@ export default function ServicePhotos() {
 
             <button
               type="button"
-              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              className="self-start py-2 px-4 rounded-md text-white mt-3 font-bold"
               style={{ backgroundColor: '#FF7F2C' }}
             >
               <a href="/#contact">Request</a>
@@ -87,7 +87,7 @@ export default function ServicePhotos() {
               Customized Service
             </span>
 
-            <h3 className="text-2xl md:text-3xl  font-bold text-[#FF7F2C]">Post-Construction Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Post-Construction Cleaning</h3>
 
             <p className="my-1 text-md">
               Turn your newly built space into a livable environment with our post-construction cleaning.
@@ -99,7 +99,7 @@ export default function ServicePhotos() {
 
             <button
               type="button"
-              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              className="self-start py-2 px-4 rounded-md text-white mt-3 font-bold"
               style={{ backgroundColor: '#FF7F2C' }}
             >
               <a href="/#contact">Request</a>
@@ -118,7 +118,7 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-2xl md:text-3xl  font-bold text-[#FF7F2C]">Window Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Window Cleaning</h3>
 
             <p className="my-1 text-md">
               Keep your windows spotless with our specialized cleaning service.
@@ -126,7 +126,7 @@ export default function ServicePhotos() {
 
             <button
               type="button"
-              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              className="self-start py-2 px-4 rounded-md text-white mt-3 font-bold"
               style={{ backgroundColor: '#FF7F2C' }}
             >
               <a href="/#contact">Request</a>
@@ -146,7 +146,7 @@ export default function ServicePhotos() {
               Customized Service
             </span>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Small Details</h3>
+            <h3 className="text-2xl md:text-3xl text-[#FF7F2C]">Small Details</h3>
 
             <p className="my-3 text-gray-600">
               Take care of your furnitures with our specialized sanitization, ensuring cleanliness and preservation.
@@ -154,7 +154,7 @@ export default function ServicePhotos() {
 
             <button
               type="button"
-              className="self-start py-2 px-4 font-semibold rounded-md text-white mt-5"
+              className="self-start py-2 px-4 rounded-md text-white mt-3 font-bold"
               style={{ backgroundColor: '#FF7F2C' }}
             >
               <a href="/#contact">Request</a>

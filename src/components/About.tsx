@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import imagem from '../../public/about-company/imagem-sobre-empresa-removebg-preview.png';
 
 export default function About() {
@@ -17,11 +16,11 @@ export default function About() {
       
       {/* Coluna do Texto */}
       <div className="w-full flex flex-col justify-center text-gray-800 md:text-center lg:text-left lg:pl-8 p-6 lg:p-12">
-        <span className="text-4xl lg:text-6xl font-bold uppercase">About Us</span>
-        <h1 className="py-4 text-3xl lg:text-5xl font-bold leading-tight text-segunda">
+        <span className="text-4xl lg:text-6xl uppercase">About Us</span>
+        <h1 className="py-4 text-3xl lg:text-5xl leading-tight text-segunda">
           Founded by an entrepreneur dedicated to care and affection
         </h1>
-        <p className="pb-6 text-2xl lg:text-4xl">
+        <p className="pb-6 text-xl md:text-2xl">
           Our company was born out of the desire to transform each house into a new and welcoming home, where every detail reflects love, care, and dedication.
         </p>
       </div>

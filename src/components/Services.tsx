@@ -101,13 +101,13 @@ export default function Services() {
     setSelectedRoomIndex((prevIndex) => (prevIndex === services.rooms.length - 1 ? 0 : prevIndex + 1));
   };
 
-  const visibleRooms = services.rooms.slice(selectedRoomIndex, selectedRoomIndex + 3);
+  const visibleRooms = services.rooms.slice(selectedRoomIndex, selectedRoomIndex + 2);
 
   return (
     <div className="bg-white" id='services'>
 
       <div className="container mx-auto p-4 my-6 space-y-2 text-center pt-20">
-        <h2 className="text-3xl md:text-6xl font-bold text-start md:text-center leading-tight uppercase">Differentiated and personalized services <br /> <span className="uppercase text-quinta">especially for you</span></h2>
+        <h2 className="text-3xl md:text-6xl text-start md:text-center leading-tight uppercase text-black">Differentiated and personalized services <br /> <span className="uppercase text-quinta font-bold">especially for you</span></h2>
 
         <div className='flex justify-between'>
 
@@ -199,7 +199,7 @@ export default function Services() {
             <GiButterfly className="text-terceira w-8 h-8"/>
             <GiButterfly className="text-quarta w-10 h-10"/>
             <GiButterfly className="text-quinta w-12 h-12"/>
-            <h2 className="text-4xl md:text-4xl font-bold tracking-tight text-primeira sm:text-3xl">
+            <h2 className="text-4xl md:text-4xl tracking-tight text-primeira sm:text-3xl">
               {services.rooms[selectedRoomIndex].name}
             </h2>
             <GiButterfly className="text-quinta w-12 h-12"/>
@@ -207,16 +207,17 @@ export default function Services() {
             <GiButterfly className="text-terceira w-8 h-8"/>
           </div>
           <div className="mt-4 space-y-6">
-            <h2 className="text-xl font-semibold text-gray-800">{services.rooms[selectedRoomIndex].houseItems}</h2>
+            <h2 className="text-2xl text-gray-800 font-bold">{services.rooms[selectedRoomIndex].houseItems}</h2>
             <p className="text-xl text-gray-900">{services.rooms[selectedRoomIndex].houseItemsDescription}</p>
 
-            <h2 className="text-xl font-semibold text-gray-800">{services.rooms[selectedRoomIndex].schedules}</h2>
+            <h2 className="text-2xl text-gray-800 font-bold">{services.rooms[selectedRoomIndex].schedules}</h2>
+            
             <p className="text-xl text-gray-900">{services.rooms[selectedRoomIndex].scheduleDescription}</p>
 
-            <h2 className="text-xl font-semibold text-gray-800">{services.rooms[selectedRoomIndex].checklist}</h2>
+            <h2 className="text-2xl text-gray-800 font-bold">{services.rooms[selectedRoomIndex].checklist}</h2>
             <p className="text-xl text-gray-900">{services.rooms[selectedRoomIndex].checklistDescription}</p>
 
-            <h2 className="text-xl font-semibold text-gray-800">Additional Description</h2>
+            <h2 className="text-2xl text-gray-800 font-bold">Additional Description</h2>
             {services.rooms[selectedRoomIndex].additionalDescription.map((line, index) => (
               <p key={index} className="text-xl text-gray-900">
                 {line}

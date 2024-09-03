@@ -21,11 +21,9 @@ export default function Home() {
       <ServicePhotos />
       <ContactNetworks />
       <SobreFeedback />
+      <ReceivedFeedbacks/>
       {/*
       <FormContact />
-      
-      
-      <ReceivedFeedbacks/>
       */}
     </div>
     

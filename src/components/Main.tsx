@@ -8,11 +8,11 @@ export default function Main() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex flex-col md:justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
 
-            <h1 className="text-5xl md:text-md font-bold leading-none lg:text-6xl text-white pt-40 md:pt-0">
-              Professional Cleaning Services Provider
+            <h1 className="text-5xl md:text-md leading-none lg:text-6xl text-white pt-40 md:pt-0">
+              Professional cleaning services
             </h1>
 
-            <p className="mt-3 md:mt-6 mb-4 md:mb-8 text-2xl md:text-3xl sm:mb-12 text-white font-bold">
+            <p className="mt-3 md:mt-6 mb-4 md:mb-8 text-2xl sm:mb-12 text-white">
               We provide the best solutions for a Clean Environment. If you need any help in cleaning or maintenance.
             </p>
 
@@ -20,14 +20,14 @@ export default function Main() {
               <a
                 rel="noopener noreferrer"
                 href="tel:+2063763755" aria-label="Call" target='_blank'
-                className="px-8 py-3 text-xl font-bold text-center rounded bg-primeira hover:bg-sexta text-white uppercase"
+                className="px-8 py-3 text-xl text-center rounded bg-primeira hover:bg-sexta text-white uppercase font-bold"
               >
                 Contact
               </a>
               <a
                 rel="noopener noreferrer"
                 href="#services"
-                className="px-8 py-3 text-xl font-bold rounded bg-segunda text-white hover:bg-setima hover:text-white uppercase text-center"
+                className="px-8 py-3 text-xl rounded bg-segunda text-white hover:bg-setima hover:text-white uppercase text-center font-bold"
               >
                 Our Services
               </a>

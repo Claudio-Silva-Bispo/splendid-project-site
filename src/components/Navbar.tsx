@@ -87,14 +87,14 @@ export default function Navbar() {
 
         {/* Aqui o menu desktop permanece exatamente como estava */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-xl text-segunda font-bold">
+          <ul className="menu menu-horizontal px-1 text-xl text-segunda">
             <li><a href="/">Home</a></li>
             <li><a href="/AboutCompany">About Us</a></li>
             <li><a href="/#about-services">Services</a></li>
             <li>
               <details>
                 <summary>Contact</summary>
-                <ul className="p-2 bg-segunda z-50 text-white font-bold text-xl">
+                <ul className="p-2 bg-segunda z-50 text-white text-xl">
                   <li><a href="tel:+2063763755" aria-label="Call" target='_blank'>Call +2063763755</a></li>
                   <li><a href="sms:+2063763755" aria-label="SMS" target='_blank'>SMS +2063763755</a></li>
                   <li><a href="mailto:splendidcleaningusa@gmail.com" aria-label="Email">Email splendidcleaningusa@gmail.com</a></li>
@@ -107,7 +107,7 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-end hidden lg:flex">
-          <a className="btn bg-primeira border-none text-white text-xl uppercase">Contact +(206)3763755</a>
+          <a className="btn bg-primeira border-none text-white text-md uppercase font-bold">Contact +(206)3763755</a>
         </div>
       </div>
 
@@ -139,7 +139,7 @@ export default function Navbar() {
               <li key={menuItem.item} className="w-full">
                 <a
                   href="#"
-                  className={`block w-full px-4 py-2 text-segunda text-2xl font-bold ${
+                  className={`block w-full px-4 py-2 text-segunda text-2xl ${
                     selectedItem === menuItem.item ? 'bg-gray-50' : 'hover:bg-sexta'
                   }`}
                   onClick={() => {
@@ -158,7 +158,7 @@ export default function Navbar() {
                   )}
                 </a>
                 {menuItem.items && openContactMenu && selectedItem === menuItem.item && (
-                  <ul className="pl-4 bg-segunda text-white font-bold w-full">
+                  <ul className="pl-4 bg-segunda text-white w-full">
                     {menuItem.items.map((subItem) => (
                       <li key={subItem.item}>
                         <a
