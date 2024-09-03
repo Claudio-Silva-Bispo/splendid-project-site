@@ -1,14 +1,14 @@
 export default function ServicePhotos() {
   return (
     <section
-      className="p-4 lg:p-8 bg-gray-100 text-gray-800"
+      className="p-4 lg:p-8 bg-terceira text-gray-800"
     >
 
         <div className="container mx-auto p-4 my-6 space-y-2 text-center" id="about-services">
                 
-                <h2 className="text-2xl font-bold text-start md:text-center leading-tight uppercase">Discover the Services We Have Created <br /> <span className="uppercase text-quinta">Especially for You</span></h2>
+                <h2 className="text-2xl md:text-5xl font-bold text-start md:text-center leading-tight uppercase">Discover the Services We Have Created <br /> <span className="uppercase text-primeira">Especially for You</span></h2>
                 
-                <p className="text-start md:text-center">We aim to make your day easier with the best solutions</p>
+                <p className="text-xl text-left md:text-center">We aim to make your day easier with the best solutions</p>
         </div>
 
       <div className="container mx-auto space-y-12">
@@ -23,7 +23,7 @@ export default function ServicePhotos() {
           <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
             <span className="text-xs uppercase">Customized Service</span>
 
-            <h3 className="text-3xl font-bold text-[#FF7F2C]">Residential Cleaning</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Residential Cleaning</h3>
 
             <p className="my-1 text-md">
               We offer a complete residential cleaning service, ensuring your home is always clean and organized.
@@ -54,7 +54,7 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-3xl font-bold text-[#FF7F2C]">Commercial Cleaning</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Commercial Cleaning</h3>
 
             <p className="my-1 text-md">
               Keep your workspace clean and professional with our commercial cleaning services.
@@ -87,7 +87,7 @@ export default function ServicePhotos() {
               Customized Service
             </span>
 
-            <h3 className="text-3xl font-bold text-[#FF7F2C]">Post-Construction Cleaning</h3>
+            <h3 className="text-2xl md:text-3xl  font-bold text-[#FF7F2C]">Post-Construction Cleaning</h3>
 
             <p className="my-1 text-md">
               Turn your newly built space into a livable environment with our post-construction cleaning.
@@ -118,7 +118,7 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-3xl font-bold text-[#FF7F2C]">Window Cleaning</h3>
+            <h3 className="text-2xl md:text-3xl  font-bold text-[#FF7F2C]">Window Cleaning</h3>
 
             <p className="my-1 text-md">
               Keep your windows spotless with our specialized cleaning service.
@@ -146,14 +146,10 @@ export default function ServicePhotos() {
               Customized Service
             </span>
 
-            <h3 className="text-3xl font-bold text-[#FF7F2C]">Small Details in Furniture</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-[#FF7F2C]">Small Details</h3>
 
             <p className="my-3 text-gray-600">
-              Take care of your upholstery and furniture with our specialized sanitization, ensuring cleanliness and preservation.
-            </p>
-
-            <p className=" text-md text-gray-600">
-              We use eco-friendly products and advanced techniques to clean and disinfect your upholstery.
+              Take care of your furnitures with our specialized sanitization, ensuring cleanliness and preservation.
             </p>
 
             <button

@@ -67,7 +67,7 @@ export default function ContactFlow() {
                   Easy and quick
                 </time>
                 <p className="mt-3 text-xl">
-                  Get in touch with us via Phone: +2063763755, Email: splendidcleaningusa@gmail.com, SMS, or WhatsApp. Our team is available to assist you.
+                  Get in touch with us via Phone, SMS, or WhatsApp: +2063763755. Our team is available to assist you.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function ContactFlow() {
             <div>
               <button
                 type="submit"
-                className="w-full py-2 px-4 font-semibold text-white rounded mt-10 md:mt-0 text-2xl uppercase"
+                className="w-full py-2 px-4 font-semibold text-white rounded mt-10 md:mt-0 text-xl md:text-2xl uppercase"
                 style={{ backgroundColor: '#1C6F42' }}
               >
                 <a href="/#contact">Contact Us</a>

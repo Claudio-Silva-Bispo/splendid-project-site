@@ -47,7 +47,7 @@ const services = {
     },
     {
       id: 3,
-      name: 'Living Room',
+      name: 'Living',
       serviceDescription: 'Arrangement and cleaning of sofas, curtains, carpets, and surfaces.',
       houseItems: 'Locations included in basic services',
       houseItemsDescription: 'Includes organizing furniture, vacuuming carpets, and cleaning surfaces.',
