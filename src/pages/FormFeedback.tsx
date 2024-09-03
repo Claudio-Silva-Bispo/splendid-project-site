@@ -52,9 +52,9 @@ export default function FormFeedback() {
     return (
         <section className="bg-white pt-20">
             
-            <div className="container flex flex-col-reverse lg:flex-row">
-                <div className="flex flex-col p-20 space-y-6 rounded-sm lg:w-1/2 xl:w-3/5 text-black">
-                    <h1 className="font-bold text-2xl uppercase text-primeira">About our services, how was your experience?</h1>
+            <div className="container flex flex-col lg:flex-row pt-20 md:pt-0">
+                <div className="flex flex-col p-4 md:p-20 space-y-6 rounded-sm lg:w-2/3 xl:w-3/5 text-black">
+                    <h1 className="text-4xl uppercase text-primeira">About our services, how was your experience?</h1>
 
                     <div className="flex space-x-2 sm:space-x-4">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6 text-segunda">
@@ -98,13 +98,13 @@ export default function FormFeedback() {
                     </div>
                 </div>
 
-                <div className="lg:w-1/2 xl:w-3/5 bg-white">
+                <div className="lg:w-2/3 xl:w-3/5 bg-white">
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
-                        <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 bg-gray-50 text-gray-800">
+                        <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 bg-terceira text-gray-800">
                             
                             <form onSubmit={handleSubmit}>
                                 <div className="flex flex-col items-center w-full">
-                                    <h2 className="text-3xl font-semibold text-center">Your feedback matters to us</h2>
+                                    <h2 className="text-3xl text-center font-bold">Your feedback matters to us</h2>
                                     <div className="flex flex-col items-center py-6 space-y-3">
                                         <span className="text-center">How was your experience?</span>
                                         <div className="flex space-x-3">
@@ -133,7 +133,7 @@ export default function FormFeedback() {
                                         <textarea
                                             rows={3}
                                             placeholder="Message..."
-                                            className="p-4 rounded-md resize-none text-gray-800"
+                                            className="p-4 rounded-md resize-none text-gray-800 bg-white"
                                             id="message"
                                             value={formData.message}
                                             onChange={handleChange}
@@ -142,7 +142,7 @@ export default function FormFeedback() {
                                         <input
                                             type="text"
                                             placeholder="Name"
-                                            className="p-4 rounded-md resize-none text-gray-800 mt-3"
+                                            className="p-4 rounded-md resize-none text-gray-800 mt-3 bg-white"
                                             id="name"
                                             value={formData.name}
                                             onChange={handleChange}
@@ -151,13 +151,13 @@ export default function FormFeedback() {
                                         <input
                                             type="email"
                                             placeholder="Email"
-                                            className="p-4 rounded-md resize-none text-gray-800 mt-3"
+                                            className="p-4 rounded-md resize-none text-gray-800 mt-3 bg-white"
                                             id="email"
                                             value={formData.email}
                                             onChange={handleChange}
                                         />
                                         
-                                        <button type="submit" className="py-4 my-4 font-semibold rounded-md text-gray-50" style={{ backgroundColor: '#1C6F42' }}>
+                                        <button type="submit" className="py-4 my-4  rounded-md text-gray-50" style={{ backgroundColor: '#1C6F42' }}>
                                             Leave your message
                                         </button>
                                     </div>

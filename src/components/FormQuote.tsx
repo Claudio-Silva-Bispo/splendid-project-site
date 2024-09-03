@@ -82,7 +82,7 @@ export default function FormQuote() {
     console.log('Enviando o formulário com os dados:', formData);
 
       try {
-          const response = await fetch('https://olivercleaningservice.com/api/criarOrcamento', {
+          const response = await fetch('https://splendid-project-site.vercel.app/api/criarOrcamento', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
