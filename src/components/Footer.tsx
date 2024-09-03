@@ -64,6 +64,9 @@ export default function Footer() {
 					<li>
 						<a rel="noopener noreferrer" href="#">Documentation</a>
 					</li>
+					<li>
+						<a rel="noopener noreferrer" href="/Dashboard">Dashboard</a>
+					</li>
 				</ul>
 			</div>
 

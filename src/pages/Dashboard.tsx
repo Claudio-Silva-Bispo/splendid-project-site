@@ -31,8 +31,8 @@ const Dashboard: React.FC = () => {
       <Sidebar setSection={setSection} />
       <main className="flex-1 p-6 ml-60 bg-gray-100 text-gray-800">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold">{section.charAt(0).toUpperCase() + section.slice(1)}</h2>
-          <button onClick={fetchData} className="px-4 py-2 text-white bg-[#E5332F] rounded">Atualizar Base</button>
+          <h2 className="text-2xl">{section.charAt(0).toUpperCase() + section.slice(1)}</h2>
+          <button onClick={fetchData} className="px-4 py-2 text-white bg-primeira rounded font-bold">Atualizar Base</button>
         </div>
         <div className="overflow-x-auto">
           {loading ? (
