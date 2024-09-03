@@ -17,12 +17,12 @@ export default function Home() {
       <ServicePlan />
       <About />
       <ContactFlow />
-      
       <Services />
       <ServicePhotos />
+      <ContactNetworks />
       {/*
       <FormContact />
-      <ContactNetworks />
+      
       <SobreFeedback />
       <ReceivedFeedbacks/>
       */}
