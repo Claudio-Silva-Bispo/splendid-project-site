@@ -20,10 +20,11 @@ export default function Home() {
       <Services />
       <ServicePhotos />
       <ContactNetworks />
+      <SobreFeedback />
       {/*
       <FormContact />
       
-      <SobreFeedback />
+      
       <ReceivedFeedbacks/>
       */}
     </div>
