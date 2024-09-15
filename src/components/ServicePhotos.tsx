@@ -23,7 +23,7 @@ export default function ServicePhotos() {
           <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
             <span className="text-xs uppercase bold-bold">Customized Service</span>
 
-            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Residential Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Standard Cleaning</h3>
 
             <p className="my-1 text-md">
               We offer a complete residential cleaning service, ensuring your home is always clean and organized.
@@ -118,10 +118,10 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Window Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Mov in and Mov out Cleaning</h3>
 
             <p className="my-1 text-md">
-              Keep your windows spotless with our specialized cleaning service.
+            We offer specialized cleaning services for moving moments, ensuring that your new home or apartment is spotless for your arrival (Move In Cleaning) or leaving the space in perfect condition when you move out (Move Out Cleaning). Our team takes care of every detail, providing comfort and peace of mind during this important time.
             </p>
 
             <button
@@ -146,10 +146,10 @@ export default function ServicePhotos() {
               Customized Service
             </span>
 
-            <h3 className="text-2xl md:text-3xl text-[#FF7F2C]">Small Details</h3>
+            <h3 className="text-2xl md:text-3xl text-[#FF7F2C]">Deep Clening</h3>
 
             <p className="my-3 text-gray-600">
-              Take care of your furnitures with our specialized sanitization, ensuring cleanliness and preservation.
+            We offer professional Deep Cleaning services to thoroughly clean and sanitize your space from top to bottom. Ideal for a detailed refresh, our team focuses on every corner, tackling hard-to-reach areas, and ensuring your home or office is spotless and germ-free. Experience a deeper level of cleanliness and enjoy a healthier environment.
             </p>
 
             <button

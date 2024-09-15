@@ -12,7 +12,7 @@ const services = {
       schedules: 'Types of schedules you can request',
       scheduleDescription: 'We provide daily, weekly, biweekly, monthly, or specific services according to your schedule.',
       checklist: 'Additional items you can customize',
-      checklistDescription: 'Extra services can include cleaning the oven, inside the fridge, and cleaning cabinets.',
+      checklistDescription: 'Extra services can include cleaning the oven, inside the fridge, and cleaning inside the cabinets.',
       images: [
         '/assets/Service/cozinha/cozinha1.png',
         '/assets/Service/cozinha/cozinha2.png',

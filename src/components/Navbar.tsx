@@ -95,10 +95,10 @@ export default function Navbar() {
               <details>
                 <summary>Contact</summary>
                 <ul className="p-2 bg-segunda z-50 text-white text-xl">
-                  <li><a href="tel:+2063763755" aria-label="Call" target='_blank'>Call +2063763755</a></li>
-                  <li><a href="sms:+2063763755" aria-label="SMS" target='_blank'>SMS +2063763755</a></li>
+                  <li><a href="tel:+2063763755" aria-label="Call" target='_blank'>Call +(206)3763755</a></li>
+                  <li><a href="sms:+(206)3763755" aria-label="SMS" target='_blank'>SMS +(206)3763755</a></li>
                   <li><a href="mailto:splendidcleaningusa@gmail.com" aria-label="Email">Email splendidcleaningusa@gmail.com</a></li>
-                  <li><a href="https://wa.me/2063763755" aria-label="WhatsApp" target="_blank">WhatsApp +2063763755</a></li>
+                  <li><a href="https://wa.me/2063763755" aria-label="WhatsApp" target="_blank">WhatsApp +(206)3763755</a></li>
                 </ul>
               </details>
             </li>

@@ -32,7 +32,7 @@ export default function ContactFlow() {
                   Step 1: Choose the Service
                 </h3>
                 <time className="text-md tracking-wide uppercase text-gray-600">
-                  Available for you <span><GiButterfly className="text-primeira w-8 h-8" /></span>
+                  Available for you <span></span>
                 </time>
                 
                 <p className="mt-3 text-xl">
@@ -67,7 +67,7 @@ export default function ContactFlow() {
                   Easy and quick
                 </time>
                 <p className="mt-3 text-xl">
-                  Get in touch with us via Phone, SMS, or WhatsApp: +2063763755. Our team is available to assist you.
+                  Get in touch with us via Phone, Text Message, Email or WhatsApp: <span className='underline text-primeira'>206-3763755</span> Our team is available to assist you.
                 </p>
               </div>
             </div>
