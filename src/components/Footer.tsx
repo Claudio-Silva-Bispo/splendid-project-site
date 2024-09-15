@@ -46,10 +46,10 @@ export default function Footer() {
 				<h3 className="tracking-wide uppercase font-bold">Company</h3>
 				<ul className="space-y-1">
 					<li>
-						<a rel="noopener noreferrer" href="#">About</a>
+						<a rel="noopener noreferrer" href="/AboutCompany">About</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="/#contact">Request a quote</a>
+						<a rel="noopener noreferrer" href="/#FormQuote">Request a quote</a>
 					</li>
          			
 					<li>
