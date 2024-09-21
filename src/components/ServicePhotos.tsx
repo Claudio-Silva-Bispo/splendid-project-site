@@ -118,7 +118,7 @@ export default function ServicePhotos() {
             <span className="text-xs uppercase text-gray-600">
               Customized Service
             </span>
-            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Mov in and Mov out Cleaning</h3>
+            <h3 className="text-xl md:text-3xl text-[#FF7F2C]">Move in and Move out Cleaning</h3>
 
             <p className="my-1 text-md">
             We offer specialized cleaning services for moving moments, ensuring that your new home or apartment is spotless for your arrival (Move In Cleaning) or leaving the space in perfect condition when you move out (Move Out Cleaning). Our team takes care of every detail, providing comfort and peace of mind during this important time.
