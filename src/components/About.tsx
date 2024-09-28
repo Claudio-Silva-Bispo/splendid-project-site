@@ -109,7 +109,7 @@ export default function About() {
 
             <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1 rounded-xl">
 
-              <VideoComponent videoSrc="/assets/Videos/video-um.mp4"/>
+              <VideoComponent videoSrc="/public/assets/Videos/video-um.mp4"/>
 
             </div>
             
@@ -193,7 +193,7 @@ export default function About() {
             </div>
 
             <div className='w-full'>
-              <VideoComponent videoSrc="/assets/Videos/video-dois.mp4"/>
+              <VideoComponent videoSrc="/public/assets/Videos/video-dois.mp4"/>
             </div>
             
       </div>
