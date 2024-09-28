@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import imagem from "../../public/assets/Mockup/Mockup-logo-tres.png"
+import imagem from "../../public/assets/Mockup/roses.png"
 
 export default function FormContact(){
 
@@ -69,7 +69,7 @@ export default function FormContact(){
                                     
                                     <div className="min-w-full">
                                         <label htmlFor="name" className="block text-sm font-medium">Name</label>
-                                        <input type="text" id="name" className="min-w-full p-2 border border-gray-300 rounded bg-white" onChange={handleChange} value={formData.name} />
+                                        <input type="text" id="name" className="min-w-full p-2 border border-gray-300 rounded bg-white" onChange={handleChange} value={formData.name} placeholder="your full name" />
                                     </div>
 
                                     <div className="w-full">
