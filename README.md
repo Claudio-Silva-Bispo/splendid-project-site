@@ -1,5 +1,5 @@
 
-## Introdução à Documentação do Projeto
+## Introdução à Documentação do Projeto completo
 
 Bem-vindo à documentação dos componentes do projeto da Splendid Cleaning Service. Esta documentação foi criada para fornecer todas as informações necessárias para entender e implementar os componentes individuais do projeto.
 
