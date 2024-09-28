@@ -1,5 +1,5 @@
 import Image from "next/image";
-import imagem from "../../public/assets/Mockup-logo-dois.png"
+import imagem from "../../public/assets/Mockup/Mockup-logo-dois.png"
 
 export default function AboutFeedback() {
     return (

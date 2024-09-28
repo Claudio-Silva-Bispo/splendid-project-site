@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import imagem from "../../public/assets/Mockup-logo-tres.png"
+import imagem from "../../public/assets/Mockup/Mockup-logo-tres.png"
 
 export default function FormContact(){
 

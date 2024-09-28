@@ -14,10 +14,10 @@ const services = {
       checklist: 'Additional items you can customize',
       checklistDescription: 'Extra services can include cleaning the oven, inside the fridge, and cleaning inside the cabinets.',
       images: [
-        '/assets/Service/cozinha/cozinha1.png',
-        '/assets/Service/cozinha/cozinha2.png',
-        '/assets/Service/cozinha/cozinha4.png',
-        '/assets/Service/cozinha/cozinha3.png'
+        '/assets/Service/cozinha/20210201_131604.jpg',
+        '/assets/Service/cozinha/20201125_151653.jpg',
+        '/assets/Service/cozinha/IMG-20200204-WA0029.jpg',
+        '/assets/Service/cozinha/20200211_175828.jpg'
       ],
       additionalDescription: [
         'Our kitchen cleaning service offers a comprehensive approach, ensuring shiny surfaces, grease-free appliances, and a sanitized environment.',
@@ -35,10 +35,10 @@ const services = {
       checklist: 'Additional items you can customize',
       checklistDescription: 'Extra services can include additional disinfection, cleaning tiles, and more.',
       images: [
-        '/assets/Service/banheiro/banheiro1.png',
-        '/assets/Service/banheiro/banheiro2.png',
-        '/assets/Service/banheiro/banheiro3.png',
-        '/assets/Service/banheiro/banheiro4.png'
+        '/assets/Service/banheiro/IMG-20230322-WA0166.jpg',
+        '/assets/Service/banheiro/IMG-20230322-WA0046.jpg',
+        '/assets/Service/banheiro/banheiro4.png',
+        '/assets/Service/banheiro/banheiro2.png'
       ],
       additionalDescription: [
         'We guarantee a fully sanitized and disinfected bathroom, providing a clean and safe environment for you and your family.',

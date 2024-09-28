@@ -15,7 +15,7 @@ export default function ServicePhotos() {
         {/* Residential Cleaning */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img
-            src="/assets/ServicesDone/servico-residencial.png"
+            src="/assets/Service/sala/20201217_095105.jpg"
             alt="Residential Cleaning"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -46,7 +46,7 @@ export default function ServicePhotos() {
         {/* Commercial Cleaning */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
           <img
-            src="/assets/ServicesDone/servico-comercial.png"
+            src="/assets/Service/sala/sala4.png"
             alt="Commercial Cleaning"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -110,7 +110,7 @@ export default function ServicePhotos() {
         {/* Window Cleaning */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
           <img
-            src="/assets/ServicesDone/servico-janelas.png"
+            src="/assets/Service/sala/IMG-20200204-WA0028.jpg"
             alt="Window Cleaning"
             className="h-80 bg-gray-500 aspect-video"
           />
@@ -137,7 +137,7 @@ export default function ServicePhotos() {
         {/* Upholstery Sanitization */}
         <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
           <img
-            src="/assets/ServicesDone/servico-moveis.png"
+            src="/assets/Service/mockup/IMG-20230322-WA0238.jpg"
             alt="Upholstery Sanitization"
             className="h-80 bg-gray-500 aspect-video"
           />
