@@ -103,11 +103,12 @@ export default function Navbar() {
               </details>
             </li>
             <li><a href="/FormFeedback">Feedback</a></li>
+            <li><a href="/Gallery">Gallery</a></li>
           </ul>
         </div>
 
         <div className="navbar-end hidden lg:flex">
-          <a className="btn bg-primeira border-none text-white text-md uppercase font-bold">Contact +(206)3763755</a>
+          <a className="btn bg-primeira border-none text-white text-md uppercase font-bold">Call +(206)3763755</a>
         </div>
       </div>
 
