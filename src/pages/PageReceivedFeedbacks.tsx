@@ -13,8 +13,8 @@ export default function PageReceivedFeedbacks() {
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
                                     <p>The service was excellent! I needed help in an emergency and was assisted quickly. Additionally, the team was very efficient and helped me in no time. I recommend it to everyone!</p>
                                     <div className="flex items-center mt-4 space-x-4">
-                                        <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
-                                        <div>
+                                        
+                                        <div className="flex flex-col gap-2">
                                             <p className="text-lg font-semibold">João Silva</p>
                                             <div className="flex space-x-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-500">
@@ -40,8 +40,8 @@ export default function PageReceivedFeedbacks() {
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
                                     <p>I needed help in the middle of the night, and the team arrived quickly and solved the problem within minutes. Excellent and very professional service!</p>
                                     <div className="flex items-center mt-4 space-x-4">
-                                        <img src="https://source.unsplash.com/50x50/?portrait?2" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
-                                        <div>
+                                       
+                                        <div className="flex flex-col gap-2">
                                             <p className="text-lg font-semibold">Maria Fernandes</p>
                                             <div className="flex space-x-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-500">
@@ -69,8 +69,8 @@ export default function PageReceivedFeedbacks() {
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
                                     <p>Quick and efficient service. They were very attentive and managed to solve my problem quickly. I recommend their services!</p>
                                     <div className="flex items-center mt-4 space-x-4">
-                                        <img src="https://source.unsplash.com/50x50/?portrait?3" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
-                                        <div>
+                                       
+                                        <div className="flex flex-col gap-2">
                                             <p className="text-lg font-semibold">Carlos Oliveira</p>
                                             <div className="flex space-x-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-500">
@@ -96,8 +96,8 @@ export default function PageReceivedFeedbacks() {
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
                                     <p>The team is very professional and helpful. I will continue to use their services whenever necessary.</p>
                                     <div className="flex items-center mt-4 space-x-4">
-                                        <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
-                                        <div>
+                                       
+                                        <div className="flex flex-col gap-2">
                                             <p className="text-lg font-semibold">Ana Souza</p>
                                             <div className="flex space-x-1">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-500">

@@ -45,7 +45,7 @@ export default function LoginDashboard() {
             src="/assets/Logo/logo-com-fundo.png"
             alt="Your Company"
           />
-          <h2 className="mt-6 text-2xl font-bold text-primeira">Painel de Solicitações</h2>
+          <h2 className="mt-6 text-2xl font-bold text-primeira">Request Panel.</h2>
         </div>
 
         <form className="space-y-6" onSubmit={handleSubmit}>
@@ -60,7 +60,7 @@ export default function LoginDashboard() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
+                className="bg-white block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
               />
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function LoginDashboard() {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
+                className="bg-white block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 focus:ring-2 focus:ring-blue-600 sm:text-sm"
               />
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function LoginDashboard() {
         </form>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Cadastro somente
-          <span className="block font-semibold text-[#FF7F2C]">com o administrador do sistema</span>
+        Registration only
+          <span className="block font-semibold text-[#FF7F2C]">with the system administrator.</span>
         </p>
       </div>
     </div>

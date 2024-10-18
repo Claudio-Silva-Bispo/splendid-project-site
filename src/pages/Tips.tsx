@@ -64,8 +64,8 @@ export default function Tips(){
 
     return(
 
-        <section className="bg-terceira min-h-[80vh] flex flex-col
-         justify-start items-start lg:pt-20 p-6">
+        <section className="bg-quinta min-h-[60vh] flex flex-col
+         justify-start items-start p-6">
             <div>
                 <h1 className="text-5xl font-bold mb-10 text-start pt-44 text-gray-700">Useful Tips for You</h1>
             </div>

@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    // Habilitar Netlify Forms
+    experimental: {
+      runtime: 'edge',
+    },
+    // Outras configurações conforme necessário
+  };
+  
+  export default nextConfig;
+  
