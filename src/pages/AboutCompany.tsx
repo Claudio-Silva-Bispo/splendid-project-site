@@ -3,14 +3,14 @@ import React from 'react';
 export default function AboutCompany() {
     return (
         <div className="bg-white py-12" id='about-company'>
-            <div className="container mx-auto px-6 lg:px-20 mt-20">
+            <div className="container mx-auto px-6 lg:px-20 mt-10">
                 
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
                     
                     <div className='flex flex-col justify-center items-center gap-10'>
                         
                         <div>
-                            <h1 className="text-5xl font-bold  mb-6 text-primeira uppercase pt-20">About Splendid Cleaning Service</h1>
+                            <h1 className="text-5xl font-bold  mb-6 text-primeira uppercase">About Splendid Cleaning Service</h1>
                             <p className="text-2xl text-gray-600 leading-10">Founded with love and dedication, our mission is to transform every house into a welcoming home.</p>
                         </div>
                         

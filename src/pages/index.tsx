@@ -1,4 +1,4 @@
-import Main from "@/components/Main"
+import Hero from "@/components/Hero"
 import ServicePlan from "@/components/ServicePlan"
 import About from "@/components/About"
 import Services from "@/components/Services"
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div> 
-      <Main />
+      <Hero />
       <ServicePlan />
       <About />
       <ContactFlow />

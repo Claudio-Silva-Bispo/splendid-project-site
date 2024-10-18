@@ -4,11 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faHome, faBuilding, faPhone, faCalendarAlt, faCalendarTimes, faComments, faChevronDown, faUsers, faThumbsUp, faShareAlt, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import 'primeicons/primeicons.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [activeHash, setActiveHash] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -62,10 +64,10 @@ export default function Navbar() {
       path: '/Tips',
     },
     {
-      title: 'Team',
+      title: 'Quote',
       icon: faUsers,
-      description: 'Meet our team',
-      path: '/',
+      description: 'Quote free now',
+      path: '#FormQuote',
     },
     {
       title: 'Dashboard',
@@ -94,7 +96,7 @@ export default function Navbar() {
       setIsDropdownOpen(false);
     }
   };
-
+  
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
@@ -102,21 +104,67 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroElement = document.querySelector('#habilitar-menu') as HTMLElement | null;
+
+      if (heroElement) {
+        const heroHeight = heroElement.offsetHeight;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > heroHeight - 100) {
+          setIsHeroVisible(false);
+        } else {
+          setIsHeroVisible(true);
+        }
+      }
+
+      if (router.pathname === '/FormFeedback' || router.pathname === '/AboutCompany' || router.pathname === '/Gallery') {
+          setIsHeroVisible(false);
+          return;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [router.pathname]);
+
+  const handleHashLinkClick = (hash: string) => {
+    if (hash.startsWith('#')) {
+      if (router.pathname === '/') {
+        // Se estiver na home, rolar para a seção
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Caso contrário, navega para a home e rola para a seção
+        router.push(`/`).then(() => {
+          document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    } else {
+      router.push(hash);
+    }
+  };
+
   return (
-    <header className={`p-4 fixed top-0 w-full z-50`} >
+    <header className={`p-4 fixed top-0 w-full z-50 ${isHeroVisible ? 'bg-transparent text-white hover:text-gray-700' : 'bg-white'}`} >
       <div className="container flex justify-between h-10 mx-auto w-full">
         <div className="hidden md:flex md:h-10 md:w-20 items-center">
           <a href="/"><Image width={100} height={100} src={"/assets/Logo/imagem-logo-oficial.png"} alt="Company Logo" /></a>
         </div>
         <div className="hidden lg:flex items-center space-x-3 text-lg text-gray-800">
-          <a href="/" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
+          <Link href="/" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
             <FontAwesomeIcon icon={faHome} />
             <span>Home</span>
-          </a>
-          <a href="#FormQuote" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
+          </Link>
+          <Link href="#FormQuote" scroll={false} className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2"
+            onClick={() => handleHashLinkClick('#FormQuote')}
+          >
             <FontAwesomeIcon icon={faCalendarAlt} />
-            <span>Quote</span>
-          </a>
+            <span >Quote</span>
+          </Link>
           <div className="relative" ref={dropdownRef}>
             <button onClick={handleDropdownToggle} className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
               <span>Sections</span>
@@ -126,7 +174,9 @@ export default function Navbar() {
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[80vw] bg-white shadow-lg rounded-md z-50">
                 <div className="grid grid-cols-3 gap-4 p-4">
                   {sections.map((section) => (
-                    <a key={section.title} href={section.path} className="flex items-start space-x-3 p-2 hover:bg-gray-100 rounded-md text-gray-800">
+                    <Link key={section.title} href={section.path} className="flex items-start space-x-3 p-2 hover:bg-gray-100 rounded-md text-gray-800"
+                      onClick={() => handleHashLinkClick(section.path)}
+                    >
                       <div className="bg-segunda p-2 rounded-md w-10 h-10 flex items-center justify-center">
                         <FontAwesomeIcon icon={section.icon} className="text-white" />
                       </div>
@@ -134,7 +184,7 @@ export default function Navbar() {
                         <div className="font-semibold text-gray-800">{section.title}</div>
                         <div className="text-sm text-gray-800">{section.description}</div>
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -151,7 +201,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-segunda   z-40 flex flex-col lg:hidden">
+        <div className="fixed inset-0 bg-segunda z-40 flex flex-col lg:hidden">
           <button onClick={toggleMobileMenu} className="self-end text-gray-800 pt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -160,24 +210,20 @@ export default function Navbar() {
               stroke="currentColor"
               className="w-6 h-6"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" className='text-white' />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-
-          <ul className="flex flex-col items-start space-y-4 px-3">
+          <nav className="flex flex-col space-y-4 pt-10">
             {menuItems.map((menuItem) => (
-              <li key={menuItem.item} className="w-full border-b border-white last:border-none">
-                <a href={menuItem.path} className="text-md text-white flex items-center space-x-3 py-3">
-                  <FontAwesomeIcon icon={menuItem.icon} />
-                  <span>{menuItem.item}</span>
-                </a>
-              </li>
+              <Link key={menuItem.item} href={menuItem.path}
+                className="px-4 py-2 text-white hover:bg-gray-700 rounded-md flex items-center space-x-2"
+                onClick={() => handleHashLinkClick(menuItem.path)}
+              >
+                <FontAwesomeIcon icon={menuItem.icon} />
+                <span>{menuItem.item}</span>
+              </Link>
             ))}
-          </ul>
-
-          <div className="mt-auto p-5 w-full m:flex m:justify-center hidden">
-            <Image width={100} height={100} src={""} alt="Company Logo" className="w-44 h-auto hidden" />
-          </div>
+          </nav>
         </div>
       )}
     </header>

@@ -2,7 +2,7 @@ import logo from '../../public/assets/Logo/fundo-main-removebg-preview.png';
 
 export default function Main() {
   return (
-    <section className="bg-[#C5E1CB]">
+    <section className="bg-[#C5E1CB]" id='habilitar-menu'>
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between md:mt-20 min-h-[100vh]">
 
         <div className="flex flex-col md:flex-row items-center">
