@@ -128,12 +128,12 @@ export default function About() {
             </div>
 
             <div className="flex gap-4 animate-marquee">
-                <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/cozinha/20200123_150607.jpg" alt="Room photo" />
+                <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/cozinha/20210201_131604.jpg" alt="Room photo" />
                 <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/cozinha/20210201_131604.jpg" alt="Image 2" />
                 <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/cozinha/20200701_143913.jpg" alt="Image 3" />
                 <img className="h-60 aspect-video rounded-sm object-cover object-center bg-gray-500" src="/assets/Service/cozinha/20200701_162936.jpg" alt="Image 4" />
                 <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/cozinha/20201125_151653.jpg" alt="Image 5" />
-                <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/sala/20201217_095105.jpg" alt="Image 6" />
+                <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/sala/20201217_123713.jpg" alt="Image 6" />
                 <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/sala/IMG-20200204-WA0028.jpg" alt="Image 7" />
                 <img className="h-60 aspect-video rounded-sm object-fill object-center bg-gray-500" src="/assets/Service/chao/20201125_152907.jpg" alt="Image 8" />
             </div>

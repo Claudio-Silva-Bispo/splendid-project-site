@@ -50,7 +50,7 @@ export default function FormFeedback() {
     };
 
     return (
-        <section className="bg-white pt-20">
+        <section className="bg-white pt-20 md:pt-44">
             
             <div className="container flex flex-col lg:flex-row pt-20 md:pt-0">
                 <div className="flex flex-col p-4 md:p-20 space-y-6 rounded-sm lg:w-2/3 xl:w-3/5 text-black">

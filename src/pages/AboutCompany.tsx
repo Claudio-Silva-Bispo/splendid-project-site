@@ -1,7 +1,5 @@
 import React from 'react';
 
-import imagem from '../../public/assets/Service/quarto/20201111_142224.jpg'
-
 export default function AboutCompany() {
     return (
         <div className="bg-white py-12" id='about-company'>
@@ -62,7 +60,7 @@ export default function AboutCompany() {
 
                         <div className="p-6 bg-white shadow-lg rounded-lg overflow-hidden group">
                             <h2 className="text-2xl font-bold text-segunda mb-4">Contacts</h2>
-                            <p className="mt-2 text-segunda text-2xl">Phone, SMS ou WhatsApp:</p>
+                            <p className="mt-2 text-segunda text-2xl">Phone, SMS or WhatsApp:</p>
                             <p className='text-black'>+(206)3763755</p>
                             <p className="mt-2 text-segunda text-2xl">Email:</p>
                             <p className='text-black'>splendidcleaningusa@gmail.com</p>
@@ -75,8 +73,8 @@ export default function AboutCompany() {
                         
 
                         <div className="p-6 bg-white shadow-lg rounded-lg overflow-hidden group">
-                            <h2 className="text-2xl font-bold text-segunda">Cities Operation</h2>
-                            <p className="mt-2 text-gray-600">Kirkland, Seattle, Bellevue, Redmond, Bothell, Woodinville, Kenmore, Medina, Sammamish, Renton, Mercer Island, Issaquah, and other cities. Request your free quote, and we will contact you.</p>
+                            <h2 className="text-2xl font-bold text-segunda">Service available in the following cities</h2>
+                            <p className="mt-2 text-gray-600">Bellevue, Bothell, Brier, Carnation, Edmonds, Everett, Kenmore, Kirkland, Lynnwood, Mill Creek, Monroe, Mukilteo, Redmond, Shoreline, Snohomish, Woodinville, and more.</p>
 
                             {/* Pseudo-elemento para a borda animada */}
                             <div className="absolute inset-0 rounded-lg border-4 border-transparent transition-all duration-300 group-hover:border-primeiragroup-hover:animate-pulse">

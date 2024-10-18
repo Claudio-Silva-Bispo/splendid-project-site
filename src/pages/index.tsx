@@ -9,6 +9,7 @@ import ServicePhotos from "@/components/ServicePhotos"
 import ContactNetworks from "@/components/ContactNetworks"
 import SobreFeedback from "@/components/AboutFeedback"
 import ReceivedFeedbacks from "@/components/ReceivedFeedbacks"
+import Accordion from "@/components/Accordion"
 
 export default function Home() {
 
@@ -25,7 +26,7 @@ export default function Home() {
       <ContactNetworks />
       <SobreFeedback />
       <ReceivedFeedbacks/>
-      
+      <Accordion/>
     </div>
     
   )
