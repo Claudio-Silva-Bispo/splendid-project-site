@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faHome, faBuilding, faPhone, faCalendarAlt, faCalendarTimes, faComments, faChevronDown, faUsers, faThumbsUp, faShareAlt, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
+
+// Instalar npm install primeico
 import 'primeicons/primeicons.css';
 import Link from 'next/link';
 
@@ -159,7 +161,7 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faHome} />
             <span>Home</span>
           </Link>
-          <Link href="#FormQuote" scroll={false} className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2"
+          <Link href="#FormQuote" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2"
             onClick={() => handleHashLinkClick('#FormQuote')}
           >
             <FontAwesomeIcon icon={faCalendarAlt} />
