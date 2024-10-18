@@ -21,7 +21,6 @@ export default function Navbar() {
     { item: 'Feedback', path: '/FormFeedback', icon: faComments },
     { item: 'Testimonials', path: '/PageReceivedFeedbacks', icon: faThumbsUp },
     { item: 'Tips', path: '/Tips', icon: faShareAlt },
-    { item: 'Team', path: '/Team', icon: faUsers },
     { item: 'Gallery', path: '/Gallery', icon: faGlobe },
   ];
 
@@ -66,7 +65,7 @@ export default function Navbar() {
       title: 'Team',
       icon: faUsers,
       description: 'Meet our team',
-      path: '/Team',
+      path: '/',
     },
     {
       title: 'Dashboard',
