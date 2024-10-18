@@ -13,6 +13,20 @@ Esperamos que esta documentação torne o processo de integração e utilizaçã
 
 **Este projeto está composto pelo Front-End (React: Next.js), Back-End(Next.js) e Banco de Dados com MongoDb.**
 
+**Instalação de suporte para super a aplicação no Netlify**
+```bash
+    npm install @netlify/plugin-nextjs@latest
+``` 
+**Atualizar**
+```bash
+    npm update
+```
+
+**Buildar o projeto**
+```bash
+    npm run build
+```
+
 # Front-End
 
 ## Navbar
