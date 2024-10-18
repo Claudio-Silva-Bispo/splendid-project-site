@@ -97,34 +97,34 @@ export default function AboutCompany() {
 
                         <div className="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8 z-">
                             <div className="flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/personalizado/20201217_123521.jpg" alt="Image 1"/>
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Novas/imagem7.jpeg" alt="Image 1"/>
                             </div>
                             <div className="flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/personalizado/20210201_131722.jpg" alt="Image 2"/>
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Novas/imagem5.jpeg" alt="Image 2"/>
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/personalizado/20201202_112536.jpg" alt="Image 3" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Novas/imagem8.jpeg" alt="Image 3" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/personalizado/20201202_112842.jpg" alt="Image 4" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Novas/imagem4.jpeg" alt="Image 4" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/banheiro/IMG-20230322-WA0046.jpg" alt="Image 5" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/AntesEDepois/imagem1.jpeg" alt="Image 5" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/banheiro/IMG-20230322-WA0089.jpg" alt="Image 6" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/AntesEDepois/imagem2.jpeg" alt="Image 6" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/banheiro/IMG-20230322-WA0166.jpg" alt="Image 7" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/AntesEDepois/imagem3.jpeg" alt="Image 7" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/banheiro/IMG-20230322-WA0390.jpg" alt="Image 8" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/AntesEDepois/imagem4.jpeg" alt="Image 8" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/quarto/20201028_142814.jpg" alt="Image 9" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/AntesEDepois/imagem5.jpeg" alt="Image 9" />
                             </div>
                             <div className=" flex flex-shrink-0 w-full sm:w-auto">
-                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Service/quarto/20201111_142224.jpg" alt="Image 10" />
+                                <img className="object-cover object-center bg-gray-500 h-96 aspect-square" src="/assets/Novas/imagem1.jpeg" alt="Image 10" />
                             </div>
                             
                         </div>
