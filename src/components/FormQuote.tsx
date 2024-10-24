@@ -119,7 +119,7 @@ export default function FormQuote() {
     
     <form 
     ref={formRef}
-    name='form-quote-oliver' 
+    name='form-quote-splendid' 
     method='post'
     data-netlify="true"
     netlify-honeypot="bot-field"
@@ -463,8 +463,6 @@ interface ScheduleProps {
 const Schedule: React.FC<ScheduleProps> = ({ onChange }) => {
   // Formulário de agendamento
   return (
-
-
     <section className="w-full" id="FormQuote">
                     
         <h2 className="text-lg leading-7 uppercase text-segunda mt-10 font-bold">Appointment</h2>

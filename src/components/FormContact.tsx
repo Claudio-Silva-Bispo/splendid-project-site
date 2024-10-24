@@ -61,7 +61,13 @@ export default function FormContact(){
 
             <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center gap-8 border rounded-md ">
                 <div className="border-primary w-full">
-                <form onSubmit={handleSubmit} className="space-y-4 p-4" name="contact-form-oficina">
+                <form 
+                id="form-feedback-splendid"
+                onSubmit={handleSubmit} 
+                className="space-y-4 p-4" 
+                name="contact-form-splendid"
+                method="post"
+                data-netlify="true">
                                 
                                 <h3 className="text-2xl md:text-4xl uppercase text-center font-bold text-primeira">Contact Form</h3>
                                 

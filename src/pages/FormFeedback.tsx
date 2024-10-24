@@ -102,7 +102,12 @@ export default function FormFeedback() {
                     <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
                         <div className="flex flex-col max-w-xl p-6 shadow-sm rounded-xl lg:p-12 bg-terceira text-gray-800">
                             
-                            <form onSubmit={handleSubmit}>
+                            <form 
+                            id="form-feedback-splendid"
+                            onSubmit={handleSubmit}
+                            name="contact-feedback-splendid"
+                            method="post"
+                            data-netlify="true">
                                 <div className="flex flex-col items-center w-full">
                                     <h2 className="text-3xl text-center font-bold">Your feedback matters to us</h2>
                                     <div className="flex flex-col items-center py-6 space-y-3">
