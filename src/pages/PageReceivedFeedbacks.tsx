@@ -1,11 +1,11 @@
 export default function PageReceivedFeedbacks() {
     return (
         <section className=" bg-segunda">
-            <div className="container px-6 py-12 mx-auto">
+            <div className="container md:px-6 md:py-12 mx-auto">
                 <div className="grid items-center gap-4 xl:grid-cols-5 mt-20">
-                    <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-                        <h2 className="text-4xl font-bold text-white">Your Opinion Matters to Us!</h2>
-                        <p className="text-white text-2xl">We thank all our clients for sharing their experiences. Your feedback helps us continually improve our battery charging and locksmith services.</p>
+                    <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left p-5 md:p-0">
+                        <h2 className="text-4xl font-bold text-white text-start md:text-center">Your Opinion Matters to Us!</h2>
+                        <p className="text-white text-2xl text-start md:text-center">We thank all our clients for sharing their experiences. Your feedback helps us continually improve our battery charging and locksmith services.</p>
                     </div>
                     <div className="p-6 xl:col-span-3">
                         <div className="grid gap-4 md:grid-cols-2">

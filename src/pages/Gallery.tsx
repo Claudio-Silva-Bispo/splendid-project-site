@@ -1,10 +1,9 @@
 
-import imagem from '../../public/assets/Service/banheiro/banheiro2.png'
 export default function Gallery(){
     return(
         <div>
             <section className="py-6 bg-white text-gray-900">
-                <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4 pt-44">
+                <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4 pt-16 md:pt-44">
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="/assets/Service/sala/20201125_151608.jpg" />
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="/assets/Service/sala/20201217_123713.jpg" />
                     <img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="/assets/Service/sala/sala4.png" />

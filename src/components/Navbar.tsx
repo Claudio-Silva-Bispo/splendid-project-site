@@ -204,28 +204,28 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-segunda z-40 flex flex-col lg:hidden">
-          <button onClick={toggleMobileMenu} className="self-end text-gray-800 pt-5">
+          <button onClick={toggleMobileMenu} className="self-end text-gray-800 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-6 h-6 m-5"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <nav className="flex flex-col space-y-4 pt-10">
+          <ul className="flex flex-col items-start space-y-4 px-3">
             {menuItems.map((menuItem) => (
-              <Link key={menuItem.item} href={menuItem.path}
-                className="px-4 py-2 text-white hover:bg-gray-700 rounded-md flex items-center space-x-2"
-                onClick={() => handleHashLinkClick(menuItem.path)}
-              >
-                <FontAwesomeIcon icon={menuItem.icon} />
-                <span>{menuItem.item}</span>
-              </Link>
+              <li key={menuItem.item} className="w-full border-b border-white last:border-none">
+                <Link href={menuItem.path} className="text-md text-white flex items-center space-x-3 py-3" onClick={() => {handleHashLinkClick(menuItem.path); setIsMobileMenuOpen(false)
+                }}>
+                  <FontAwesomeIcon icon={menuItem.icon} />
+                  <span>{menuItem.item}</span>
+                </Link>
+              </li>
             ))}
-          </nav>
+          </ul>
         </div>
       )}
     </header>
