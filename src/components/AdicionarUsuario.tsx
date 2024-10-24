@@ -38,7 +38,12 @@ const AdicionarUsuario: React.FC<AdicionarUsuarioProps> = ({ onClose }) => {
       <div className="bg-white p-6 rounded shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-semibold mb-4">Adicionar Usuário</h2>
        
-        <form onSubmit={handleSubmit}>
+        <form 
+        onSubmit={handleSubmit}
+        name="save-form-splendid"
+        method="post"
+        data-netlify="false"
+        id="form-save-splendid">
           <div className="mb-4">
             <label className="block text-sm font-medium mb-2" htmlFor="nome">Nome</label>
             <input

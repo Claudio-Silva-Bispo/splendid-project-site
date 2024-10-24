@@ -67,7 +67,7 @@ export default function FormContact(){
                 className="space-y-4 p-4" 
                 name="contact-form-splendid"
                 method="post"
-                data-netlify="true">
+                data-netlify="false">
                                 
                                 <h3 className="text-2xl md:text-4xl uppercase text-center font-bold text-primeira">Contact Form</h3>
                                 

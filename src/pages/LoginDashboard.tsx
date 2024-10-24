@@ -54,7 +54,7 @@ export default function LoginDashboard() {
         onSubmit={handleSubmit}
         name="form-login-splendid"
         method="post"
-        data-netlify="true">
+        data-netlify="false">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
             <div className="mt-2">

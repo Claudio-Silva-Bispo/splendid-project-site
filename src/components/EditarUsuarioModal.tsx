@@ -47,7 +47,13 @@ const EditarUsuarioModal: React.FC<EditarUsuarioModalProps> = ({ usuario, onClos
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-6 rounded">
         <h2 className="text-xl font-semibold mb-4">Editar Usuário</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form 
+        onSubmit={handleSubmit} 
+        className="space-y-4"
+        name="update-form-splendid"
+        method="post"
+        data-netlify="false"
+        id="form-update-splendid">
           <div>
             <label htmlFor="nome" className="block text-sm font-medium">Nome</label>
             <input

@@ -107,7 +107,7 @@ export default function FormFeedback() {
                             onSubmit={handleSubmit}
                             name="contact-feedback-splendid"
                             method="post"
-                            data-netlify="true">
+                            data-netlify="false">
                                 <div className="flex flex-col items-center w-full">
                                     <h2 className="text-3xl text-center font-bold">Your feedback matters to us</h2>
                                     <div className="flex flex-col items-center py-6 space-y-3">

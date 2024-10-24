@@ -121,7 +121,7 @@ export default function FormQuote() {
     ref={formRef}
     name='form-quote-splendid' 
     method='post'
-    data-netlify="true"
+    data-netlify="false"
     netlify-honeypot="bot-field"
     onSubmit={handleSubmit}
     id="FormQuote"
