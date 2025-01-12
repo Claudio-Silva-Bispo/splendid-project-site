@@ -11,7 +11,7 @@ export default function PageReceivedFeedbacks() {
                         <div className="grid gap-4 md:grid-cols-2">
                             <div className="grid content-center gap-4">
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>The service was excellent! I needed help in an emergency and was assisted quickly. Additionally, the team was very efficient and helped me in no time. I recommend it to everyone!</p>
+                                    <p>I couldn’t be happier with the cleaning service! The team was friendly, thorough, and efficient. They went above and beyond to make sure everything was spotless, even in areas I hadn’t noticed. Excellent attention to detail and great customer service. I’ll definitely be a returning customer! Highly recommend to anyone in need of quality cleaning.</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                         
                                         <div className="flex flex-col gap-2">
@@ -38,7 +38,7 @@ export default function PageReceivedFeedbacks() {
                                     </div>
                                 </div>
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>I needed help in the middle of the night, and the team arrived quickly and solved the problem within minutes. Excellent and very professional service!</p>
+                                    <p>The cleaning service was excellent! I needed help in an emergency and was assisted quickly. Additionally, the team was very efficient and completed the job in no time. I recommend it to everyone!</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                        
                                         <div className="flex flex-col gap-2">
@@ -67,7 +67,7 @@ export default function PageReceivedFeedbacks() {
                             </div>
                             <div className="grid content-center gap-4">
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                                    <p>Quick and efficient service. They were very attentive and managed to solve my problem quickly. I recommend their services!</p>
+                                    <p>Im really impressed with the cleaning services! The team arrived on time, worked quickly, and left everything spotless. They paid attention to every detail and made sure the place was perfectly clean. Great professionalism and care. Ill definitely be using this service again! Highly recommended!</p>
                                     <div className="flex items-center mt-4 space-x-4">
                                        
                                         <div className="flex flex-col gap-2">

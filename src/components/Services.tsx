@@ -35,10 +35,10 @@ const services = {
       checklist: 'Additional items you can customize',
       checklistDescription: 'Extra services can include additional disinfection, cleaning tiles, and more.',
       images: [
+        '/assets/Photos/banheiro_1.JPG',
         '/assets/Service/banheiro/IMG-20230322-WA0166.jpg',
-        '/assets/Service/banheiro/IMG-20230322-WA0046.jpg',
-        '/assets/Service/banheiro/banheiro4.png',
-        '/assets/Service/banheiro/banheiro2.png'
+        '/assets/Photos/banheiro_2.JPG',
+        '/assets/Photos/banheiro_3.JPG'
       ],
       additionalDescription: [
         'We guarantee a fully sanitized and disinfected bathroom, providing a clean and safe environment for you and your family.',
@@ -56,10 +56,10 @@ const services = {
       checklist: 'Additional items you can customize',
       checklistDescription: 'Extra services can include deep carpet cleaning and furniture polishing.',
       images: [
-        '/assets/Service/sala/sala1.png',
-        '/assets/Service/sala/sala2.png',
-        '/assets/Service/sala/sala3.png',
-        '/assets/Service/sala/sala4.png'
+        '/assets/Photos/sala_1.JPG',
+        '/assets/Photos/sala_2.JPG',
+        '/assets/Photos/sala_3.JPG',
+        '/assets/Service/sala/IMG-20200204-WA0028.jpg'
       ],
       additionalDescription: [
         'Our living room cleaning guarantees a cozy environment, with organized furniture and impeccable carpets.',
@@ -77,10 +77,10 @@ const services = {
       checklist: 'Additional items you can customize',
       checklistDescription: 'Extra services can include closet cleaning, furniture polishing, and organizing wardrobes.',
       images: [
-        '/assets/Service/quarto/quarto1.png',
-        '/assets/Service/quarto/quarto2.png',
-        '/assets/Service/quarto/quarto3.png',
-        '/assets/Service/quarto/quarto4.png'
+        '/assets/Photos/quarto_1.JPG',
+        '/assets/Photos/quarto_2.JPG',
+        '/assets/Photos/quarto_3.JPG',
+        '/assets/Photos/quarto_4.JPG'
       ],
       additionalDescription: [
         'We provide a clean and organized bedroom where you can relax and rest.',
