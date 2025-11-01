@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página Principal (Landing Page) -->
   <url>
     <loc>https://www.splendidcleaningserv.com/</loc>
     <lastmod>2025-01-01</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
+  
+  <!-- Páginas Independentes -->
   <url>
-    <loc>https://www.splendidcleaningserv.com/#services</loc>
+    <loc>https://www.splendidcleaningserv.com/AboutCompany</loc>
     <lastmod>2025-01-01</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
   <url>
-    <loc>https://www.splendidcleaningserv.com/#about</loc>
+    <loc>https://www.splendidcleaningserv.com/FormFeedback</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://www.splendidcleaningserv.com/Gallery</loc>
     <lastmod>2025-01-01</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
   <url>
-    <loc>https://www.splendidcleaningserv.com/#contact</loc>
+    <loc>https://www.splendidcleaningserv.com/PageReceivedFeedbacks</loc>
     <lastmod>2025-01-01</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://www.splendidcleaningserv.com/Tips</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
