@@ -20,7 +20,7 @@ export default function Main() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="flex flex-col md:justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
 
-            <h1 className="text-3xl md:text-md leading-none lg:text-4xl text-white pt-10 md:pt-0">
+            <h1 className="text-3xl md:text-md leading-none lg:text-4xl text-green-800 pt-10 md:pt-0">
               Professional Cleaning Services in Seattle, Bellevue & Tacoma
             </h1>
 
@@ -32,7 +32,7 @@ export default function Main() {
               </span>
             </div>
 
-            <p className="mt-3 md:mt-6 mb-4 md:mb-8 text-sm lg:text-xl sm:mb-12 text-white">
+            <p className="mt-3 md:mt-6 mb-4 md:mb-8 text-sm lg:text-xl sm:mb-12 text-green-900">
               We provide the best solutions for a Clean Environment. Professional residential and commercial cleaning services in Seattle, Bellevue, Tacoma, and surrounding areas.
             </p>
 

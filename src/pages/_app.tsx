@@ -4,6 +4,9 @@ import { useRouter } from 'next/router';
 import '../globals.css';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { PrimeReactProvider } from 'primereact/api';
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
         
 import Navbar from '@/components/Navbar';
 import Rodape from '@/components/Footer';
